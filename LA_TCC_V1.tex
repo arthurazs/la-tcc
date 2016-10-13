@@ -1002,11 +1002,11 @@ brazil,				% o último idioma é o principal do documento
 	\par Também residindo no plano de gerenciamento, a camada de segurança pode ser chamada pela WME ou por outras entidades de camadas superiores.
 	
 	\par O escopo da camada de segurança em dispositivos WAVE é discutido no padrão IEEE 1609.2 - Serviços de Segurança para Aplicações e Mensagens de Gerenciamento, que tem os propósitos de estabelecer a privacidade nas comunicações WAVE e proteger os dispositivos WAVE de ataques e de vazamento de informações.
-	
+
 	\par Segundo a intenção dos padrões IEEE 1609, qualquer dispositivo WAVE deve proteger a privacidade de seus dados, de modo que partes não-autorizadas não conheçam dados pessoais e partes autorizadas conheçam apenas se consentidas para tal.
-	
+
 	\par De modo detalhado, a norma IEEE 1609.2 descreve os seguintes serviços de segurança para aplicações e mensagens de gerenciamento:
-	
+
 	\begin{itemize}
 		\item Serviços de Segurança Internos:
 		\begin{itemize}	
@@ -1019,38 +1019,38 @@ brazil,				% o último idioma é o principal do documento
 			\item Entidade de Distribuição de Certificados Ponto-a-Ponto
 		\end{itemize}		
 	\end{itemize}
-	
+
 	% INSERIR Figura 18 Segurança WAVE em detalhes
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.5]{figuras/cap3/18SegurancaWAVEDetalhada}
 		\caption{\label{fig_18}Segurança WAVE Detalhada}
 	\end{figure}
-	
+
 	\par A camada de segurança WAVE gerencia a validação de certificados de segurança,  a criação de unidades de protocolo de dados seguros (SPDU ou \textit{Secure Protocol Data Unit}), além de operações de criptografia. Nas operações de criptografia, a norma cita algoritmos de assinatura, algoritmos hash, algoritmos de chave simétrica e assimétrica, além de diferentes abordagens de chaves de criptografia.
-	
-	\par Não é de objetivo deste trabalho monográfico discorrer de maneira detalhada sobre o estudo de segurança das redes WAVE, e sim citar a existência da camada e realizar uma abordagem geral.
-	
+
+	\par Não é de objetivo deste trabalho discorrer de maneira detalhada sobre o estudo de segurança das redes WAVE, e sim citar a existência da camada e realizar uma abordagem geral.
+
 	\subsection{Interfaces}
 	\label{sec:Interfaces}
-	
+
 	\par Para comunicação entre diversos protocolos no Plano de Dados, é necessário ter interfaces. As interfaces nos componentes WAVE são chamados de Pontos de Acesso de Serviços (\textit{Service Access Points} ou SAP). Assim como no modelo OSI, os SAPs do plano de dados se localizam conceitualmente entre uma camada OSI e outra adjacente. No plano de gerenciamento, os SAPs podem ser acessados por quaisquer entidades.
-	
+
 	% INSERIR Figura 19 Service Access Points
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.5]{figuras/cap3/19ServiceAccessPoints}
 		\caption{\label{fig_19}\textit{Service Access Points}}
 	\end{figure}
-	
+
 	\par Os SAPs são compostos de primitivas de serviço. Estas primitivas informam ao serviço como desempenhar uma determinada ação. Primitivas de serviço se parecem com procedimentos em linguagem de programação. As primitivas de serviço são “codificadas” na notação ASN.1 (Ver \autoref{ASN1}).
-	
+
 	\section{Camada Física}
-	
+
 	\par A camada física do modelo WAVE foi descrita pelo padrão 802.11p, que é uma emenda à família de padrões 802.11. Esta emenda propõe uma adaptação das redes sem fio em suas camadas física e de enlace (subcamada MAC) para o ambiente veicular.
-	
+
 	\par Os meios sem fio de transmissão de dados mais utilizados na norma 802.11 baseiam-se em Rádio Frequência (RF).  Existem outros meios de propagação sem fio como o Infravermelho, porém são menos utilizados. As frequências de rádio empregadas para redes de comunicação sem fio estão na faixa de frequência de micro-ondas no espectro eletromagnético(\autoref{fig_20}), variando entre 0,3x$10^{9}$ até 3x$10^{11}$ Hertz.
-	
+
 	%INSERIR Figura 20 Espectro Eletromagnético
 	\begin{figure} [H]
 		\centering
@@ -1853,22 +1853,22 @@ brazil,				% o último idioma é o principal do documento
 	\par Portanto, conforme demonstrado neste capítulo, a escolha do OMNET + VEINS + SUMO neste trabalho de conclusão de curso se justifica, pois será possível criar aplicações para Redes Veiculares que operem de forma similar àquilo descrito na família de padrões 1609, simulando desde cenários com poucos veículos até situações mais complexas como grande tráfego em cidades conhecidas. Este conjunto de programas apresentam uma ampla variedade de logs, permitindo uma análise mais profunda da demonstração produzida, além de permitir diversas configurações de elementos reais como potência e atenuação do sinal, interferência por obstáculos, número de veículos e suas velocidades, produzindo, portanto, simulações bem próximas à realidade.
 	
 	\par No próximo capítulo serão apresentados três cenários simulados nos softwares supracitados, utilizando-se de uma aplicação desenvolvida pelos autores deste trabalho, nos quais os resultados obtidos serão analisados e discutidos.
-	
+
 	%----------------------------------------------------------------
-	
+
 	\newpage
 	\chapter{Especificações do Sistema e Estudo de Caso}
-	
-	\par Este capítulo apresenta um estudo de caso, tendo por objetivo experimentar através de simulações o uso de uma aplicação de emergência desenvolvida para comunicações interveiculares. A escolha do framework VEINS para a realização deste estudo de caso possibilitou ir além das simulações. Foi realizado neste TCC a inclusão de novas classes no código-fonte do \textit{framework}, visando adaptar as simulações a realidade proposta neste trabalho.
-	
+
+	\par Este capítulo apresenta um estudo de caso, tendo por objetivo experimentar através de simulações o uso de uma aplicação de emergência desenvolvida para comunicações interveiculares. A escolha do framework VEINS para a realização deste estudo de caso possibilitou ir além das simulações. Foi realizado neste trabalho a inclusão de novas classes no código-fonte do \textit{framework}, visando adaptar as simulações a realidade proposta neste trabalho.
+
 	\par Os experimentos mostrados a seguir têm todos os veículos equipados com tecnologias Car2X. Foi garantido que um mesmo conjunto de sementes aleatórias fosse gerado para os experimentos a serem comparados, o que descarta uma possível influência nos dados coletados e aumenta o grau de confiabilidade destes.
-	
+
 	\par Conforme descrito na Enciclopédia Online do SUMO, estas sementes aleatórias são geradas através do algorítimo Mersenne Twister, garantindo o efeito estocástico necessário para a reprodução de cenários realistas.
 
 	\par As simulações realizadas nos cenários subsequentes utilizam o mesmo espectro regulamentado pela FCC para comunicações DSRC nos Estados Unidos. A ANATEL (ATO No 2.099, 2012) ainda não estabeleceu um espectro para as comunicações interveiculares no Brasil até a presente data.
-	
+
 	\section{Especificações do Sistema}
-	 	
+
    	\par Conforme relatado na \autoref{sec:MiddleIntegra}, o \textit{framework} escolhido para simulação de Redes Veiculares é o VEINS. Devido a grande quantidade de atributos e métodos presentes no código fonte deste \textit{framework}, a \autoref{fig_5.1} demonstra um diagrama de classes simplificado do funcionamento do software. A \autoref{tab_5.1} apresenta uma breve descrição sobre suas principais classes.
 
 	 \begin{figure} [H]
@@ -1973,28 +1973,28 @@ brazil,				% o último idioma é o principal do documento
     \end{table}
 
     \par A aplicação de emergência solicita o percurso do veículo a um GPS (Rua Atual + próximas ruas) e encripta esta informação logo em seguida. Com o dado pronto para ser enviado, a aplicação inicia a preparação da mensagem tendo como base uma WAVE \textit{Short Message} (WSM) inicializada pela classe \textit{BaseWaveApplicationLayer}. Esta aplicação utiliza a classe \textit{BaseWaveApplicationLayer} para incluir na WSM o dado encriptado, o PSID da aplicação e o número do canal a ser utilizado, que neste caso é o canal de controle.
-    
-	
+
+
 	\section{\label{sec:estudoDeCaso}Estudo de Caso}
-	
-	\par Para elucidação do tema proposto neste trabalho monográfico, foram criados neste estudo de caso 3 experimentos, que estão detalhados logo a seguir.
-	
+
+	\par Para elucidação do tema proposto neste trabalho, foram criados neste estudo de caso 3 experimentos, que estão detalhados logo a seguir.
+
 	\subsection{Descrição dos Experimentos}
-	
+
 	\par A aplicação de emergência descrita na seção anterior será utilizada e medida nos seguintes experimentos: 
-	
+
 	\begin{enumerate}
 		\item Análise de comunicações entre veículos em uma rodovia simples.
 		\item Análise de comunicações entre veículos e estruturas de acostamento em uma rodovia simples.
 		\item Análise de comunicações entre veículos e estruturas de acostamento na microrregião de Ipanema e Copacabana no Rio de Janeiro.
 	\end{enumerate}
-	
+
 	\par Os experimentos 1 e 2 contém simulações com cenários e métricas mais inteligíveis. Estes experimentos têm por objetivo elucidar o funcionamento das comunicações interveiculares, preparando o leitor para o experimento 3.
-	
+
 	\par O conjunto de experimentos 3 apresenta medições mais complexas, como a análise de  valores ótimos para parâmetros da aplicação de emergência utilizados por dispositivos Car2X em tráfego rodoviário na região dos bairros de Ipanema e Copacabana, no Rio de Janeiro.
-	
+
 	\par Os experimentos citados serão frequentemente comparados com suas medições chamadas de “medições base”, as quais não executam a aplicação de emergência em seus cenários.
-	
+
 	\par Cada medição de cada experimento foi executada 100 vezes para reprodução de aleatoriedade. O SUMO estabelece uma nova posição inicial e velocidade máxima para cada veículo a cada nova repetição.
 
 	\par É necessário o controle destas sementes aleatórias (geradas pelo SUMO) para garantir que o mesmo estado inicial seja replicado nas outras medições, como:
@@ -2341,46 +2341,46 @@ brazil,				% o último idioma é o principal do documento
 	% ---
 	\bookmarksetup{startatroot}% 
 	% ---
-	
+
 	% ---
 	% Conclusão
 	% ---
-	
+
 % ----------------------------------------------------------
 	\chapter*[Conclusão]{Conclusão}
 	\addcontentsline{toc}{chapter}{CONCLUS\~{A}O}
-	
+
 	\par A padronização da tecnologia através das normas IEEE 1609 e ETSI mostra uma tentativa de incentivar a adoção de Rede Veiculares pelas indústrias. Tecnologias padronizadas facilitam a produção e implantação em maior escala.
-	
+
 	\par A tecnologia Car2X não se apresenta apenas como futuro promissor e sim como uma realidade iminente. Nos últimos anos, inúmeras empresas de tecnologia voltaram sua atenção para a indústria automobilística a fim de desenvolver produtos com o objetivo de alcançar a tão desejada condução autônoma. CEOs de empresas automotivas repetem incessantemente que a inclusão de tecnologias eletrônicas e de comunicação sem fio em veículos é a tendência atual desta indústria{\footnote{\href{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/}{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/} acesso em 23 de set. 2016}.
-	
+
 	\par No contexto das comunicações interveiculares, há um mercado promissor para empresas de desenvolvimento de software. Aplicativos para sensores, segurança, comunicação, entretenimento, informação, controle de tráfego poderão surgir, melhorando a experiência, segurança e a comodidade dentro do veículo.
-	
+
 	\par No estudo de caso apresentado, vimos que uma aplicação de emergência alinhada à tecnologia Car2X facilita o trajeto de veículos de segurança pública. Estes veículos contam com uma nova forma de sinalização de sua presença, vencendo barreiras visuais e sonoras através da replicação de suas mensagens através da Rede Veicular.
-	
+
 % ----------------------------------------------------------
 
 	\chapter*[Trabalhos Futuros]{Trabalhos Futuros}
 	\addcontentsline{toc}{chapter}{TRABALHOS FUTUROS}
-	
-	\par O código desenvolvido para a aplicação de emergência apresentada no estudo de caso desta monografia permite ser incrementado em trabalhos futuros. Um mecanismo simples de criptografia foi utilizado como exemplo para realizar a encriptação dos dados da mensagem de emergência. Através da biblioteca crypto++, técnicas de criptografia podem ser incluídas para novos estudos de caso.
-	
+
+	\par O código desenvolvido para a aplicação de emergência apresentada no estudo de caso deste trabalho permite ser incrementado em trabalhos futuros. Um mecanismo simples de criptografia foi utilizado como exemplo para realizar a encriptação dos dados da mensagem de emergência. Através da biblioteca crypto++, técnicas de criptografia podem ser incluídas para novos estudos de caso.
+
 	\par Atualmente, o código da aplicação contém orientação de mudança de faixa no corpo da mensagem de emergência. Novas orientações podem ser incluídas em trabalhos posteriores objetivando novos cenários. Como exemplo, mensagens contendo novas orientações como desaceleração, estacionamento, permissão de ultrapassagem, direção cautelosa, velocidades máxima e mínima podem ser criadas para cenários com outros fins. Novos estudos de caso poderiam simular a troca de mensagens em perseguições policiais, passagens de comitivas especiais, operações de blitz, sinalização vertical de vias, semáforos inteligentes, cruzamentos de tráfego intermodais (automóveis e trens, por exemplo), entre outros.
-	
+
 	\par A classe Driver permite controlar ações típicas de um motorista humano no veículo. Esta poderia ser incrementada utilizando princípios de inteligência artificial. Como exemplo, as mudanças de faixa poderiam ser realizada ou não após o raciocínio de sinapses que calculam variáveis como distância entre veículos (frontal, traseira e lateral), aceleração e condições da pista.
-	
+
 	\par Aplicações que comuniquem-se com semáforos possibilitariam melhor fluidez para os veículos de segurança pública caso estes pudessem alterar momentaneamente o sincronismo entre as fases do semáfaro através da troca de mensagens de emergência.
-	
+
 	\par Placas indicativas de velocidade máxima espalhadas em pontos estratégicos de uma rodovia poderiam ser equipadas de unidades de acostamento com o intuito de enviar WSMs periódicos indicando a velocidade adequada. Os dispositivos recebedores poderiam interpretar estas mensagens de diversas maneiras.
-	
+
 	\par Radares poderiam ser equipados com RSUs para um registro mais confiável dos veículos que não estiverem em conformidade com as leis de trânsito, enviando a multa diretamente para o dono do veículo transgressor sem depender apenas de fotos, que por vezes não são suficientes.
-	
+
 % ----------------------------------------------------------
 	% ELEMENTOS PÓS-TEXTUAIS
 	% ----------------------------------------------------------
 	\postextual
-	
-	
+
+
 	% ----------------------------------------------------------
 	% Referências bibliográficas
 	% ----------------------------------------------------------
@@ -2388,7 +2388,7 @@ brazil,				% o último idioma é o principal do documento
 	\chapter*[Referências]{Referências}
 	\addcontentsline{toc}{chapter}{REFERÊNCIAS}
 	\flushleft
-	
+
 	\begin{itemize}[label={}] %\itemsep -4pt
 		
 		\item HARVEY, D. The Condition of Postmodernity: An Enquiry into the Origins of Cultural Change. Wiley-Blackwell, 1992. 392 p.
@@ -2705,33 +2705,23 @@ brazil,				% o último idioma é o principal do documento
 		    \end{tabular}	
 			    \caption{\label{tab_3}Descrição dos diversos Identificadores do Elemento WAVE}
 	    \end{table}
-	
+
 	    \newpage
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		\chapter{\label{tutorial_1}Preparando o ambiente para simulações veiculares no VEINS}
-		
-		    \par Um dos objetivos deste trabalho monográfico é mostrar como simulações em redes veiculares são realizadas e como desenvolver novas simulações para futuros estudos de caso. %[?] É um objetivo msm?
-		
+
+		    \par Um dos objetivos deste trabalho é mostrar como simulações em redes veiculares são realizadas e como desenvolver novas simulações para futuros estudos de caso. %[?] É um objetivo msm?
+
 		    \par No \autoref{chap:Abor_Aval} foram definidos os \textit{frameworks} a serem utilizados para a criação de estudo de caso baseado-se num conjunto de critérios. 
-		    
+
 		    \par O \textit{framework} OMNET++ é o responsável pela simulação de eventos discretos, contendo bibliotecas para a simulação de redes de comunicação. 
-		    
+
 		    \par O \textit{framework} SUMO gerencia o tráfego em modelo microscópico, emitindo mensagens de status de cada veículo em determinado intervalo de tempo. 
-		    
+
 		    \par O \textit{framework} integrador VEINS recebe as mensagens de status do SUMO, gerando traços dos veículos no ambiente gráfico. O VEINS também também envia mensagens através da interface de comunicação TRACI. Estas mensagens podem ou não alterar a rotas dos veículos em simulação no SUMO.
 
 		    \par Para a correta instalação e síncrona comunicação dos \textit{frameworks}, é necessária a instalação seguindo a ordem proposta além de componentes extras para que os \textit{frameworks} tenham um funcionamento adequado. 
-		    
+
 		    \par Foram elaborados dois tutorias para dois sistemas operacionais distintos: Windows 10 e Ubuntu 16.04. Encorajamos a instalação dos \textit{frameworks} no sistema operacional Ubuntu para melhor \textit{performance} da instalação e das simulações.
 
 		    \par O download do SUMO pode ser feito através do site \href{http://sumo.dlr.de/wiki/Main\_Page}{http://sumo.dlr.de/wiki/Main\\\_Page}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
@@ -2740,13 +2730,12 @@ brazil,				% o último idioma é o principal do documento
 
 		    \par O download do VEINS pode ser feito através do site \href{http://veins.car2x.org/download/}{http://veins.car2x.org/\\download/}. %[?] Colocar link para versão utilizada!
 
-
 		    \par Recomenda-se manter os arquivos descompactados em uma pasta padrão. Neste tutorial vamos assumir que esta pasta é nomeada \textbf{WAVE}. Determine qual sistema operacional será utilizado e siga os passos conformemente.
 
         	\newpage
-				
+
         	\section{Sistemas Linux}
-        	
+
             	\begin{description}
 		            \item[1º Passo]
 		        \end{description}
