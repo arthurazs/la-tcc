@@ -1993,9 +1993,18 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Os experimentos citados serão frequentemente comparados com suas medições chamadas de “medições base”, as quais não executam a aplicação de emergência em seus cenários.
 	
-	\par É necessário informar que os conjuntos de amostras em cada experimento compartilham das mesmas sementes aleatórias, o que aumenta a confiabilidade dos dados gerados.
+	\par Cada medição de cada experimento foi executada 100 vezes para reprodução de aleatoriedade. O SUMO estabelece uma nova posição inicial e velocidade máxima para cada veículo a cada nova repetição.
+
+	\par É necessário o controle destas sementes aleatórias (geradas pelo SUMO) para garantir que o mesmo estado inicial seja replicado nas outras medições, como:
+
+	\begin{itemize}
+		\item Medição base (Sem comunicação)
+		\item Aplicação ativa (Comunicação V2V)
+		\item Aplicação ativa (Comunicação V2X)
+	\end{itemize}
 	
-	
+	\par O controle destas sementes permite o estudo técnico do impacto da Rede Veicular em cada cenário específico.
+
 	\subsection{Experimentos 1 e 2: Descrição do Cenário}
 	
 	\par O objetivo dos experimentos 1 e 2 é mostrar o funcionamento e a efetividade da aplicação desenvolvida em comunicações interveiculares.
