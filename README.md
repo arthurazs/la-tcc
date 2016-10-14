@@ -1,8 +1,8 @@
-# Redes Veiculares: Tendências e Estudo de Caso (TCC - LaTeX)
+# Redes Veiculares: Tendências e Estudo de Caso
 
 Este é um projeto de Conclusão de Curso desenvolvido por
 [@laurodelacerda](https://github.com/laurodelacerda) e
-[@arthurazs](https://github.com/arthurazs).
+[@arthurazs](https://github.com/arthurazs) utilizando LaTeX.
 
 Você pode ler o trabalho [aqui](LA_TCC_V1.pdf).
 
