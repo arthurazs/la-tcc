@@ -1920,9 +1920,9 @@ brazil,				% o último idioma é o principal do documento
 	    \includegraphics[scale=.37]{figuras/cap5/52ClassesEstudodeCaso}
 	    \caption{\label{fig_5.2}Diagrama de Classes para o Estudo de Caso}
     \end{figure}
-    
+
 	A \autoref{tab_5.2} contém uma breve descrição das classes desenvolvidas para extensão do VEINS e para este estudo de caso.
-	    
+
     \begin{table}[H] %[?] ARRUMAR tamanho da tabela e rever italicos+negritos! OBS: REFERENCIAR LIVRO DO PADRAO DE PROJETO COMPOSITE
     	\centering
 	    \renewcommand{\arraystretch}{1.4}
@@ -1941,17 +1941,19 @@ brazil,				% o último idioma é o principal do documento
 		   \caption{Descrição das Classes desenvolvidas}
 		   \label{tab_5.2}
     \end{table}
-	
+
+    \par Foi escolhido o método de envio das mensagens de emergência no formato broadcast com o intuito de garantir que todos veículos na proximidade recebam o alerta. Entretanto, conforme analisado por Sommer e Dressler (2015), o envio de mensagens broadcast no meio veicular pode gerar um problema de "congestionamento de transmissões". Existem propostas de solução para o problema, porém estas não serão tratadas no trabalho.
+
 	\par As mensagens da aplicação de emergência são enviadas no formato broadcast. Estas mensagens são de alcance direto (\textit{single-hop} ou salto único) e geradas na camada de aplicação WAVE. Serão requisitados para o envio da mensagem apenas os serviços da camadas de aplicação, da subcamada de enlace MAC e da camada física. Os serviços de outras camadas, como a de transporte e a subcamada de enlace LLC são apropriados para o envio de outras naturezas de mensagens, como mensagens de protocolos roteamento que contém múltiplos saltos (\textit{multihop}).
-	
+
 	\par O tamanho dos dados nas mensagens de emergência é dinâmico. Para este estudo de caso, o campo \textit{wsmData} contém o percurso parcial a ser percorrido pelo veículo de segurança pública. O formato deste campo é o seguinte:
-	
+
 	\begin{center} $ (L_1) [R_1] [R_2] … [R_n] $ \end{center}
-	
+
 	\par  $ L_1 $ e $ R_1 $ representam respectivamente a faixa e rua em trânsito. $ R_2 $ até $ R_n $ simbolizam as próximas ruas a serem percorridas pelo veículo de segurança pública. 
-	
+
 	\par Devido à sua natureza, a aplicação de emergência utiliza o PSID \textbf{0x0C} no cabeçalho das mensagens, apropriado para situações de emergência. O código abaixo representa como essa informação é gerada pelo veículo de segurança pública através da função \textbf{prepareMessage}. % [?] verificar se é prepareMsg msm
-	    
+
     \begin{table}[H] %[?] Colocar cor no codigo. Fica em tabela msm? Coloca legenda ou n?
 	    \centering
 	    \renewcommand{\arraystretch}{1.2}
@@ -1991,7 +1993,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Os experimentos 1 e 2 contém simulações com cenários e métricas mais inteligíveis. Estes experimentos têm por objetivo elucidar o funcionamento das comunicações interveiculares, preparando o leitor para o experimento 3.
 
-	\par O conjunto de experimentos 3 apresenta medições mais complexas, como a análise de  valores ótimos para parâmetros da aplicação de emergência utilizados por dispositivos Car2X em tráfego rodoviário na região dos bairros de Ipanema e Copacabana, no Rio de Janeiro.
+	\par O conjunto de experimentos 3 apresenta medições mais complexas, como a análise de valores ótimos para parâmetros da aplicação de emergência utilizados por dispositivos Car2X em tráfego rodoviário na região dos bairros de Ipanema e Copacabana, no Rio de Janeiro.
 
 	\par Os experimentos citados serão frequentemente comparados com suas medições chamadas de “medições base”, as quais não executam a aplicação de emergência em seus cenários.
 
@@ -2375,6 +2377,8 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Radares poderiam ser equipados com RSUs para um registro mais confiável dos veículos que não estiverem em conformidade com as leis de trânsito, enviando a multa diretamente para o dono do veículo transgressor sem depender apenas de fotos, que por vezes não são suficientes.
 
+	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminuição de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja através da limitação do tempo de vida dos pacotes ou com a utilização de beacons para o envio \textit{multicast}.
+
 % ----------------------------------------------------------
 	% ELEMENTOS PÓS-TEXTUAIS
 	% ----------------------------------------------------------
@@ -2480,7 +2484,9 @@ brazil,				% o último idioma é o principal do documento
 		\item WHYTE, W., et al. Threat and Countermeasures Analysis for WAVE \textit{Service Advertisement}. IEEE 18th International Conference on Intelligent Transportation Systems, Las Palmas, p. 1061-1068, 2015.
 		
 		\item  Simulation/Randomness. Disponível em: \url{http://sumo.dlr.de/wiki/Simulation/Randomness}. Acesso em: 13 de out. 2016.
-		
+
+		\item SOMMER, C.; DRESSLER, F. Vehicular Networking. Primeira Edição. Cambridge University Press, 2015. 370 p.
+
 	\end{itemize}
 	
 	% ----------------------------------------------------------
