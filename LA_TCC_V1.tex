@@ -2202,9 +2202,9 @@ brazil,				% o último idioma é o principal do documento
 	\end{figure}	
 	
 	\par Foi estabelecida uma distribuição dos valores de velocidade máxima dos veículos comuns, sendo inferiores ao de velocida máxima permitida em cada trecho (variam entre 60 e 100 km/h). Apenas o veículo de segurança pública pode ultrapassar o limite máximo de cada trecho pois precisa percorrer o trajeto descrito no menor tempo possível.
-	
-	\par A \autoref{fig_5.15} mostra uma parte do cenário Ipanema-Copacabana no SUMO-GUI. É necessário ressaltar que para este cenário todos os semáforos das ruas percorridas pelo veículo de resgate estão em funcionamento. O desenvolvimento de aplicações interveiculares para controle e sincronismo de semáforos para liberação de vias a partir de mensagens de emergência pode ser discutido em trabalhos futuros.
-	
+
+	\par A \autoref{fig_5.15} mostra uma parte do cenário Ipanema-Copacabana no SUMO-GUI. É necessário ressaltar que para este cenário todos os semáforos das ruas percorridas pelo veículo de resgate estão em funcionamento.
+
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=.34]{figuras/cap5/515Cenario3SUMO}
@@ -2303,9 +2303,8 @@ brazil,				% o último idioma é o principal do documento
 		\caption{Resultados - Medição com aplicação ativada e semáforos abertos}
 		\label{tab_5.9}
 	\end{table}
-	
-	\par Analisando as medições com semáforos habilitados e desabilitados, podemos verificar que o uso da aplicação de emergência somado aos semáforos abertos resultou em uma rapidez de 35,63\% no tempo total de percurso do veículo de resgate. Este cenário foi imaginado para avaliar uma situação mais próxima da realidade, onde os veículos de resgate avançam os sinais vermelhos. Em trabalhos futuros, é possível adicionar a comunicação entre os veículos de resgate e os semáforo (equipados com RSU) para que haja uma mudança no sincronismo dos sinais garantindo que não haja engarrafamento perto da aproximação do veículo de resgate.
 
+	\par Analisando as medições com semáforos habilitados e desabilitados, podemos verificar que o uso da aplicação de emergência somado aos semáforos abertos resultou em uma rapidez de 35,63\% no tempo total de percurso do veículo de resgate. Este cenário foi imaginado para avaliar uma situação mais próxima da realidade, onde os veículos de resgate avançam os sinais vermelhos.
 
 	\section{Resultados e Discussões}
 
@@ -2375,7 +2374,9 @@ brazil,				% o último idioma é o principal do documento
 
 	\par O código desenvolvido para a aplicação de emergência apresentada no estudo de caso deste trabalho permite ser incrementado em trabalhos futuros. Um mecanismo simples de criptografia foi utilizado como exemplo para realizar a encriptação dos dados da mensagem de emergência. Através da biblioteca crypto++, técnicas de criptografia podem ser incluídas para novos estudos de caso.
 
-	\par Atualmente, o código da aplicação contém orientação de mudança de faixa no corpo da mensagem de emergência. Novas orientações podem ser incluídas em trabalhos posteriores objetivando novos cenários. Como exemplo, mensagens contendo novas orientações como desaceleração, estacionamento, permissão de ultrapassagem, direção cautelosa, velocidades máxima e mínima podem ser criadas para cenários com outros fins. Novos estudos de caso poderiam simular a troca de mensagens em perseguições policiais, passagens de comitivas especiais, operações de blitz, sinalização vertical de vias, semáforos inteligentes, cruzamentos de tráfego intermodais (automóveis e trens, por exemplo), entre outros.
+	\par Atualmente, o código da aplicação contém orientação de mudança de faixa no corpo da mensagem de emergência. Novas orientações podem ser incluídas em trabalhos posteriores objetivando novos cenários. Como exemplo, mensagens contendo novas orientações como desaceleração, estacionamento, permissão de ultrapassagem, direção cautelosa, velocidades máxima e mínima podem ser criadas para cenários com outros fins. Novos estudos de caso poderiam simular a troca de mensagens em perseguições policiais, passagens de comitivas especiais, operações de blitz, sinalização vertical de vias, cruzamentos de tráfego intermodais (automóveis e trens, por exemplo), entre outros.
+
+	\par Semáforos inteligentes podem ser controlados para a liberação de vias de acordo com o tráfego. É possível desenvolver aplicações para comunicação entre veículos de segurança pública e semáforos para que haja uma mudança no sincronismo dos sinais garantindo fluxo livre perto da aproximação destes veículos.
 
 	\par A classe Driver permite controlar ações típicas de um motorista humano no veículo. Esta poderia ser incrementada utilizando princípios de inteligência artificial. Como exemplo, as mudanças de faixa poderiam ser realizadas ou não após o raciocínio de sinapses que calculam variáveis como distância entre veículos (frontal, traseira e lateral), aceleração e condições da pista.
 
