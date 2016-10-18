@@ -105,8 +105,8 @@ brazil,				% o último idioma é o principal do documento
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{Redes Veiculares: Tendências e Estudo de Caso}
-\autor{LAURO DE LACERDA CAETANO \\
-		ARTHUR ALBUQUERQUE ZOPELLARO SOARES}
+\autor{ARTHUR ALBUQUERQUE ZOPELLARO SOARES\\
+		LAURO DE LACERDA CAETANO}
 \local{Campos dos Goytacazes}
 \data{2016}
 \orientador{MSc. VINÍCIUS BARCELOS} % [?] Verificar com o orientador
@@ -339,7 +339,7 @@ brazil,				% o último idioma é o principal do documento
 		\vspace*{\fill}
 		\centering
 		\noindent
-		\textit{%INSERIR DEDICATÓRIA
+		\textit{A nossos pais, mestres e amigos
 			} \vspace*{\fill}
 	\end{dedicatoria}
 	% ---
@@ -347,10 +347,21 @@ brazil,				% o último idioma é o principal do documento
 	% ---
 	% Agradecimentos
 	% ---
-	\begin{agradecimentos}
-		
-		% INSERIR AGRADECIMENTOS 
-		
+	\begin{agradecimentos} % Agradecimentos do Lauro
+
+		\par Minha gratidão a meu Deus por ter me dado este tema em um momento de angústia particular e ter me ensinado em Provérbios 3:13-14 que adquirir conhecimento é uma bênção.
+
+		\par Agradeço aos meus pais pelo amor e motivação doados. Com carinho, meu obrigado aos amigos mais chegados pela força concedida durante a jornada deste trabalho.
+
+		\par O meu agradecimento especial a todos os mestres, servidores e colegas de profissão do Instituto Federal Fluminense, com quem tanto aprendi e dividi dúvidas, incertezas, alegrias e desesperos nestes anos de curso. 
+
+		\par Um notável agradecimento ao CNPq que, durante o período deste curso, me concedeu uma bolsa de intercâmbio no exterior, transformando-me em um estudante mais completo. 
+
+		\par Obrigado a você também, leitor, pela apreciação deste trabalho monográfico. Espero que, de alguma forma, ele faça alguma diferença para as suas pesquisas.
+
+		\begin{flushright}
+			\textit{Lauro de Lacerda Caetano}
+		\end{flushright}
 		
 	\end{agradecimentos} 
 	
@@ -377,7 +388,7 @@ brazil,				% o último idioma é o principal do documento
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
 
-	\par Este trabalho descreve o desenvolvimento da tecnologia de redes veiculares, sua padronização e suas ferramentas. Em especial, a norma IEEE 1609 é investigada em maior detalhe. São citados diversos exemplos de aplicações possíveis para a tecnologia veicular. Encontram-se analisados diversos softwares de simulação que, quando integrados, permitem que simulações de veículos se conectem em rede. A tecnologia é simulada e analisada através de um estudo de caso em um cenário na cidade do Rio de Janeiro. Tutoriais de instalação e de criação de novos cenários de simulação estão adicionados neste trabalho.
+	\par Este trabalho descreve o desenvolvimento da tecnologia de redes veiculares, sua padronização e suas ferramentas. Em especial, a norma IEEE 1609 é investigada em maior detalhe. São citados diversos exemplos de aplicações possíveis para a tecnologia veicular. Encontram-se analisados diversos softwares de simulação que, quando integrados, permitem que simulações de veículos se conectem em rede. A tecnologia é simulada e analisada em um estudo de caso criado em cenário na cidade do Rio de Janeiro. Tutoriais de instalação e de criação de novos cenários de simulação estão adicionados neste trabalho.
 
 	\vspace{\onelineskip}
 			
@@ -388,7 +399,7 @@ brazil,				% o último idioma é o principal do documento
 \begin{resumo}[Abstract]
 	\begin{otherlanguage*}{english}
 		
-		\par This work describes the development of vehicular networking technology, its standardization and tools. Specifically, the IEEE 1609 standard is investigated in detail. Several examples of vehicular technology applications are given. A group of  simulation tools is analyzed and compared. When some of them are integrated, they allow vehicles to be connected in networks. The technology is simulated and scrutinized on a case study in a scenario in Rio de Janeiro city. Installation and implementation guides that help creating new scenarios are attached to this work.			
+		\par This work describes the development of the vehicular networking technology, its standardization and tools. Specifically, the IEEE 1609 standard is investigated in detail. Several examples of vehicular technology applications are given. A group of  simulation tools is analyzed and compared. When some of them are integrated, they allow vehicles to be connected in networks. The technology is simulated and scrutinized on a case study in a scenario in Rio de Janeiro city. Installation and implementation guides that help creating new scenarios are attached to this work.			
 	 
 		\vspace{\onelineskip}
 		
@@ -522,7 +533,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As redes de comunicação veiculares, parte fundamental para incremento da inteligência no meio veicular, continuam em plena evolução. O estudo do funcionamento destas tem mais de uma década, sendo iniciado pelas VANETs (\textit{Vehicular Ad Hoc NETworks} ou Redes Ad Hoc Veiculares), passando por diversos protocolos de teste, até chegar ao estabelecimento de famílias de padrões. Duas destas se destacam, a primeira família chamada de Acesso sem fio em Ambientes Veiculares (WAVE) contém um conjunto de padrões criados pelo Instituto de Engenheiros Elétricos e Eletrônicos(IEEE) que foram submetidos a diversas baterias de testes e provas de conceito. Na Europa, a família de padrões para Sistemas de Transportes Inteligentes do Instituto de Padrões de Telecomunicações Europeu(ETSI) se iguala em notoriedade na comunidade científica.
 	
-	\par Segundo expectativas de mercado, 75\% dos carros do mundo estarão conectados em 2020, e o crescimento da Internet dos Veículos trará em torno de US\$2,94 bilhões em receitas{\footnote{http://press.trendforce.com/node/view/1880.html acesso em 13 de maio 2016}}. Com um amplo apoio do Departamento de Transporte dos Estados Unidos, a comunicação entre veículos está perto de se tornar obrigatória para automóveis em circulação neste país{\footnote{https://www.transportation.gov/fastlane/dialogue-industry-conversation-between-cars acesso em 14 de maio 2016}}. Na Europa, a implantação da comunicação veicular também está acelerada. Foi criado um consórcio chamado Car2Car a partir da iniciativa de fabricantes de veículos europeus. Este consórcio sem fins lucrativos tem por objetivo aumentar a eficiência e segurança no tráfego rodoviário a partir da utilização de redes veículares.
+	\par Segundo expectativas de mercado, 75\% dos carros do mundo estarão conectados em 2020, e o crescimento da Internet dos Veículos trará em torno de US\$2,94 bilhões em receitas{\footnote{http://press.trendforce.com/node/view/1880.html (acesso em 13 de maio 2016)}}. Com um amplo apoio do Departamento de Transporte dos Estados Unidos, a comunicação entre veículos está perto de se tornar obrigatória para automóveis em circulação neste país{\footnote{https://www.transportation.gov/fastlane/dialogue-industry-conversation-between-cars(acesso em 14 de maio 2016)}}. Na Europa, a implantação da comunicação veicular também está acelerada. Foi criado um consórcio chamado Car2Car a partir da iniciativa de fabricantes de veículos europeus. Este consórcio sem fins lucrativos tem por objetivo aumentar a eficiência e segurança no tráfego rodoviário a partir da utilização de redes veículares.
 	
 	\par As redes veiculares apresentam-se como área promissora para a ciência e para o mercado de trabalho. É possível que nos próximos anos apareçam \textit{startups} focadas no desenvolvimento de aplicações voltadas para entretenimento e segurança veicular. Além disso, empresas de tecnologia 3G e 4G podem se aproveitar de uma ampliação do alcance das comunicações interveiculares para oferecer planos de dados, transformando os veículos numa extensão da atual Internet. Ademais, com o advento dos veículos autônomos servindo-se da imprescindível existência de redes de comunicação, podemos visionar o aumento da segurança dos transportes e do bem estar de condutores  e passageiros.
 	
@@ -545,7 +556,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Também é objetivo contribuir com uma ampla revisão bibliográfica para análise da família padrões IEEE 1609, especialmente as normas já homologadas pelo IEEE. Estes padrões formarão uma consistente base teórica para o estudo de caso.
 	
-	\par Além disso, este trabalho tem finalidade de orientar através de tutoriais:
+	\par Além disso, este trabalho tem finalidade de orientar por meio de tutoriais:
 	
 	\begin{itemize}
 		\item a instalação de um conjunto de softwares para a simulação de redes veiculares;
@@ -554,7 +565,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Metodologia}
 	
-	\par Como base teória para um estudo de caso, serão discorridos conceitos de redes de comunicação e de redes veiculares, que foram padronizados pelo IEEE e outras organizações, através das normas IEEE 802.11p, IEEE 1609 WAVE e SAE J2735. 
+	\par Como base teória para um estudo de caso, serão discorridos conceitos de redes de computadores e de redes veiculares, que foram padronizados pelo IEEE e outras organizações por meio das normas IEEE 802.11p, IEEE 1609 WAVE e SAE J2735. 
 	
 	\par Serão analisados simuladores de tráfego urbano e simuladores de redes a fim de encontrar um grupo que melhor trabalhe com simulações de redes veiculares. 
 	
@@ -722,7 +733,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O conjunto de padrões que lida com as redes LAN é o IEEE 802. Este padrão trata sobretudo das camadas física e de enlace do modelo OSI aplicadas em redes locais.
 	
-	\par O IEEE através do padrão referido subdividiu a camada de enlace em duas subcamadas nomeadas de LLC (\textit{Logical Link Control} ou Controle de Enlace Lógico) e MAC (\textit{Media Access Control} ou Controle de Acesso ao Meio).
+	\par O IEEE por meio do padrão referido subdividiu a camada de enlace em duas subcamadas nomeadas de LLC (\textit{Logical Link Control} ou Controle de Enlace Lógico) e MAC (\textit{Media Access Control} ou Controle de Acesso ao Meio).
 	
 	\par A subcamada de Controle de Enlace Lógico se localiza abaixo da camada de Rede do modelo OSI. Esta é responsável pelo processo de encapsulamento e desencapsulamento da camada de Enlace, lidando portanto com o controle de fluxo e erros. O cabeçalho criado pelo LLC é quem informa à camada de enlace o que fazer com o pacote quando esta recebe o \textit{frame}. Por exemplo, quando um \textit{host} recebe um \textit{frame}, este olha para o cabeçalho gerado pelo LLC para entender que o pacote está destinado ao protocolo IP na camada de Rede. A subcamada também é responsável pela multiplexação{\footnote{Combinação de dois ou mais canais de informação por apenas um meio de transmissão}} e decodificação de protocolos na camada de enlace.
 	
@@ -732,7 +743,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Família de padrões IEEE 802.11}
 	
-	\par As redes Locais utilizam-se de meio cabeado e sem fio para a transmissão de bits entre os dispositivos da rede. As redes sem fio, também conhecidas como Redes \textit{Wifi} ou \textit{Wireless} foram uma grande novidade tecnológica dos últimos anos. A partir de 1997, o IEEE começou a definir uma série de padrões de transmissão e codificação para redes sem fio através da família de padrões 802.11, que é aninhada à família de padrões 802. Como base, o referido padrão trata de especificações ligadas às camadas de rede e de enlace do modelo OSI voltados para Redes sem fio de Área Local (WLAN ou \textit{Wireless Local Area Networks}).
+	\par As redes Locais utilizam-se de meio cabeado e sem fio para a transmissão de bits entre os dispositivos da rede. As redes sem fio, também conhecidas como Redes \textit{Wifi} ou \textit{Wireless} foram uma grande novidade tecnológica dos últimos anos. A partir de 1997, o IEEE começou a definir uma série de padrões de transmissão e codificação para redes sem fio na família de padrões 802.11, que é aninhada à família de padrões IEEE 802. Como base, o referido padrão trata de especificações ligadas às camadas de rede e de enlace do modelo OSI voltados para Redes sem fio de Área Local (WLAN ou \textit{Wireless Local Area Networks}).
 	
 	\par Ao longo dos anos, uma miríade de padrões foram adicionados à família 802.11, sendo diferenciados por letras subsequentes ao número da norma. Em cada padrão adicionado à família 802.11, há uma série de especificidades que adequam-se às linhas gerais da norma. Como exemplo, são citadas algumas dessas normas na \autoref{tab_0}.
 	
@@ -756,7 +767,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As redes sem fio suportam basicamente dois modos de operação: Infra-estruturado e ad-hoc.
 	
-	\par O modo de operação infra-estruturado utiliza de pontos de acesso (\textit{Access Point} ou AP) para controlar os nós cobertos por determinada área geográfica. Como exemplo, na \autoref{fig_8} os nós de rede sem fio se comunicam com outros equipamentos ou com a rede cabeada através de um ponto de acesso, que é representado por um roteador sem fio.
+	\par O modo de operação infra-estruturado utiliza de pontos de acesso (\textit{Access Point} ou AP) para controlar os nós cobertos por determinada área geográfica. Como exemplo, na \autoref{fig_8} os nós de rede sem fio se comunicam com outros equipamentos ou com a rede cabeada por meio de um ponto de acesso, que é representado por um roteador sem fio.
 	
 	% INSERIR FIGURA 08 Modo infra-estruturado
 	\begin{figure} [H]
@@ -778,7 +789,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Quando duas ou mais estações se comunicam umas com as outras, estas compartilham um Conjunto Básico de Serviços(BSS ou \textit{Basic Service Set}). Um BSS mínimo é formado entre dois nós. As redes locais 802.11 utilizam o BSS como um bloco de construção padrão.
 	
-	\par O BSS que não se conecta a um AP é chamado de BSS Independente (\textit{Independent} BSS ou IBSS). Este tipo de BSS é comumente visto em Redes \textit{Ad Hoc}. A formação de um IBSS pode ser melhor entendida através da \autoref{fig_10}.
+	\par O BSS que não se conecta a um AP é chamado de BSS Independente (\textit{Independent} BSS ou IBSS). Este tipo de BSS é comumente visto em Redes \textit{Ad Hoc}. A formação de um IBSS pode ser melhor entendida na \autoref{fig_10}.
 	
 	% INSERIR FIGURA 10 Redes Ad Hoc - IBSS
 	\begin{figure} [H]
@@ -796,7 +807,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_11}Arquitetura IEEE802.11 - BSS}
 	\end{figure}
 	
-	\par Para entrar em um BSS, a estação deve primeiramente "ouvir" a frequência transmitida pelo ponto de acesso, e depois executar diversos passos que incluem processos de autenticação e associação. Os usuários de redes sem fio 802.11 identificam a presença de um BSS através de uma SSID (\textit{Service Set Identification} ou Identificação de Conjunto de Serviços) que é anunciada pelos transmissores sem fio. As interfaces de rádio identificam um BSS no nível da subcamada MAC através do BSSID (BSS \textit{Identification} ou Identificação BSS), que é um campo da dispositivo transmissor com formato de endereço MAC.
+	\par Para entrar em um BSS, a estação deve primeiramente "ouvir" a frequência transmitida pelo ponto de acesso, e depois executar diversos passos que incluem processos de autenticação e associação. Os usuários de redes sem fio 802.11 identificam a presença de um BSS por meio do SSID (\textit{Service Set Identification} ou Identificação de Conjunto de Serviços) que é anunciado pelos transmissores sem fio. As interfaces de rádio identificam um BSS no nível da subcamada MAC por intermédio de seu BSSID (BSS \textit{Identification} ou Identificação BSS), que é um campo da dispositivo transmissor com formato de endereço MAC.
 	
 	\par Cada BSS deve ser identificado por um BSSID único, que em uma rede infraestruturada é frequentemente escolhido como o endereço MAC do ponto de acesso. Em um BSS Independente, normalmente é utilizado um endereço MAC administrado localmente, formado por um numero aleatório de 46 bits, e 2 bits identificando o endereço como “individual” (em vez de “grupo”) e “local” (em vez de “universal”). Ademais, o padrão IEEE 802.11 define um BSSID especial, com todos os 48 bits tendo valor binário 1.
 	
@@ -822,7 +833,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O roteamento de pacotes em redes \textit{ad hoc} é mais complexo do que em redes infraestruturadas e possui uma série de desafios. Para rotear os pacotes, os desafios encontrados são: mobilidade dos nós que impactam diretamente as rotas, implantação de Qualidade de Serviço (QoS) para os fluxos de aplicações multimídia e a escalabilidade da rede. Há também desafios com relação ao consumo de energia elétrica que os nós dispõem para realizar a transmissão e recepção dos dados além de realizar outros processos. Como a troca de informações entre os nós é intensa, a energia é gasta de maneira mais acelerada. Desafios que envolvem conectividade também preocupam. As redes \textit{ad hoc} apresentam condições inconstantes como taxas de erro de bit variáveis e interferências na comunicação por outros meios de transmissão.
 	
-	\par Ao longo dos anos, diversos protocolos de roteamento para MANETs foram criados. Seguindo uma primeira abordagem, os protocolos de redes \textit{ad hoc} móveis foram classificados baseando-se na topologia (Royer \& Toh, 1999) ou na posição geográfica (Giordano et al., 2004). Os protocolos baseados na topologia ainda podem ser subclassificados como pró-ativos, reativos e híbridos. Alguns protocolos são citados e categorizados na \autoref{fig_12}.
+	\par Ao longo dos anos, diversos protocolos de roteamento para MANETs foram criados. Seguindo uma primeira abordagem, os protocolos de redes \textit{ad hoc} móveis foram classificados baseando-se na topologia (Royer \& Toh, 1999) ou na posição (Giordano et al., 2004). Os protocolos baseados na topologia ainda podem ser subclassificados como pró-ativos, reativos e híbridos enquanto os protocolos baseados em posição podem ser classificados em roteamento guloso ou restrito. Alguns exemplos de protocolo são citados e categorizados na \autoref{fig_12}.
 	
 	% INSERIR FIGURA 12 Protocolos de roteamento de MANETs
 	\begin{figure} [H]
@@ -839,11 +850,11 @@ brazil,				% o último idioma é o principal do documento
 	\newpage
 	\chapter{Redes de Comunicação Veiculares}
 
-	\par Segundo a Organização Mundial de Saúde(OMS), acidentes de carro estão entre as 10 maiores causa de morte no mundo{\footnote{\href{http://www.who.int/mediacentre/factsheets/fs310/en/}{http://www.who.int/mediacentre/factsheets/fs310/en/} acesso em 22 de jun. 2016}}. Conforme relatado pela Universidade de Stanford, mais de 90\% dos acidentes têm origem em falha humana{\footnote{\href{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes}{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes} acesso em 25 de jun. 2016}}. Tais dados são alarmantes para a sociedade visto que nenhum meio de transporte tira tantas vidas como o meio rodoviário.
+	\par Segundo a Organização Mundial de Saúde(OMS), acidentes de carro estão entre as 10 maiores causa de morte no mundo{\footnote{http://www.who.int/mediacentre/factsheets/fs310/en/ (acesso em 22 de jun. 2016)}}. Conforme relatado pela Universidade de Stanford, mais de 90\% dos acidentes têm origem em falha humana{\footnote{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes (acesso em 25 de jun. 2016)}}. Tais dados são alarmantes para a sociedade visto que nenhum meio de transporte tira tantas vidas como o meio rodoviário.
 
 	\par Se comparados com transporte de outros meios, os transportes terrestres são os menos seguros. Os outros meios, como o aquático, aéreo e ferroviário, sofrem menos acidentes porém eventuais catástrofes assumem maiores proporções por justamente serem transportes de massa. Estes meios de transporte entenderam melhor a carência de segurança na locomoção e por isso há algumas décadas vemos navios e aviões equipados com sistemas de comunicação utilizando transponders, que auxiliam na prevenção de acidentes e na escolha de novas rotas, seja por tráfego denso ou por condições climáticas adversas. Nos trens, o uso de tecnologias 3G e 4G pelos sistemas de comunicação também tem sido fundamental para proporcionar o aumento da segurança e da pontualidade nas ferrovias metropolitanas e intercidades.
 	
-	\par Atualmente, os condutores de veículos terrestres contam com itens de proteção como cintos de segurança, \textit{airbags}, sensores de obstáculo, alarmes de velocidade, e outros equipamentos. Contudo, alguns destes itens não têm provocado um efeito de compra pelos motoristas (pelo seu preço adicional em veículos novos) e muito menos causado uma substancial diminuição no número de acidentes. Segundo prevê a OMS, acidentes automobilísticos passarão da 9ª para a 7ª maior causa de morte de humanos entre todas as idades em 2030 (\textit{Global Status Report on Road Safety}, 2015). Por isto, governos e grandes empresas continuam a trabalhar no desenvolvimento de tecnologias para aumento da segurança veicular. O potencial advento de sistemas de comunicação entre veículos representa o próximo passo na evolução da segurança veicular, possibilitando a interação entre diferentes veículos para evitar acidentes. Segundo Yang et al(2014), os principais objetivos desses sistemas são (1) oferecer conectividade ubíqua para os usuários e (2) possibilitar a comunicação de veículo para veículo, oferecendo condições necessárias para que aplicações com diferentes requisitos sejam atendidas satisfatoriamente. Tais aplicações compõem um ITS (\textit{Intelligent Transportation System} ou Sistema de Transportes Inteligente). Exemplos destas aplicações incluem monitoração cooperativa do tráfego, controle de fluxos de tráfego, auxílio a cruzamentos sem sinalização, prevenção de colisões, propagação de mensagens de emergência, serviços de informação próximos, etc.
+	\par Atualmente, os condutores de veículos terrestres contam com itens de proteção como cintos de segurança, \textit{airbags}, sensores de obstáculo, alarmes de velocidade, e outros equipamentos. Contudo, alguns destes itens não têm provocado um efeito de compra pelos motoristas (pelo seu preço adicional em veículos novos) e muito menos causado uma substancial diminuição no número de acidentes. Segundo prevê a OMS, acidentes automobilísticos passarão da 9ª para a 7ª maior causa de morte de humanos entre todas as idades em 2030 (\textit{Global Status Report on Road Safety}, 2015). Por isto, governos e grandes empresas continuam a trabalhar no desenvolvimento de tecnologias para aumento da segurança veicular. O potencial advento de sistemas de comunicação entre veículos representa o próximo passo na evolução da segurança veicular, possibilitando a interação entre diferentes veículos para evitar acidentes. Segundo Yang et al (2014), os principais objetivos desses sistemas são (1) oferecer conectividade ubíqua para os usuários e (2) possibilitar a comunicação de veículo para veículo, oferecendo condições necessárias para que aplicações com diferentes requisitos sejam atendidas satisfatoriamente. Tais aplicações compõem um ITS (\textit{Intelligent Transportation System} ou Sistema de Transportes Inteligente). Exemplos destas aplicações incluem monitoração cooperativa do tráfego, controle de fluxos de tráfego, auxílio a cruzamentos sem sinalização, prevenção de colisões, propagação de mensagens de emergência, serviços de informação próximos, etc.
 	
 	\par Os sistemas de comunicação entre veículos formam as chamadas redes veiculares. Estas redes são compostas por veículos e equipamentos fixos geralmente localizados às margens de estradas ou de ruas. As redes veiculares se diferenciam de outras redes sem-fio principalmente pela natureza dos nós, que são compostos por veículos com interfaces de comunicação sem-fio, e por equipamentos fixos nos entornos das vias. 
 	
@@ -862,7 +873,7 @@ brazil,				% o último idioma é o principal do documento
 	\par Nos últimos anos, com o avanço no estudo das MANETs, foi iniciado o estudo em massa das redes móveis no campo interveicular. As VANETs começaram então a ser desenvolvidas, funcionando como um tipo de MANET de larga escala, tornando veículos em nós de rede sem fio. No entanto, algumas características diferenciam as VANETs das MANETs, tais quais:
 	
 	\begin{itemize}
-		\item Nas VANETs(\autoref{fig_15}), há uma maior restrição das trajetórias em que os nós podem percorrer, visto que os veículos só podem trafegar ruas, avenidas e rodovias.
+		\item Nas VANETs (\autoref{fig_15}), há uma maior restrição das trajetórias em que os nós podem percorrer, visto que os veículos só podem trafegar ruas, avenidas e rodovias.
 		\item Não há problemas com relação à energia, já que a energia não é um fator crítico em automóveis, como pode ser para outros tipos de sensores.
 	\end{itemize}
 	
@@ -892,7 +903,7 @@ brazil,				% o último idioma é o principal do documento
 		\centering
 		\includegraphics[scale=.45]{figuras/waveDevices/CohdaOBU}
 		\caption{\label{OBU_Cohda}OBU produzida pela Cohda Wireless}
-		\legend{Fonte: \href{http://cohdawireless.com/Products/Hardware}{http://cohdawireless.com/Products/Hardware} acesso em 22 de set. 2016}
+		\legend{Fonte: \href{http://cohdawireless.com/Products/Hardware}{http://cohdawireless.com/Products/Hardware} (acesso em 22 de set. 2016)}
 	\end{figure}	
 	
 	\par As \textbf{unidades de acostamento} são dispositivos de rede veicular estáticos instalados ao lado de rodovias ou avenidas (num poste de luz, semáforo ou ponto de pedágio). Também chamados de \textit{Road Side Equipments} (RSE) ou \textit{Road Side Units} (RSU). Podem estar conectadas a uma rede de infraestrutura. Podem se comunicar com outros dispositivos Car2X estáticos ou móveis. A \autoref{RSU_Cohda} mostra um exemplo de unidade de acostamento produzida pela empresa Cohda Wireless.
@@ -901,7 +912,7 @@ brazil,				% o último idioma é o principal do documento
 		\centering
 		\includegraphics[scale=.45]{figuras/waveDevices/CohdaRSU}
 		\caption{\label{RSU_Cohda}RSU produzida pela Cohda Wireless}
-		\legend{Fonte: \href{http://cohdawireless.com/Products/Hardware}{http://cohdawireless.com/Products/Hardware} acesso em 22 de set. 2016}
+		\legend{Fonte: \href{http://cohdawireless.com/Products/Hardware}{http://cohdawireless.com/Products/Hardware} (acesso em 22 de set. 2016)}
 	\end{figure}
 	
 	\par Os dispositivos Car2X têm duas principais formas de comunicação: veículo para veículo e veículo para infraestrutura.
@@ -921,7 +932,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Família de padrões WAVE}
 	
-	\par A padronização das redes veiculares tem sido feita por dois grandes grupos: pelo IEEE, através da colaboração entre a Sociedade de Tecnologia Veicular e o Comitê de Sistemas de Transportes Inteligentes, e pelo ETSI (\textit{European Telecommunications Standards Institute} ou Instituto Europeu de Padrões de Telecomunicações), através de seu Comitê de Transportes Inteligentes. Cabe ressaltar que este trabalho seguirá as diretrizes dos padrões IEEE 1609, visto que as normas ETSI são voltadas a atender o mercado europeu.
+	\par A padronização das redes veiculares tem sido feita por dois grandes grupos: pelo IEEE, numa colaboração entre a Sociedade de Tecnologia Veicular e o Comitê de Sistemas de Transportes Inteligentes, e pelo ETSI (\textit{European Telecommunications Standards Institute} ou Instituto Europeu de Padrões de Telecomunicações), por intermédio de seu Comitê de Transportes Inteligentes. Cabe ressaltar que este trabalho seguirá as diretrizes dos padrões IEEE 1609, visto que as normas ETSI são voltadas a atender principalmente o mercado europeu.
 	
 	\par A família de normas IEEE destina-se a prover um conjunto padronizado de interfaces para que diferentes fabricantes de automóveis possam fornecer comunicações V2V e V2I, garantindo a interoperabilidade entre os dispositivos fabricados.
 	
@@ -952,7 +963,7 @@ brazil,				% o último idioma é o principal do documento
 			\textbf{Padrão} & \multicolumn{1}{c|}{\textbf{Área}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Status}} \\ \hline
 			802.11p & Camadas\newline Física e MAC & Emenda que descreve as diferenças específicas na camada física e controle de acesso ao meio em ambientes de comunicação WAVE & Ativo \\ \hline
 			1609.0 & Arquitetura & Descreve a arquitetura e os serviços necessários para dispositivos WAVE multicanal & Ativo \\ \hline
-			1609.1 & Gerenciador de Recursos & Aplicação retirada que permitia a sites remotos se comunicarem com OBUs através de RSUs. & Retirado \\ \hline
+			1609.1 & Gerenciador de Recursos & Aplicação retirada que permitia a sites remotos se comunicarem com OBUs via RSUs. & Retirado \\ \hline
 			1609.2 & Serviços de Segurança & Define métodos para tornar as mensagens de gerenciamento e aplicação seguras. Descreve funções administrativas necessárias para suporte de funções de segurança. & Ativo \\ \hline
 			P1609.2a & Emenda à 1609.2 para gerenciamento de certificados & Descreve como os serviços de segurança WAVE respeitam a privacidade do usuário. Provê características adicionais de gerenciamento de certificação. & Em desenvolvimento \\ \hline
 			1609.3 & Serviços de Rede & Especifica protocolos das camadas de rede e transporte e serviços que suportam operações multicanal. & Ativo \\ \hline
@@ -1087,7 +1098,7 @@ brazil,				% o último idioma é o principal do documento
 		\item O canal 178 é um CCH (\textit{Control Channel} ou Canal de Controle);
 		\item Os canais 172, 174, 176, 180, 182 e 184 são SCHs (\textit{Service Channels} ou Canais de Serviço);
 		\item Os canais 174 e 176  e os canais 180 e 182 podem ser combinados para produzir 2 canais de 20 MHz, nomeados de canais 175 e 181 respectivamente;
-		\item Os canais 172 e 184 são designados para aplicações de segurança pública envolvendo segurança da vida e propriedade. Especificamente definidos através do FCC dos EUA, o canal 172 se destina à aplicações de segurança V2V para prevenção e mitigação de acidentes e aplicações para a segurança de vida e propriedades. O canal 184, por sua vez, se destina às comunicações de longa distância e alto consumo para serem usadas por aplicações de segurança pública envolvendo segurança de vida e de propriedade, incluindo mitigação de colisões em cruzamentos.
+		\item Os canais 172 e 184 são designados a aplicações de segurança pública envolvendo segurança da vida e propriedade. Especificamente alocado pelo FCC nos EUA, o canal 172 é voltado à aplicações de segurança V2V para prevenção e mitigação de acidentes e aplicações para a segurança de vida e de propriedades. O canal 184, por sua vez, se destina à aplicações de mesmo fim atendendo especificamente as comunicações de longa distância e alto consumo. 
 	\end{itemize}
 	
 	\par É importante salientar que o espectro alocado pelo FCC para os EUA pode ou não ser imitado por outros países, como o Brasil. É de escopo da Agência Nacional de Telecomunicações (Anatel) determinar o espectro e a alocação dos canais para os serviços de redes veiculares com fins públicos e privados.
@@ -1096,7 +1107,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Os padrões WAVE especificam duas tipos de canais de rádio. Os dispositivos Car2X que utilizam o padrão WAVE e que têm múltiplas camadas físicas (vários transmissores de rádio) poderão operar um canal de controle (CCH) e pelo menos um canal de serviço(SCH) ao mesmo tempo. Os dispositivos WAVE de apenas um rádio transmissor trabalham alternando entre o canal de controle e os canais de serviço. Para lidar com a limitação de um rádio transmissor, é exigido um sincronismo para que os dispositivos WAVE monitorem cada canal no seu intervalo de tempo específico.
 	
-	\par O canal de controle é reservado apenas para mensagens do protocolo WSMP e para troca de mensagens de gerenciamento do sistema, como as mensagens de anúncio de serviços WAVE(WSA). As mensagens do protocolo WSMP podem ser recebidas por qualquer dispositivo WAVE com o canal de controle "acordado". Como exemplo, um dispositivo WAVE pode solicitar informações de sincronismo entre rádios através de uma requisição broadcast através do protocolo WSMP a um outro dispositivo WAVE próximo. O dispositivo WAVE receptor responderia com informações de sincronismo através de um quadro de gerenciamento.
+	\par O canal de controle é reservado apenas para mensagens do protocolo WSMP e para troca de mensagens de gerenciamento do sistema, como as mensagens de anúncio de serviços WAVE(WSA). As mensagens do protocolo WSMP podem ser recebidas por qualquer dispositivo WAVE com o canal de controle "acordado". Como exemplo, um dispositivo WAVE pode solicitar informações de sincronismo entre rádios por meio de uma requisição broadcast utilizando o protocolo WSMP. O dispositivo WAVE receptor responderia com informações de sincronismo por meio de um quadro de gerenciamento.
 	
 	\par Os canais de serviço são destinados a operar as transferências de dados de aplicações  diversas, e também podem ser coordenados via mensagens de anúncio de serviço WAVE. Os protocolos WSMP e IPv6 podem ser usados para transmitir informações nos canais de serviço. 
 	
@@ -1104,11 +1115,11 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Os serviços WAVE “não anunciados” estão geralmente ligados à segurança pública e têm canais fixos. Os serviços “não anunciados” forçam os dispositivos WAVE recebedores a mudar para o canal proposto imediatamente após o envio de uma mensagem de gerenciamento WAVE.
 	
-	\par Como exemplo, um veículo de segurança pública pode enviar uma mensagem do protocolo WSMP contendo informações de emergência no canal de serviço 172 (canal de segurança pública nos EUA) para que os veículos em seu percurso liberem passagem. Todos os veículos no alcance da unidade de bordo emissora processariam a mensagem imediatamente, propagando a mesma em seguida através do canal de serviço 172.
+	\par Como exemplo, um veículo de segurança pública pode enviar uma mensagem do protocolo WSMP contendo informações de emergência no canal de serviço 172 (canal de segurança pública nos EUA) para que os veículos em seu percurso liberem passagem. Todos os veículos no alcance da unidade de bordo emissora processariam a mensagem imediatamente, propagando a mesma em seguida por meio do canal de serviço 172.
 	
-	\par Nos serviços "anunciados", um dispositivo WAVE assume o papel de provedor. Este provedor transmite mensagens de anúncio WAVE através do canal de controle identificando e descrevendo o serviço e o canal a serem utilizados por este. Os dispositivos WAVE que decidirem se associar ao provedor sintonizam suas antenas no canal proposto pela WSA, se tornando usuários deste provedor. Assim feito, o  dispositivo provedor e os usuários poderão trocar informações associadas com o serviço oferecido. 
+	\par Nos serviços "anunciados", um dispositivo WAVE assume o papel de provedor. Este provedor transmite mensagens de anúncio WAVE mediante o canal de controle identificando e descrevendo o serviço e o canal a serem utilizados por este. Os dispositivos WAVE que decidirem se associar ao provedor sintonizam suas antenas no canal proposto pela WSA, se tornando usuários deste provedor. Assim feito, o  dispositivo provedor e os usuários poderão trocar informações associadas com o serviço oferecido. 
 	
-	\par Como exemplo, a \autoref{fig_22} representa um cenário no qual há 3 unidades de acostamento, todas instaladas em postes de iluminação ao longo da rodovia. Neste cenário, cada unidade de acostamento está transmitindo anúncios de serviço WAVE através do canal de controle contendo a Identificação do Serviço com o valor 0x04, atribuído ao serviço de aconselhamento de tráfego para viajantes. As unidades de acostamento enviam as mensagens de anúncio (WSAs) na forma de broadcast contendo avisos sobre o tráfego local em um canal proposto e respondem a requisições para informações adicionais de tráfego usando IPv6. Quando os dispositivos usuários entrarem na área de cobertura das unidades de acostamento, estes irão receber as WSAs e avaliarão se o valor da identificação de serviço é desejado. Os dispositivos usuários que têm interesse em aconselhamento de tráfego (neste cenário representados pelo caminhão verde e pelo carro vermelho) aceitarão este serviço e sintonizarão no canal especificado. Os dispositivos usuários que não têm interesse neste serviço irão simplesmente descartar os pacotes recebidos.
+	\par Como exemplo, a \autoref{fig_22} representa um cenário no qual há 3 unidades de acostamento, todas instaladas em postes de iluminação ao longo da rodovia. Neste cenário, cada unidade de acostamento está transmitindo anúncios de serviço WAVE via canal de controle contendo a Identificação do Serviço com o valor 0x04, atribuído ao serviço de aconselhamento de tráfego para viajantes. As unidades de acostamento enviam as mensagens de anúncio (WSAs) na forma de broadcast contendo avisos sobre o tráfego local em um canal proposto e respondem a requisições para informações adicionais de tráfego usando IPv6. Quando os dispositivos usuários entrarem na área de cobertura das unidades de acostamento, estes irão receber as WSAs e avaliarão se o valor da identificação de serviço é desejado. Os dispositivos usuários que têm interesse em aconselhamento de tráfego (neste cenário representados pelo caminhão verde e pelo carro vermelho) aceitarão este serviço e sintonizarão no canal especificado. Os dispositivos usuários que não têm interesse neste serviço irão simplesmente descartar os pacotes recebidos.
 	
 	%INSERIR Figura 22 Tipos de Canais - SCH
 	\begin{figure} [H]
@@ -1131,13 +1142,13 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Além disso, a emenda adiciona à MIB (Ver mais em \autoref{MIB}) do protocolo de gerenciamento SNMP a variável \textbf{dot11OCBActivated} como booleana. OCB (\textit{On the Context of} BSS) significa no contexto do BSS. Caso for configurada como verdadeira e o BSSID Coringa for utilizado, a conexão entre os pares é realizada dispensando os procedimentos de associação, autenticação e confidencialidade de dados. Estes serviços então seriam de responsabilidade das camadas superiores.
 	
-	\par Também foi adicionado através da emenda 802.11p um quadro de gerenciamento para anúncio de hora a fim de que as estações 802.11p sincronizem entre si uma referência de hora comum. A única referência definida na emenda é o padrão UTC (\textit{Universal Time Coordinated} ou Tempo Universal Coordenado).
+	\par Também foi adicionado por intermédio da emenda 802.11p um quadro de gerenciamento para anúncio de hora a fim de que as estações 802.11p sincronizem entre si uma referência de hora comum. A única referência definida na emenda é o padrão UTC (\textit{Universal Time Coordinated} ou Tempo Universal Coordenado).
 	
 	\subsection{Operações multi-canal}
 	
 	\par Os dispositivos WAVE implementam operações e serviços que suportam conectividade multi-canal na subcamada de acesso ao meio (MAC), baseando-se na norma IEEE 1609.4. Esta norma descreve mecanismos efetivos que controlam a transferências de dados de camadas superiores através de múltiplos canais. Outra norma descrita nesta seção é a IEEE 802.11 MAC, que trata de forma mais abrangente a coordenação de múltiplos canais em redes sem fio.
 	
-	\par Conforme visto na \autoref{fig_18}, o padrão WAVE tem uma pilha contendo protocolos, entidades de gerenciamento e serviços de segurança. As entidades de gerenciamento são importantes para o funcionamento dos protocolos pois proveêm as interfaces de serviços através das quais as funções de gerenciamento de cada camada podem ser chamadas.
+	\par Conforme visto na \autoref{fig_18}, o padrão WAVE tem uma pilha contendo protocolos, entidades de gerenciamento e serviços de segurança. As entidades de gerenciamento são importantes para o funcionamento dos protocolos pois proveêm as interfaces de serviços por meio das quais as funções de gerenciamento de cada camada podem ser chamadas.
 	
 	\par O padrão IEEE 1609.4 adiciona extensões ao modelo de subcamada MAC do padrão 802.11 para adaptação ao meio veicular. Para realizar operações sobre múltiplos canais sem fio tendo o parâmetro \textit{OCBActivated} como verdadeiro, há necessidade de realizar a coordenação de canal, o que é proposto no padrão mencionado.
 	
@@ -1190,7 +1201,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O protocolo WSMP define o canal, a potência de transmissão e a taxa de transferência a cada mensagem. Quando dados WSMP são recebidos na subcamada MAC, os pacotes são direcionados à filas para a transmissão de acordo com o \textbf{identificador do canal} e a \textbf{prioridade}. Logo após, a subcamada MAC deve transmitir o pacote dentro do intervalo de tempo indicado, com taxa de transferência e potência de transmissão determinadas.
 	
-	\par Datagramas IP, entretanto, têm os parâmetros canal, potência de transmissão e taxa de transferência armazenados no perfil do transmissor. Os pacotes IP são recebidos pela subcamada MAC e colocados em filas de acordo com o nível de prioridade para a transmissão no SCH. Utilizando os parâmetros estabelecidos no perfil do transmissor, os pacotes são enviados através da camada física caso a MLME delibere acesso.
+	\par Datagramas IP, entretanto, têm os parâmetros canal, potência de transmissão e taxa de transferência armazenados no perfil do transmissor. Os pacotes IP são recebidos pela subcamada MAC e colocados em filas de acordo com o nível de prioridade para a transmissão no SCH. Utilizando os parâmetros estabelecidos no perfil do transmissor, os pacotes são enviados por meio da camada física caso a MLME delibere acesso.
 
 	\newpage
 	
@@ -1207,7 +1218,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Os padrões WAVE suportam Qualidade de Serviço (\textit{Quality of Service} ou QoS) nos pacotes aplicando as técnicas EDCA (\textit{Enhanced Distributed Channel Access} ou Acesso ao Canal Distribuído Aprimorado).
 	
-	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4). A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA através de um anúncio de serviço WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
+	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4). A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA via anúncio de serviço WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
 	
 	\subsection{Serviços do Plano de Gerenciamento}
 	
@@ -1306,14 +1317,14 @@ brazil,				% o último idioma é o principal do documento
 			\item[A.] Se o valor no campo Type é 0x88DC, a subcamada LLC entrega o pacote para WSMP.
 			\item[B.] Se o valor no campo Type é 0X86DD, a subcamada LLC entrega o pacote para IPv6.
 		\end{description}
-		\item Em ambos protocolos, o pacote é entregue da subcamada LLC para as camadas superiores através da primitiva DL-UNITDATA.indication.	
+		\item Em ambos protocolos, o pacote é entregue da subcamada LLC para as camadas superiores via primitiva DL-UNITDATA.indication.	
 	\end{enumerate}
 	
 	\section{Camadas de Rede e Transporte}
 	
 	\par Como as camadas de rede e transporte no modelo WAVE estão intrinsicamente relacionadas, especialmente no protocolo WSMP, estas serão discutidas em seção única.
 	
-	\par Os protocolos da camadas de Rede e Transporte WAVE são definidos em grande parte no padrão IEEE 1609.3 - Serviços de Rede. Este padrão especifica duas pilhas de protocolos na camada de rede (\autoref{fig_17}), IPv6 e WSMP. Esta pilha de protocolos distingue-se entre as duas camadas superiores através do campo \textit{Ethertype} conforme explicado na \autoref{sec:llc}.
+	\par Os protocolos da camadas de Rede e Transporte WAVE são definidos em grande parte no padrão IEEE 1609.3 - Serviços de Rede. Este padrão especifica duas pilhas de protocolos na camada de rede (\autoref{fig_17}), IPv6 e WSMP. Esta pilha de protocolos distingue-se entre as duas camadas superiores no campo \textit{Ethertype} conforme explicado na \autoref{sec:llc}.
 	
 	\par O protocolo WSMP foi projetado para otimizar operações em Redes Veiculares, sendo indicado para serviços que necessitam de troca rápida de mensagens. Também é possível a utilização de tráfego IP para serviços que necessitam de conexão com a Internet para obtenção de dados na nuvem. O protocolo IPv6 gera um volume superior de tráfego na rede, sendo apenas permitido nos canais de serviço para não comprometer a performance do WSMP nos canais de controle.
 	
@@ -1332,13 +1343,13 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par No padrão WAVE, o protocolo WSMP permite que aplicações controlem diretamente as características da camada física (como o canal ou potência do transmissor) a serem utilizadas na transmissão das mensagens. A aplicação de origem também provê um identificador do Provedor de Serviço (PSID ou (\textit{Provider Service Identifier}), que é utilizado como um direcionador da  aplicação no receptor, além de marcar o endereço MAC do dispositivo de destino com a possibilidade de um endereço de grupo para \textit{multicast} ou broadcast.
 	
-	\par As mensagens curtas WAVE (WSMs ou WAVE \textit{Short Messages}) são entregues para a entidade de destino correta baseados no PSID. Caso o valor do PSID no cabeçalho de uma mensagem recebida representar um serviço que não seja de interesse local, a mensagem pode ser ignorada. Os procedimentos de aceitação de uma mensagem curta WAVE através do PSID serão explicados em maior detalhe na \autoref{subsubsec:TransRecWSM}.
+	\par As mensagens curtas WAVE (WSMs ou WAVE \textit{Short Messages}) são entregues para a entidade de destino correta baseados no PSID. Caso o valor do PSID no cabeçalho de uma mensagem recebida representar um serviço que não seja de interesse local, a mensagem pode ser ignorada. Os procedimentos de aceitação de uma mensagem curta WAVE por meio do PSID serão explicados em maior detalhe na \autoref{subsubsec:TransRecWSM}.
 
 	\subsubsection{\label{sssec:wsm}Mensagem Curta WAVE}
 	
 	\par  Quando a camada de aplicação requisita o envio de uma mensagem, esta é encapsulada dentro do campo \textbf{dados WSM} de uma mensagem curta WAVE (WSM). Mensagens Curtas WAVE são formadas pelo \textbf{cabeçalho} do protocolo WSMP em conjunto com os \textbf{dados da WSM}.
 	
-	\par A \autoref{fig_29} ilustra como este cabeçalho é construído conforme os dados são movidos da camada de aplicação através dos Serviços de Rede{\footnote{\textbf{Serviços de Rede} comprime os serviços da Camada 3 (Rede) e Camada 4 (Transporte) do Modelo OSI conforme pode ser visto na \autoref{fig_28}.}} até a camada MAC. As caixas com borda pontilhada são opcionais e não fazem parte do pacote em si, mas podem ser enviadas para as camadas inferiores como parâmetros através das primitivas ("funções" em itálico na \autoref{fig_29}). As caixas com borda preenchida indicam  os campos formatados para a transmissão.
+	\par A \autoref{fig_29} ilustra como este cabeçalho é construído conforme os dados são movidos da camada de aplicação através dos Serviços de Rede{\footnote{\textbf{Serviços de Rede} comprime os serviços da Camada 3 (Rede) e Camada 4 (Transporte) do Modelo OSI conforme pode ser visto na \autoref{fig_28}.}} até a camada MAC. As caixas com borda pontilhada são opcionais e não fazem parte do pacote em si, mas podem ser enviadas para as camadas inferiores como parâmetros por meio das primitivas ("funções" em itálico na \autoref{fig_29}). As caixas com borda preenchida indicam  os campos formatados para a transmissão.
 
 	%INSERIR Figura 29 Composição de uma WSM
 	\begin{figure} [H]
@@ -1425,7 +1436,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par É possível perceber no exemplo que o canal, a faixa de tempo, a potência de transmissão, a taxa de transferência e o canal podem ser definidos conforme o envio de mensagens são requisitados.	
 	
-	\par O protocolo WSMP provê funções da camada de rede através do cabeçalho de rede (\textbf{WSMP-N}). Este protocolo também fornece funções da camada de transporte através do cabeçalho de transporte (\textbf{WSMP-T}). Diferentes primitivas são utilizadas para a troca de informação entre os componentes conforme apresentado na \autoref{fig_37}.
+	\par O protocolo WSMP provê funções da camada de rede por meio do seu cabeçalho de rede (\textbf{WSMP-N}). Este protocolo também fornece funções da camada de transporte por intermédio do cabeçalho de transporte (\textbf{WSMP-T}). Diferentes primitivas são utilizadas para a troca de informação entre os componentes conforme apresentado na \autoref{fig_37}.
 	
 	%INSERIR Figura 37 Transmissão e Recepção de uma WSM
 	\begin{figure} [H]
@@ -1433,17 +1444,17 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_37}Transmissão e Recepção de uma WSM}
 	\end{figure}
 
-	\par Ao receber uma \textit{WSM-WaveShortMessage.request} de uma aplicação, a protocolo WSMP{\footnote{Serviços de Rede e Transporte vide \autoref{fig_28}}} verifica se o comprimento do cabeçalho está de acordo com o limite proposto pelo \textit{WsmMaxLength} da MIB da entidade de gerenciamento WAVE. Caso a verificação seja positiva, o cabeçalho WSMP é gerado e incluído na primitiva \textit{DL-UNITDATAX.request}. Caso haja inconsistência na verificação do \textit{WsmMaxLength}, a mensagem curta WAVE não é enviada e a falha é indicada através da primitiva \textit{WSM-WaveShortMessage.confirm}.
+	\par Ao receber uma \textit{WSM-WaveShortMessage.request} de uma aplicação, a protocolo WSMP{\footnote{Serviços de Rede e Transporte vide \autoref{fig_28}}} verifica se o comprimento do cabeçalho está de acordo com o limite proposto pelo \textit{WsmMaxLength} da MIB da entidade de gerenciamento WAVE. Caso a verificação seja positiva, o cabeçalho WSMP é gerado e incluído na primitiva \textit{DL-UNITDATAX.request}. Caso haja inconsistência na verificação do \textit{WsmMaxLength}, a mensagem curta WAVE não é enviada e a falha é indicada por meio da primitiva \textit{WSM-WaveShortMessage.confirm}.
 
-	\par A mensagem curta WAVE recebida na camada física é entregue para a aplicação especificada no campo \textbf{PSID}. O dispositivo receptor aceita a mensagem e a envia para as camadas superiores na pilha de protocolos (\autoref{fig_28}). A camada MAC deste dispositivo verifica se a mensagem é destinada a ele e se é uma mensagem de \textit{Unicast}, \textit{Multicast} ou Broadcast. Caso este dispositivo seja realmente o receptor, o \textbf{PSID} é verificado pela protocolo WSMP para saber se há interesse neste tipo de mensagem. Caso haja o interesse, a camada MAC envia esta mensagem para as camadas superiores. A mensagem recebida será enviada pela protocolo WSMP para quaisquer entidades da camada de aplicação com interesse no serviço associado àquele \textbf{PSID}. O interesse é indicado através da primitiva \textit{WME-WSMService.request}.
+	\par A mensagem curta WAVE recebida na camada física é entregue para a aplicação especificada no campo \textbf{PSID}. O dispositivo receptor aceita a mensagem e a envia para as camadas superiores na pilha de protocolos (\autoref{fig_28}). A camada MAC deste dispositivo verifica se a mensagem é destinada a ele e se é uma mensagem de \textit{Unicast}, \textit{Multicast} ou Broadcast. Caso este dispositivo seja realmente o receptor, o \textbf{PSID} é verificado pela protocolo WSMP para saber se há interesse neste tipo de mensagem. Caso haja o interesse, a camada MAC envia esta mensagem para as camadas superiores. A mensagem recebida será enviada pela protocolo WSMP para quaisquer entidades da camada de aplicação com interesse no serviço associado àquele \textbf{PSID}. O interesse é indicado mediante primitiva \textit{WME-WSMService.request}.
 
-	\par Ao receber uma \textit{DL-UNITDATA.indication} da subcamada LLC, a protocolo WSMP avalia a \textbf{versão do WSMP}. Se o dispositivo WAVE receber uma mensagem curta com uma \textbf{versão do WSMP} não suportada, nenhum processamento adicional é necessário. Em seguida, a protocolo WSMP avalia o \textbf{subtipo} e processa o \textbf{TPID}. As entidades da camada superior são notificados da recepção da WSM através da primitiva \textit{WSM-WaveShortMe-\\ssage.indication}. Após o processamento do cabeçalho, a protocolo WSMP entrega o valor do campo \textbf{dados WSM} para as aplicações com interesse no \textbf{PSID} recebido, os destinatários são indicados na tabela MIB \textit{WsmServiceRequestTable}, que é uma tabela estabelecida com cada \textit{WME-WSMService.request} executado. Se um dispositivo WAVE receber uma mensagem curta WAVE onde o \textbf{subtipo} for diferente de 0, ou o \textbf{TPID} for diferente de 0 e 1, então não há a necessidade de processamento adicional. 
+	\par Ao receber uma \textit{DL-UNITDATA.indication} da subcamada LLC, a protocolo WSMP avalia a \textbf{versão do WSMP}. Se o dispositivo WAVE receber uma mensagem curta com uma \textbf{versão do WSMP} não suportada, nenhum processamento adicional é necessário. Em seguida, a protocolo WSMP avalia o \textbf{subtipo} e processa o \textbf{TPID}. As entidades da camada superior são notificados da recepção da WSM por intermédio da primitiva \textit{WSM-WaveShortMe-\\ssage.indication}. Após o processamento do cabeçalho, a protocolo WSMP entrega o valor do campo \textbf{dados WSM} para as aplicações com interesse no \textbf{PSID} recebido, os destinatários são indicados na tabela MIB \textit{WsmServiceRequestTable}, que é uma tabela estabelecida com cada \textit{WME-WSMService.request} executado. Se um dispositivo WAVE receber uma mensagem curta WAVE onde o \textbf{subtipo} for diferente de 0, ou o \textbf{TPID} for diferente de 0 e 1, então não há a necessidade de processamento adicional. 
 
 	\subsection{Protocolo IPv6}
 	
-	\par Na camada de rede, o suporte WAVE ao protocolo IPv6 deve obedecer as especificações da norma IETF RFC 2460. O tráfego IP das Redes Veiculares é transmitido e recebido através da subcamada de enlace LLC com o campo \textit{Type} contendo valor \textit{Ethertype} 0x86DD. 
+	\par Na camada de rede, o suporte WAVE ao protocolo IPv6 deve obedecer as especificações da norma IETF RFC 2460. O tráfego IP das Redes Veiculares é transmitido e recebido por meio da subcamada de enlace LLC com o campo \textit{Type} contendo valor \textit{Ethertype} 0x86DD. 
 	
-	\par Os serviços com tráfego IPv6 nas Redes Veiculares são controlados por unidades de acostamento ligadas à redes de infraestrutura. Como exemplo na \autoref{fig_38}, um serviço de informação sobre o clima pode operar através de uma RSU. As unidades de bordo WAVE interessadas no serviço e dentro da área de cobertura podem obter endereços IPv6 a fim de operar na rede de infraestrutura, com objetivo de obter informações mais precisas sobre o serviço ofertado. Os endereços da rede são distribuídos pelo dispositivo WAVE localmente e podem ser usados sem necessidade de configuração externa.
+	\par Os serviços com tráfego IPv6 nas Redes Veiculares são controlados por unidades de acostamento ligadas à redes de infraestrutura. Como exemplo na \autoref{fig_38}, um serviço de informação sobre o clima pode operar via unidade de acostamento. As unidades de bordo WAVE interessadas no serviço e dentro da área de cobertura podem obter endereços IPv6 a fim de operar na rede de infraestrutura, com objetivo de obter informações mais precisas sobre o serviço ofertado. Os endereços da rede são distribuídos pelo dispositivo WAVE localmente e podem ser usados sem necessidade de configuração externa.
 	
 	%INSERIR Figura 38 Atribuição de IPv6 por RSU
 	\begin{figure} [H]
@@ -1454,11 +1465,11 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Cada dispositivo WAVE que oferecer serviços IP deverá suportar endereços locais, globais e de \textit{multicast} para IPv6, seguindo a norma IETF RFC 2373. 
 	
-	\par A configuração IP do padrão WAVE será realizada através de WSAs utilizando um canal de serviço, já que o canal de controle não podem ter tráfego IP. 
+	\par A configuração IP do padrão WAVE será realizada por meio de WSAs utilizando um canal de serviço, já que o canal de controle não podem ter tráfego IP. 
 		
 	\par Os dispositivos WAVE podem implementar qualquer outro protocolo da IETF (Internet \textit{Engineering Task Force}), mas devem ser tomadas precauções para que a interoperabilidade não seja afetada com outros dispositivos da Rede Veicular.
 	
-	\par Portanto, conforme visto nesta seção, a comunicação entre veículos nas camadas de rede e transporte pode ser feita através dos protocolos IPv6 ou WSMP. O protocolo WSMP é utilizado para troca de informações \textit{ad hoc} dentro da rede veicular, já o IPv6 é empregado em situações quando a troca de dados necessita de uma rede de infraestura.
+	\par Portanto, conforme visto nesta seção, a comunicação entre veículos nas camadas de rede e transporte pode ser feita via protocolos IPv6 ou WSMP. O protocolo WSMP é utilizado para troca de informações \textit{ad hoc} dentro da rede veicular, já o IPv6 é empregado em situações quando a troca de dados necessita de uma rede de infraestura.
 	
 	\section{Camada de Aplicação}
 	
@@ -1466,7 +1477,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Aplicações de Segurança e Informação}
 	
-	\par A SAE, através da norma SAE J2735, propôs três diferentes conjuntos de mensagens para aplicações de redes veiculares. Estas mensagens foram propostas de modo pragmático, utilizando notação ASN.1 e regras de codificação nos formatos DER (\textit{Distinguished Encoding Rules}) e XML. É importante salientar que o padrão SAE J2735 não implementa uma aplicação ou sistema e sim ilustra como as mensagens da camada de aplicação são codificadas e decodificadas.
+	\par A SAE, por meio da norma SAE J2735, propôs três diferentes conjuntos de mensagens para aplicações de redes veiculares. Estas mensagens foram propostas de modo pragmático, utilizando notação ASN.1 e regras de codificação nos formatos DER (\textit{Distinguished Encoding Rules}) e XML. É importante salientar que o padrão SAE J2735 não implementa uma aplicação ou sistema e sim ilustra como as mensagens da camada de aplicação são codificadas e decodificadas.
 	
 	\par Como até então não haviam APIs (\textit{Application Program Interface}) desenvolvidas para as camadas do modelo WAVE e nem protótipos de placas de rede, o padrão realizou testes de construção e decodificação de mensagens broadcast WSM utilizando \textit{sockets} Berkeley como API padrão, além do protocolo de transporte UDP representando o WSMP em uma placa de rede \textit{Ethernet}. Entidades de gerenciamento WAVE foram criadas no código.
 	
@@ -1480,7 +1491,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As BSMs são mensagens para aplicações de segurança em veículos. Estas aplicações utilizariam o fluxo de dados de BSMs provenientes de veículos nas redondezas para detectar potenciais eventos de risco. As BSMs fornecem aos veículos conhecimento da posição, velocidade e direção dos veículos nas imediações. Estas mensagens de segurança possuem grupos de PSIDs para dados específicos. Conforme mostrado \autoref{tab_9}, para BSMs contendo dados de alta precisão o grupo PSID utilizado é o 0x20. Para veículos com dados não tão acurados, o grupo de PSID utilizado é o 0x21. 
 	
-	\par Como exemplo, foi proposta uma aplicação de um sistema de frenagem inteligente que detecta potenciais colisões traseiras através de algoritmos de detecção. Após detectado o potencial risco de colisão, o condutor é alertado passivamente ou o sistema realiza ações corretivas, como desabilitar o “piloto automático”, fortalecer os freios e pré-tensionar os cintos de segurança. 
+	\par Como exemplo, foi proposta uma aplicação de um sistema de frenagem inteligente que detecta potenciais colisões traseiras mediante algoritmos de detecção. Após detectado o potencial risco de colisão, o condutor é alertado passivamente ou o sistema realiza ações corretivas, como desabilitar o “piloto automático”, fortalecer os freios e pré-tensionar os cintos de segurança. 
 	
 	\par Outros exemplos de aplicações podem aproveitar-se das mensagens básicas de segurança para os mais diversos fins, como:
 	\begin{itemize}
@@ -1494,7 +1505,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As RSAs são mensagens de broadcast voltadas à aplicações de informação. Estas informações são voltadas principalmente às condições de tráfego e são propagadas principalmente por veículos de segurança pública ou por unidades de acostamento (RSUs ou \textit{RoadSide Units}) que entregam dados de Centros de Gerenciamento de Tráfego. Os tipos de dados transmitidos por RSAs são geralmente de atrasos em percursos causado por engarrafamentos, recálculo de rotas, informações de sinalização, incidentes, pontos de interesse, etc.
 	
-	\par As PVMs são mensagens usadas por múltiplas aplicações. Os veículos coletam dados próprios, de condições de pistas e de tráfego através de seus sensores em determinados intervalos de tempo. Esta gama de dados coletada é chamada de \textit{snapshot}. Estes dados são combinados em mensagens e transmitidos para unidades de acostamento (RSUs) que aceitam estes \textit{snapshots}  quando dentro de seu alcance. Das RSUs, os dados são enviados para Centros de Gerenciamento de Tráfego e Provedores de Serviços a fim de outros usuários móveis serem abastecidos destas informações.
+	\par As PVMs são mensagens usadas por múltiplas aplicações. Os veículos coletam dados próprios, de condições de pistas e de tráfego por meio de seus sensores em determinados intervalos de tempo. Esta gama de dados coletada é chamada de \textit{snapshot}. Estes dados são combinados em mensagens e transmitidos para unidades de acostamento (RSUs) que aceitam estes \textit{snapshots}  quando dentro de seu alcance. Das RSUs, os dados são enviados para Centros de Gerenciamento de Tráfego e Provedores de Serviços a fim de outros usuários móveis serem abastecidos destas informações.
 	
 	\par Como exemplo, os sensores de dados retornam informações como:
 	
@@ -1749,9 +1760,9 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As bibliotecas do SUMO são majoritariamente em C++. Algumas ferramentas de apoio foram codificadas em Python e XML.
 	
-	\par No SUMO há a possibilidade de criar os próprios mapas através de códigos XML, importar mapas de outros softwares de simulação ou mesmo de sites como o \textit{Openstreetmaps}. Isto é, cidades inteiras podem ter seus tráfegos simulados no SUMO.
-	
-	% INSERIR FIGURA DE IDE DO SUMO	
+	\par No SUMO há a possibilidade de criar os próprios mapas a partir de códigos XML, importar mapas de outros softwares de simulação ou mesmo de sites como o \textit{Openstreetmaps}. Isto é, cidades inteiras podem ter seus tráfegos simulados no SUMO.
+
+	% INSERIR FIGURA DE IDE DO SUMO
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.3]{figuras/cap4/45InterfaceSUMO}
@@ -1777,7 +1788,14 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{\textit{Vehicles in Network Simulation}}
 	
-	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. 
+	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. Sua arquitetura é mostrada na \autoref{fig_451}. O \text{framework} em questão tem o módulo de mobilidade (Mobility) ligado ao SUMO (Road Traffic Simulation) através de uma interface de controle de tráfego (TraCI) que utiliza uma porta TCP para comunicação. Isto faz com que cada simulação de rede veicular no VEINS execute os dois simuladores em paralelo: OMNET++ e SUMO.
+
+	% INSERIR FIGURA DE IDE DO SUMO
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=.8]{figuras/cap4/451Veins}
+		\caption{\label{fig_451}Arquitetura do \textit{framework} VEINS}
+	\end{figure}
 	
 	\par Este \textit{framework} foi escolhido por oferecer as seguintes características:
 	
@@ -1786,9 +1804,9 @@ brazil,				% o último idioma é o principal do documento
 		\item Permite a reconfiguração de rotas dos veículos do SUMO em tempo de execução em reação ao envio de pacotes de rede;
 		\item Baseado nos padrões IEEE 802.11p e IEEE 1609.4 para descrever as camadas física e de rede, incluindo operação multi-canal, QoS, efeitos de ruído e interferência;
 		\item Inclui módulos de redes de celular, como LTE;
-		\item Permite a importação de cenários do OpenStreetMap, incluindo prédios, limites de velocidade, semáforos, etc;
+		\item Permite a importação de cenários do \textit{OpenStreetMap}, incluindo prédios, limites de velocidade, semáforos, etc;
 		\item Permite empregar módulos de atenuação de sinal causados por veículos e prédios;
-		\item Gera dados com uma diversidade de métricas, incluindo tempo de trajeto e emissões de dióxido de carbono;
+		\item Gera dados com uma diversidade de métricas, incluindo tempo total de trajeto, emissões de dióxido de carbono, velocidades máxima e mínima. A geração de novos conjuntos de dados é possível extendendo o código do \textit{framework};
 		\item Possui uma base ampla de usuários.
 	\end{itemize}
 	
@@ -1796,9 +1814,9 @@ brazil,				% o último idioma é o principal do documento
 	
 	\begin{description}
 		\item[O MiXiM] é utilizado para modelagem precisa da camada física, trabalhando com distribuição da potência de transmissão por tempo e distância;
-		\item[O TraCI] (\textit{Traffic Control Interface} ou Interface de Controle de Tráfego) é uma interface que transforma os veículos do SUMO em nós de rede do OMNET++. Este modulo é utilizado pra monitorar o fluxo da simulação no SUMO, atualizando informações sobre a mobilidade do nó (posição, velocidade, direção) no OMNET++, baseado nos comportamentos dos veículos. Este módulo permite a reconfiguração de rotas dos veículos em tempo de execução e que VEINS e SUMO trabalhem em conjunto trocando mensagens de status através de uma porta TCP aberta;
+		\item[O TraCI] (\textit{Traffic Control Interface} ou Interface de Controle de Tráfego) é uma interface que transforma os veículos do SUMO em nós de rede do OMNET++. Este modulo é utilizado pra monitorar o fluxo da simulação no SUMO, atualizando informações sobre a mobilidade do nó (posição, velocidade, direção) no OMNET++, baseado nos comportamentos dos veículos. Este módulo permite a reconfiguração de rotas dos veículos em tempo de execução e que VEINS e SUMO trabalhem em conjunto trocando mensagens de status por intermédio de uma porta TCP aberta;
 		\item[Os módulos IEEE 802.11p e IEEE 1609.4 DSRC/WAVE] realizam uma modelagem mais precisa das camadas física e de rede WAVE, incluindo técnicas de modulação e coordenação de canal, QoS conforme EDCA. Este módulo também inclui a manipulação de WSM, quadros de gerenciamento (\textit{beacons}), WSAs, BSMs, etc.
-		\item[Os módulos \textit{Two-Ray Interference}] gerencia a perda de pacotes em diferentes distâncias e trabalha com a propagação de mensagens entre os carros, a distância máxima de uma mensagem enviada por um único nó e a distância máxima da mesma mensagem propagada através de outros nós;
+		\item[O módulo \textit{Two-Ray Interference}] gerencia a perda de pacotes em diferentes distâncias e trabalha com a propagação de mensagens entre os carros, a distância máxima de uma mensagem enviada por um único nó e a distância máxima da mesma mensagem propagada por intermédio de outros nós;
 		\item[O módulo \textit{Obstacle Shadowing}] monitora os obstáculos que podem interferir a propagação da mensagem.
 	\end{description}
 	
@@ -1864,13 +1882,13 @@ brazil,				% o último idioma é o principal do documento
 	\newpage
 	\chapter{Especificações do Sistema e Estudo de Caso}
 
-	\par Este capítulo apresenta um estudo de caso, tendo por objetivo experimentar através de simulações o uso de uma aplicação de emergência desenvolvida para comunicações interveiculares. A escolha do framework VEINS para a realização deste estudo de caso possibilitou ir além das simulações. Foi realizado neste trabalho a inclusão de novas classes no código-fonte do \textit{framework}, visando adaptar as simulações a realidade proposta neste trabalho.
+	\par Este capítulo apresenta um estudo de caso, tendo por objetivo experimentar por intermédio de simulações o uso de uma aplicação de emergência desenvolvida para comunicações interveiculares. A escolha do \textit{framework} VEINS para a realização deste estudo de caso possibilitou ir além das simulações. Foram a incluídas novas classes no código-fonte do \textit{framework} \textbf{VEINS}, visando adaptar as simulações a realidade proposta neste trabalho.
 
 	\par Os sistemas utilizados na realização das simulações foram: VEINS 4.4, SUMO 0.25.0 e OMNET 4.6.
 
 	\par Os experimentos mostrados a seguir incluem veículos equipados com tecnologias Car2X. Foi garantido que um mesmo conjunto de sementes aleatórias fosse gerado para os experimentos a serem comparados, o que descarta uma possível influência nos dados coletados e aumenta o grau de confiabilidade destes.
 
-	\par Conforme descrito na Enciclopédia Online do SUMO, estas sementes aleatórias são geradas através do algorítimo Mersenne Twister, garantindo o efeito estocástico necessário para a reprodução de cenários realistas.
+	\par Conforme descrito na enciclopédia on-line do SUMO, estas sementes aleatórias são produzidar por um gerador de números pseudoaleatórios chamado \textit{Mersenne Twister}, garantindo efeitos mais aproximados de cenários reais.
 
 	\par As simulações realizadas nos cenários subsequentes utilizam o mesmo espectro regulamentado pela FCC para comunicações DSRC nos Estados Unidos. A ANATEL (ATO No 2.099, 2012) ainda não estabeleceu um espectro para as comunicações interveiculares no Brasil até a presente data.
 
@@ -1915,7 +1933,7 @@ brazil,				% o último idioma é o principal do documento
 		\item Veículos de Socorro
 		\item Veículos Policiais
 		\item Veículos de Fiscalização e Operação de Trânsito
-		\item Veículos de Agentes Públicos e Políticos	
+		\item Veículos de Agentes Públicos
 	\end{itemize}
 	
 	\par Esta aplicação, quando ativada, emite mensagens periódicas aos dispositivos Car2X nas redondezas. A partir do recebimento destas mensagens, os veículos comuns podem ser orientados para uma melhor tomada de decisão no trânsito.
@@ -1959,7 +1977,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par  $ L_1 $ e $ R_1 $ representam respectivamente a faixa e rua em trânsito. $ R_2 $ até $ R_n $ simbolizam as próximas ruas a serem percorridas pelo veículo de segurança pública. 
 
-	\par Devido à sua natureza, a aplicação de emergência utiliza o PSID \textbf{0x0C} no cabeçalho das mensagens, apropriado para situações de emergência. O código abaixo representa como essa informação é gerada pelo veículo de segurança pública através da função \textbf{prepareMessage}. % [?] verificar se é prepareMsg msm
+	\par Devido à sua natureza, a aplicação de emergência utiliza o PSID \textbf{0x0C} no cabeçalho das mensagens, apropriado para situações de emergência. O código abaixo representa como essa informação é gerada pelo veículo de segurança pública via função \textbf{prepareMessage}. % [?] verificar se é prepareMsg msm
 
     \begin{table}[H] %[?] Colocar cor no codigo. Fica em tabela msm? Coloca legenda ou n?
 	    \centering
@@ -2020,7 +2038,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O objetivo dos experimentos 1 e 2 é mostrar o funcionamento e a efetividade da aplicação desenvolvida em comunicações interveiculares. Ambos possuem apenas função demonstrativa.
 	
-	\par Para a simular estes experimentos, um cenário comum foi desenvolvido através do  software netedit, contido no pacote do \textit{framework} SUMO. Foi desenhada uma rodovia de duas pistas com faixas duplas de mesmo sentido e 4000 metros de comprimento, conforme mostrado na \autoref{fig_5.3}.
+	\par Para a simular estes experimentos, um cenário comum foi desenvolvido por meio do software netedit, contido no pacote do \textit{framework} SUMO. Foi desenhada uma rodovia de duas pistas com faixas duplas de mesmo sentido e 4000 metros de comprimento, conforme mostrado na \autoref{fig_5.3}.
 	
 	 \begin{figure}[H]
 	 	\centering
@@ -2050,7 +2068,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Durante o experimento 1, as unidades de acostamento públicas permaneceram desligadas e apenas são avaliadas as mensagens trocadas entre veículos. No experimento 2, estas RSUs estão em funcionamento e replicam as mensagens recebidas pelo veículo de resgate. É válido ressaltar que a relação entre os valores de potência de transmissão e alcance do sinal são diretamente proporcionais. Portanto, as mensagens geradas por unidades de acostamento conseguem alcançar maiores distâncias se o valor da potência de transmissão for maior.
 	
-	\par Conceitualmente, podemos dizer que os veículos comuns que receberem a mensagem de emergência poderiam representar as informações recebidas através de um mapa e emitir alertas sonoros em uma situação real. Estes alertas poderiam requisitar uma ação do motorista para desobstruir a passagem do veículo de segurança pública caso este esteja nos arredores, conforme mostrado em conceito na \autoref{fig_5.4}.
+	\par Conceitualmente, podemos dizer que os veículos comuns que receberem a mensagem de emergência poderiam representar as informações recebidas por meio sem fio em um mapa no painel do veículo e emitir alertas sonoros em uma real situação de emergência. Estes alertas poderiam requisitar uma ação do motorista para desobstruir a passagem do veículo de segurança pública caso este esteja nos arredores, conforme mostrado em conceito na \autoref{fig_5.4}.
 	
 	\begin{figure}[H]
 		\centering
@@ -2167,9 +2185,9 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Experimento 3: Aplicação de Emergência na região de Ipanema-Copacabana}
 	
-	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro através do \textit{OpenStreetMaps}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro,  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
+	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site do \textit{OpenStreetMap}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro,  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
 	
-	\par A \autoref{fig_5.13} apresenta o percurso do veículo de resgate, que parte da Avenida Vieira Souto em Ipanema e segue para Copacabana através da Avenida Nossa Senhora de Copacabana até seu ponto de destino. São percorridos aproximadamente 4800 metros neste trajeto, representado na imagem pela linha vermelha. Devido ao comportamento apresentado pelas unidades de acostamento no segundo experimento, 7 RSUs (pontos pretos \autoref{fig_5.13}) foram espalhadas para auxiliar na propagação das mensagens da aplicação de emergência. 
+	\par A \autoref{fig_5.13} apresenta o percurso do veículo de resgate, que parte da Avenida Vieira Souto em Ipanema e segue para Copacabana via Avenida Nossa Senhora de Copacabana até seu ponto de destino. São percorridos aproximadamente 4800 metros neste trajeto, representado na imagem pela linha vermelha. Devido ao comportamento apresentado pelas unidades de acostamento no segundo experimento, 7 RSUs (pontos pretos \autoref{fig_5.13}) foram espalhadas para auxiliar na propagação das mensagens da aplicação de emergência. 
 	
 	\begin{figure}[H]
 		\centering
@@ -2337,11 +2355,11 @@ brazil,				% o último idioma é o principal do documento
 		\label{tab_5.10}
 	\end{table}
 
-	\par Concluímos que a utilização de redes veiculares como um novo meio de comunicação no trânsito seria de relevante uso em eventuais desobstruções para veículos de segurança pública. Os resultados obtidos neste estudo de caso já demonstram que a utilização de mensagens de uma aplicação de emergência através de Redes Veiculares resultam em uma melhor fluidez no percurso dos veículos de resgate, de veículos policiais ou do corpo de bombeiros. Além do mais, cabe sempre ressaltar que qualquer ganho de tempo em um situação de resgate pode significar o ganho de uma vida.
+	\par Concluímos que a utilização de redes veiculares como um novo meio de comunicação no trânsito seria de relevante uso em eventuais desobstruções para veículos de segurança pública. Os resultados obtidos neste estudo de caso já demonstram que a utilização de mensagens de uma aplicação de emergência por intermédio de Redes Veiculares resultam em uma melhor fluidez no percurso dos veículos de resgate, de veículos policiais ou do corpo de bombeiros. Além do mais, cabe sempre ressaltar que qualquer ganho de tempo em um situação de resgate pode significar o ganho de uma vida.
 
 	\par As unidades de acostamento seriam de grande auxílio tanto para o bem público quanto na expansão do alcance de mensagens em Redes Veiculares. 
 
-	\par Para a realização de simulações em redes veiculares, os softwares abertos de simulação de tráfego como o SUMO ainda necessitam de ajustes para atuar de forma fidedigna ao caráter real de sua atuação. Algumas melhorias que corrigem as limitações citadas já estão previstas pela equipe de desenvolvimento do SUMO{\footnote{\href{http://sumo.dlr.de/trac.wsgi/roadmap}{http://sumo.dlr.de/trac.wsgi/roadmap} acesso em 19 de set. 2016}}.
+	\par Para a realização de simulações em redes veiculares, os softwares abertos de simulação de tráfego como o SUMO ainda necessitam de ajustes para atuar de forma fidedigna ao caráter real de sua atuação. Algumas melhorias que corrigem as limitações citadas já estão previstas pela equipe de desenvolvimento do SUMO{\footnote{\href{http://sumo.dlr.de/trac.wsgi/roadmap}{http://sumo.dlr.de/trac.wsgi/roadmap} (acesso em 19 de set. 2016)}}.
 	
 	\par No mais, as simulações de redes veiculares auxiliam relevantemente na preparação de provas de conceito, cooperando para uma abordagem analítica de cenários e para a economia de recursos.
 
@@ -2359,13 +2377,13 @@ brazil,				% o último idioma é o principal do documento
 % ----------------------------------------------------------
 	\chapter[Conclusão]{Conclusão}
 
-	\par A padronização da tecnologia através das normas IEEE 1609 e ETSI mostra uma tentativa de incentivar a adoção de Rede Veiculares pelas indústrias. Tecnologias padronizadas facilitam a produção e implantação em maior escala.
+	\par A padronização da tecnologia mediante as normas IEEE 1609 e ETSI mostra uma tentativa de incentivar a adoção de Rede Veiculares pelas indústrias. Tecnologias padronizadas facilitam a produção e implantação em maior escala.
 
-	\par A tecnologia Car2X não se apresenta apenas como futuro promissor e sim como uma realidade iminente. Nos últimos anos, inúmeras empresas de tecnologia voltaram sua atenção para a indústria automobilística a fim de desenvolver produtos com o objetivo de alcançar a tão desejada condução autônoma. CEOs de empresas automotivas argumenta que a inclusão de tecnologias eletrônicas e de comunicação sem fio em veículos é a tendência atual desta indústria{\footnote{\href{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/}{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/} acesso em 23 de set. 2016}.
+	\par A tecnologia Car2X não se apresenta apenas como futuro promissor e sim como uma realidade iminente. Nos últimos anos, inúmeras empresas de tecnologia voltaram sua atenção para a indústria automobilística a fim de desenvolver produtos com o objetivo de alcançar a tão desejada condução autônoma. CEOs de empresas automotivas argumenta que a inclusão de tecnologias eletrônicas e de comunicação sem fio em veículos é a tendência atual desta indústria{\footnote{\href{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/}{http://telematicsnews.info/2016/06/20/toyota-connected-ceo-wants-to-contextualise-connected-cars-ju7204/} (acesso em 23 de set. 2016)}.
 
 	\par No contexto das comunicações interveiculares, há um mercado promissor para empresas de desenvolvimento de software. Aplicativos para sensores, segurança, comunicação, entretenimento, informação, controle de tráfego poderão surgir, melhorando a experiência, segurança e a comodidade dentro do veículo.
 
-	\par No estudo de caso foi apresentado que uma aplicação de emergência alinhada à tecnologia Car2X tem o potencial de facilitar o trajeto de veículos de segurança pública. Estes veículos passam a contar com uma nova forma de sinalização de sua presença, vencendo barreiras visuais e sonoras através da replicação de suas mensagens através da Rede Veicular.
+	\par No estudo de caso foi apresentado que uma aplicação de emergência alinhada à tecnologia Car2X tem o potencial de facilitar o trajeto de veículos de segurança pública. Estes veículos passam a contar com uma nova forma de sinalização de sua presença, vencendo barreiras visuais e sonoras por intermédio da replicação de suas mensagens via Rede Veicular.
 
 % ----------------------------------------------------------
 
@@ -2380,13 +2398,13 @@ brazil,				% o último idioma é o principal do documento
 
 	\par A classe Driver permite controlar ações típicas de um motorista humano no veículo. Esta poderia ser incrementada utilizando princípios de inteligência artificial. Como exemplo, as mudanças de faixa poderiam ser realizadas ou não após o raciocínio de sinapses que calculam variáveis como distância entre veículos (frontal, traseira e lateral), aceleração e condições da pista.
 
-	\par Aplicações que comuniquem-se com semáforos possibilitariam melhor fluidez para os veículos de segurança pública caso estes pudessem alterar momentaneamente o sincronismo entre as fases do semáfaro através da troca de mensagens de emergência.
+	\par Aplicações que comuniquem-se com semáforos possibilitariam melhor fluidez para os veículos de segurança pública caso estes pudessem alterar momentaneamente o sincronismo entre as fases do semáfaro por meio da troca de mensagens de emergência.
 
 	\par Placas indicativas de velocidade máxima espalhadas em pontos estratégicos de uma rodovia poderiam ser equipadas de unidades de acostamento com o intuito de enviar WSMs periódicos indicando a velocidade adequada. Os dispositivos recebedores poderiam interpretar estas mensagens de diversas maneiras.
 
 	\par Radares poderiam ser equipados com RSUs para um registro mais confiável dos veículos que não estiverem em conformidade com as leis de trânsito, enviando a multa diretamente para o dono do veículo transgressor sem depender apenas de fotos, que por vezes não são suficientes.
 
-	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminuição de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja através da limitação do tempo de vida dos pacotes ou com a utilização de beacons para o envio \textit{multicast}.
+	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminuição de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja por meio da limitação do tempo de vida dos pacotes ou com a utilização de quadros de gerenciamento para o envio \textit{multicast}.
 
 % ----------------------------------------------------------
 	% ELEMENTOS PÓS-TEXTUAIS
@@ -2570,10 +2588,10 @@ brazil,				% o último idioma é o principal do documento
 		\centering
 		\includegraphics[scale=.7]{figuras/cap2/13MIBIPv6}
 		\caption{\label{fig_13}MIB IPv6}
-		\legend{Fonte: \href{http://support.ipmonitor.com/}{http://support.ipmonitor.com/} acesso em 29 de jul. 2016}
+		\legend{Fonte: \href{http://support.ipmonitor.com/}{http://support.ipmonitor.com/} ()acesso em 29 de jul. 2016)}
 	\end{figure}
 	
-	\par As camadas físicas e de enlace, por exemplo, têm sua própria MIB. Há entidades conceituais que gerenciam informações das camadas, requisitando informações e solicitando alterações na MIBs de outras camadas através de pontos de acesso a serviços (SAPs ou \textit{Service Acess Points}), que funcionam como interfaces. Como exemplo, algumas alterações na camada MAC podem necessitar de alterações na camada física, portanto o SAP que fica entre a subcamada MAC e a camada física permite à entidade da subcamada MAC solicitar à entidade da camada física alterações na MIB. A \autoref{fig_14} mostra um modelo conceitual contendo SAPs entre entidades e camadas.
+	\par As camadas físicas e de enlace, por exemplo, têm sua própria MIB. Há entidades conceituais que gerenciam informações das camadas, requisitando informações e solicitando alterações na MIBs de outras camadas por meio de pontos de acesso a serviços (SAPs ou \textit{Service Acess Points}), que funcionam como interfaces. Como exemplo, algumas alterações na camada MAC podem necessitar de alterações na camada física, portanto o SAP que fica entre a subcamada MAC e a camada física permite à entidade da subcamada MAC solicitar à entidade da camada física alterações na MIB. A \autoref{fig_14} mostra um modelo conceitual contendo SAPs entre entidades e camadas.
 	
 	% INSERIR FIGURA 14 MIBs - Interfaces entre camadas
 	\begin{figure} [H]
@@ -2733,17 +2751,17 @@ brazil,				% o último idioma é o principal do documento
 
 		    \par O \textit{framework} SUMO gerencia o tráfego em modelo microscópico, emitindo mensagens de status de cada veículo em determinado intervalo de tempo. 
 
-		    \par O \textit{framework} integrador VEINS recebe as mensagens de status do SUMO, gerando traços dos veículos no ambiente gráfico. O VEINS também também envia mensagens através da interface de comunicação TRACI. Estas mensagens podem ou não alterar a rotas dos veículos em simulação no SUMO.
+		    \par O \textit{framework} integrador VEINS recebe as mensagens de status do SUMO, gerando traços dos veículos no ambiente gráfico. O VEINS também também envia mensagens via interface de comunicação TRACI. Estas mensagens podem ou não alterar a rotas dos veículos em simulação no SUMO.
 
 		    \par Para a correta instalação e síncrona comunicação dos \textit{frameworks}, é necessária a instalação seguindo a ordem proposta além de componentes extras para que os \textit{frameworks} tenham um funcionamento adequado. 
 
 		    \par Foram elaborados dois tutorias para dois sistemas operacionais distintos: Windows 10 e Ubuntu 16.04. Encorajamos a instalação dos \textit{frameworks} no sistema operacional Ubuntu para melhor \textit{performance} da instalação e das simulações.
 
-		    \par O download do SUMO 0.25.0 pode ser feito através do site \href{https://sourceforge.net/projects/sumo/files/sumo/}{https://sourceforge.net/\\projects/sumo/files/sumo/}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
+		    \par O download do SUMO 0.25.0 pode ser feito por meio do site \href{https://sourceforge.net/projects/sumo/files/sumo/}{https://sourceforge.net/\\projects/sumo/files/sumo/}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
 
-		    \par O download do OMNET++ 4.6 pode ser feito através do site \href{https://omnetpp.org/omnetpp}{https://omnetpp.org/\\omnetpp}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
+		    \par O download do OMNET++ 4.6 pode ser feito por meio do site \href{https://omnetpp.org/omnetpp}{https://omnetpp.org/\\omnetpp}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
 
-		    \par O download do VEINS 4.4 pode ser feito através do site \href{http://veins.car2x.org/download/}{http://veins.car2x.org/\\download/}. %[?] Colocar link para versão utilizada!
+		    \par O download do VEINS 4.4 pode ser feito no site \href{http://veins.car2x.org/download/}{http://veins.car2x.org/\\download/}. %[?] Colocar link para versão utilizada!
 
 		    \par Recomenda-se manter os arquivos descompactados em uma pasta padrão. Neste tutorial vamos assumir que esta pasta é nomeada \textbf{WAVE}. Determine qual sistema operacional será utilizado e siga os passos conformemente.
 
@@ -2825,7 +2843,7 @@ brazil,				% o último idioma é o principal do documento
                 	\begin{description}
 		                \item[5º Passo (Opcional)]
 		            \end{description}
-		            \par Para utilizar pacotes adicionais de visualização 3D do OMNET++ realize a instalação através do comando:
+		            \par Para utilizar pacotes adicionais de visualização 3D do OMNET++ realize a instalação mediante o comando:
 		
 		            \begin{table}[H]
 			            \renewcommand{\arraystretch}{1.5}
@@ -2859,7 +2877,7 @@ brazil,				% o último idioma é o principal do documento
                 	\begin{description}
 		                \item[7º Passo]
 		            \end{description}
-		            \par A instalação do SUMO é feita através do comando:
+		            \par A instalação do SUMO é feita por meio do comando:
 		
 		            \begin{table}[H]
 			            \renewcommand{\arraystretch}{1.5}
@@ -2875,7 +2893,7 @@ brazil,				% o último idioma é o principal do documento
                 	\begin{description}
 		                \item[8º Passo (Opcional)]
 		            \end{description}
-		            \par Para testar o funcionamento do SUMO, inicialize através do terminal:
+		            \par Para testar o funcionamento do SUMO, inicialize-o via terminal:
 		
 		            \begin{table}[H]
 			            \renewcommand{\arraystretch}{1.5}
@@ -2946,7 +2964,7 @@ brazil,				% o último idioma é o principal do documento
                 	\begin{description}
 		                \item[11º Passo]
 		            \end{description}
-		            \par Logo após a configuração, é necessário compilar o OMNET++ através do comando:
+		            \par Logo após a configuração, é necessário compilar o OMNET++ por meio do comando:
 		
 		            \begin{table}[H]
 			            \renewcommand{\arraystretch}{1.5}
@@ -2964,7 +2982,7 @@ brazil,				% o último idioma é o principal do documento
                 	\begin{description}
 		                \item[12º Passo (Opcional)]
 		            \end{description}
-		            \par Após a instalação, abra o OMNET++ pelo terminal através do comando:
+		            \par Após a instalação, abra o OMNET++ pelo terminal via comando:
 		
 		            \begin{table}[H]
 			            \renewcommand{\arraystretch}{1.5}
@@ -3117,7 +3135,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
 	                \item[14º Passo (Opcional)]
 	            \end{description}
-	            \par Abra o exemplo test.sumo.cfg dentro da pasta do SUMO no caminho .../sumo-0.25.0/tools/contributed/traci4j/test/resources/sumo\_maps/box1l através do menu \textit{File > Open Simulation}.
+	            \par Abra o exemplo test.sumo.cfg dentro da pasta do SUMO no caminho .../sumo-0.25.0/tools/contributed/traci4j/test/resources/sumo\_maps/box1l por meio do menu \textit{File > Open Simulation}.
 		            
                 \begin{figure} [H]
 	                \centering
@@ -3240,9 +3258,9 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
 	                \item[22º Passo]
 	            \end{description}
-	            \par Para integrar os \textit{frameworks} OMNET++ e SUMO, é necessário utilizar um \textit{daemon} que serve para executar processos em plano de fundo. O \textit{daemon} é disponibilizado no diretório do VEINS através do arquivo python \textbf{sumo-launchd.py}. Ele executará a interface gráfica do SUMO e trocará mensagens de \textit{status} com o projeto VEINS do OMNET++.
+	            \par Para integrar os \textit{frameworks} OMNET++ e SUMO, é necessário utilizar um \textit{daemon} que serve para executar processos em plano de fundo. O \textit{daemon} é disponibilizado no diretório do VEINS por intermédio do arquivo python \textbf{sumo-launchd.py}. Ele executará a interface gráfica do SUMO e trocará mensagens de \textit{status} com o projeto VEINS do OMNET++.
 
-                \par Nos sistemas Linux, através do terminal acesse o diretório raiz da pasta VEINS e execute o seguinte comando:
+                \par Nos sistemas Linux, via terminal acesse o diretório raiz da pasta VEINS e execute o seguinte comando:
 		
 	            \begin{table}[H]
 		            \renewcommand{\arraystretch}{1.5}
@@ -3259,7 +3277,7 @@ brazil,				% o último idioma é o principal do documento
 	                \caption{\label{fig_63}Executando o \textit{daemon} no Linux}
                 \end{figure}
                 
-                \par Nos sistemas Windows, acesse o diretório raiz do VEINS através do terminal virtual \textbf{mingwenv.cmd} obtido no 5º Passo da instalação Windows. Execute o \textit{daemon} seguido da pasta onde se encontra o executável \textit{sumo-gui} do SUMO. Atenção, o comando a seguir é apenas um exemplo. Modifique a parte em negrito apontando para o diretório do SUMO em seu computador. %[!] referenciar
+                \par Nos sistemas Windows, acesse o diretório raiz do VEINS via terminal virtual \textbf{mingwenv.cmd} obtido no 5º Passo da instalação Windows. Execute o \textit{daemon} seguido da pasta onde se encontra o executável \textit{sumo-gui} do SUMO. Atenção, o comando a seguir é apenas um exemplo. Modifique a parte em negrito apontando para o diretório do SUMO em seu computador. %[!] referenciar
 		
 	            \begin{table}[H]
 		            \renewcommand{\arraystretch}{1.5}
@@ -3317,7 +3335,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
 	                \item[25º Passo (Opcional)]
 	            \end{description}
-	            \par O \textit{sumo-gui} será inicializado com o mapa da simulação já importado. Os dois softwares irão executar em conjunto, comunicando-se através do \textit{daemon} inicializado alguns passos atrás.
+	            \par O \textit{sumo-gui} será inicializado com o mapa da simulação já importado. Os dois softwares irão executar em conjunto, comunicando-se por intermédio do \textit{daemon} inicializado alguns passos atrás.
 		            
                 \begin{figure} [H]
 	                \centering
@@ -3342,9 +3360,9 @@ brazil,				% o último idioma é o principal do documento
             \end{description}
             \par Dentro do diretório padrão \textbf{WAVE} (1º Passo do \autoref{tutorial_1}), crie uma nova pasta com o nome que desejar. Para este tutorial, o nome da pasta será \textbf{simulacao}. %[!] referenciar
             
-        	\section{Exportando mapas através do OpenStreetMap}
+            \section{Exportando mapas no \textit{OpenStreetMap}}
 
-        	    \par OpenStreetMap é um projeto colaborativo para criação do mapa mundial que seja editável e livre.
+                \par \textit{OpenStreetMap} é um projeto colaborativo para criação do mapa mundial que seja editável e livre.
 
             	\begin{description}
                     \item[2º Passo]
@@ -3354,7 +3372,7 @@ brazil,				% o último idioma é o principal do documento
                 \begin{figure} [H]
 	                \centering
 	                \includegraphics[scale=.3]{figuras/aneC/70PesquisandoEndereco}
-	                \caption{\label{fig_70}Pesquisando um Endereço no OpenStreetMap}
+	                \caption{\label{fig_70}Pesquisando um Endereço no \textit{OpenStreetMap}}
                 \end{figure}
                     
                 %------------
@@ -3367,7 +3385,7 @@ brazil,				% o último idioma é o principal do documento
                 \begin{figure} [H]
 	                \centering
 	                \includegraphics[scale=.3]{figuras/aneC/71HabilitandoExportacao}
-	                \caption{\label{fig_71}Habilitando Exportação de Mapas no OpenStreetMap}
+	                \caption{\label{fig_71}Habilitando Exportação de Mapas no \textit{OpenStreetMap}}
                 \end{figure}
                     
                 %------------
@@ -3380,13 +3398,13 @@ brazil,				% o último idioma é o principal do documento
                 \begin{figure} [H]
 	                \centering
 	                \includegraphics[scale=.3]{figuras/aneC/72HabilitandoSelecao}
-	                \caption{\label{fig_72}Habilitando Seleção de Área no OpenStreetMap}
+	                \caption{\label{fig_72}Habilitando Seleção de Área no \textit{OpenStreetMap}}
                 \end{figure}
 		            
                 \begin{figure} [H]
 	                \centering
 	                \includegraphics[scale=.28]{figuras/aneC/73SelecionandoArea}
-	                \caption{\label{fig_73}Selecionando Área para Exportar no OpenStreetMap}
+	                \caption{\label{fig_73}Selecionando Área para Exportar no \textit{OpenStreetMap}}
                 \end{figure}
                     
                 %------------
@@ -3399,7 +3417,7 @@ brazil,				% o último idioma é o principal do documento
                 \begin{figure} [H]
 	                \centering
 	                \includegraphics[scale=.35]{figuras/aneC/74ExportandoMapa}
-	                \caption{\label{fig_74}Exportando Mapa no OpenStreetMap}
+	                \caption{\label{fig_74}Exportando Mapa no \textit{OpenStreetMap}}
                 \end{figure}
                     
                 %------------
@@ -3422,7 +3440,7 @@ brazil,				% o último idioma é o principal do documento
             
         	\section{Criando polígonos para o mapa}
         	
-            	\par É possível transferir os prédios do OpenStreetMap para o SUMO. Estes prédios poderão ser utilizados como obstáculos causando atenuação dos sinais para uma simulação mais realista.
+                \par É possível transferir os prédios do \textit{OpenStreetMap} para o SUMO. Estes prédios poderão ser utilizados como obstáculos causando atenuação dos sinais para uma simulação mais realista.
                     
                 %------------
 
@@ -3431,7 +3449,7 @@ brazil,				% o último idioma é o principal do documento
                 \end{description}
                 \par Procure pelo arquivo \textbf{osmPolyconvert.typ.xml} dentro da pasta do SUMO e copie este arquivo para a pasta \textbf{simulacao} (criada no 1º Passo do \autoref{tutorial_2}). %[!] referenciar
                 
-                \par Para procurar este arquivo no linux, utilize o comando \textbf{locate osmPolyconvert} através do terminal. Para procurar no windows, va até o diretório do SUMO extraído na pasta \textbf{WAVE} e pesquise através do \textit{explorer}.
+                \par Para procurar este arquivo no linux, utilize o comando \textbf{locate osmPolyconvert} via terminal. Para procurar no Windows, acesse o diretório do SUMO extraído na pasta \textbf{WAVE} e pesquise por meio do \textit{Explorer}.
                     
                 %------------
 
@@ -3535,7 +3553,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
                     \item[14º Passo (Opcional)]
                 \end{description}
-                \par O SUMO verifica online os arquivos xml passados como parâmetros. Para evitar a verificação (e agilizar a execução da simulação), adicione o seguinte após o \textit{\textbf{input}}:
+                \par O SUMO verifica on-line os arquivos xml passados como parâmetros. Para evitar a verificação (e agilizar a execução da simulação), adicione o seguinte após o \textit{\textbf{input}}:
 		
 	            \begin{table}[H]
 		            \renewcommand{\arraystretch}{1}
@@ -3555,7 +3573,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
                     \item[15º Passo (Opcional)]
                 \end{description}
-                \par Abra o SUMO, aumente o \textit{delay} e execute a simulação novamente através do menu \textit{File > Reload}.
+                \par Abra o SUMO, aumente o \textit{delay} e execute a simulação novamente por meio do menu \textit{File > Reload}.
 		            
                 \begin{figure} [H]
 	                \centering
@@ -3563,7 +3581,7 @@ brazil,				% o último idioma é o principal do documento
 	                \caption{\label{fig_75}Alterando o \textit{Delay}}
                 \end{figure}
                 
-                \par Carregue o arquivo \textbf{maracana.sumo.cfg} através do menu \textit{File > Open Simulation...}
+                \par Carregue o arquivo \textbf{maracana.sumo.cfg} no menu \textit{File > Open Simulation...}
 		
 	            \begin{table}[H]
 		            \renewcommand{\arraystretch}{1.5}
