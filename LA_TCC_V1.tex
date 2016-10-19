@@ -785,7 +785,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Modos de operação}
 	
-	\par As redes sem fio suportam basicamente dois modos de operação: Infra-estruturado e ad-hoc.
+	\par As redes sem fio suportam basicamente dois modos de operação: Infra-estruturado e ad hoc.
 	
 	\par O modo de operação infra-estruturado utiliza de pontos de acesso (\textit{Access Point} ou AP) para controlar os nós cobertos por determinada área geográfica. Como exemplo, na \autoref{fig_8} os nós de rede sem fio se comunicam com outros equipamentos ou com a rede cabeada por meio de um ponto de acesso, que é representado por um roteador sem fio.
 	
@@ -798,7 +798,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As Redes \textit{Ad Hoc} se diferenciam por serem redes sem fio onde não há um nó central servindo como ponto de acesso. As estações ou nós comunicam-se como se fossem, ao mesmo tempo, os \textit{hosts} e os roteadores da rede (\autoref{fig_9}).
 	
-	% INSERIR FIGURA 09 Modo de operação ad-hoc
+	% INSERIR FIGURA 09 Modo de operação ad hoc
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.3]{figuras/cap2/09ModosdeOperacaoAdHoc}
@@ -845,13 +845,13 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par \textbf{O Serviço de Privacidade} é usado para impedir que o conteúdo das mensagens seja lido por outras pessoas além do destinatário pretendido. O padrão sugere o uso opcional da criptografia para garantir privacidade.		
 	
-	\section{Redes Ad-hoc Móveis}
+	\section{Redes Ad hoc Móveis}
 	
-	\par As redes \textit{ad hoc} se destacam por serem redes onde não há um nó central - como um roteador ou um \textit{switch} - servindo como ponto de acesso. Os nós funcionam de forma similiar a roteadores. Estes nós que se conectam consomem e geram dados, assim como armazenam e entregam informações. Em redes \textit{ad hoc} são trocados quadros de arquitetura IBSS, se diferenciando das redes de infraestrutura, que utilizam quadros BSS. Além disso, as redes \textit{ad hoc} não possuem conexão direta com a Internet. Justamente por serem redes sem infraestrutura, as mesmas não possuem provedor de acesso.
+	\par As redes \textit{ad hoc} se destacam por serem redes onde não há um nó central - como um roteador ou um \textit{switch} - servindo como ponto de acesso. Esta função é acumulada pelos nós, que se conectam, consomem e geram dados, assim como armazenam e entregam informações. Em redes \textit{ad hoc} são trocados quadros de arquitetura IBSS, se diferenciando das redes de infraestrutura, que utilizam quadros BSS. Além disso, as redes \textit{ad hoc} não possuem conexão direta com a Internet. Justamente por serem redes sem infraestrutura, as mesmas não possuem provedor de acesso.
 	
 	\par As redes sem fio de nós móveis que estão próximos uns aos outros são chamadas de MANETs (\textit{Mobile Ad Hoc Networks} ou Redes \textit{Ad Hoc} Móveis). Estes nós podem ser \textit{notebooks}, \textit{tablets}, \textit{smartphones}, etc. Por possuírem dispositivos que se movem constantemente, as MANETs estão sujeitas à constantes variações na topologia de rede, com nós que podem entrar e sair da rede em um curto intervalo de tempo, ocasionando a alteração rápida de rotas. 
 	
-	\par O roteamento de pacotes em redes \textit{ad hoc} é mais complexo do que em redes infraestruturadas e possui uma série de desafios. Para rotear os pacotes, os desafios encontrados são: mobilidade dos nós que impactam diretamente as rotas, implantação de Qualidade de Serviço (QoS) para os fluxos de aplicações multimídia e a escalabilidade da rede. Há também desafios com relação ao consumo de energia elétrica que os nós dispõem para realizar a transmissão e recepção dos dados além de realizar outros processos. Como a troca de informações entre os nós é intensa, a energia é gasta de maneira mais acelerada. Desafios que envolvem conectividade também preocupam. As redes \textit{ad hoc} apresentam condições inconstantes como taxas de erro de bit variáveis e interferências na comunicação por outros meios de transmissão.
+	\par O roteamento de pacotes em redes \textit{ad hoc} é mais complexo do que em redes infraestruturadas e possui uma série de desafios. Para rotear os pacotes, os desafios encontrados são: mobilidade dos nós que impactam diretamente as rotas, implantação de Qualidade de Serviço (QoS) e a escalabilidade da rede. Há também desafios com relação ao consumo de energia elétrica que os nós dispõem para realizar a transmissão e recepção dos dados além de realizar outros processos. Como a troca de informações entre os nós é intensa, a energia é gasta de maneira mais acelerada. Desafios que envolvem conectividade também preocupam. As redes \textit{ad hoc} apresentam condições inconstantes como taxas de erro de bit variáveis e interferências na comunicação por outros meios de transmissão.
 	
 	\par Ao longo dos anos, diversos protocolos de roteamento para MANETs foram criados. Seguindo uma primeira abordagem, os protocolos de redes \textit{ad hoc} móveis foram classificados baseando-se na topologia (Royer \& Toh, 1999) ou na posição (Giordano et al., 2004). Os protocolos baseados na topologia ainda podem ser subclassificados como pró-ativos, reativos e híbridos enquanto os protocolos baseados em posição podem ser classificados em roteamento guloso ou restrito. Alguns exemplos de protocolo são citados e categorizados na \autoref{fig_12}.
 	
@@ -1175,36 +1175,21 @@ brazil,				% o último idioma é o principal do documento
 	\par Na subcamada MAC, a entidade MLME (mostrada na \autoref{fig_19}) é responsável por gerenciar os serviços de coordenação do canal e por auxiliar a entrega das unidades de dados de serviço MAC.
 	
 	\subsection{Serviços do Plano de Dados} 
-	\label{subsec:Serviços do Plano de Dados}
+	\label{subsec:servPlanDados}
 	
 	\par Os serviços executados pela MLME são inerentes ao Plano de Dados e ao Plano de Gerenciamento. Os serviços MLME no Plano de Dados abrangem:
+
+	\begin{itemize}
+        \item Coordenação de canal
+        \item Roteamento de canal
+        \item Priorização de pacotes
+    \end{itemize}
 	
-	\begin{description}
-        \item[Coordenação de canal]
-    \end{description}
+	\par O \textbf{serviço de coordenação de canal} oferecido pela subcamada MAC garante que os pacotes serão transmitidos no canal sem fio pretendido e permite a troca de dados entre dispositivos com operações alternadas e concorrentes em múltiplos canais. Esta última característica permite que dispositivos WAVE com uma única camada física (ou seja, uma única antena) utilizem o acesso alternado na coordenação de canal. Como exemplo, num dispositivo WAVE de única camada física os tráfegos de alta prioridade e de gerenciamento operariam no canal de controle em intervalo de tempo 0 enquanto o tráfego geral de camadas superiores atuaria no canal de serviço durante intervalo de tempo 1. 
 	
-	\par A coordenação de canal pela subcamada MAC garante que os pacotes serão transmitidos no canal sem fio pretendido e permite a troca de dados entre dispositivos com operações alternadas e concorrentes em múltiplos canais. Esta última característica permite que dispositivos WAVE com uma única camada física utilizem o acesso alternado na coordenação de canal. Como exemplo, num dispositivo WAVE de única camada física os tráfegos de alta prioridade e de gerenciamento operariam no canal de controle em intervalo de tempo 0 enquanto o tráfego geral de camadas superiores atuaria no canal de serviço durante intervalo de tempo 1. 
-	
-	\par Os dispositivos WAVE de várias camadas físicas podem utilizar o acesso contínuo na utilização de canal de controle ou canal de serviço, sem necessitar de alguma coordenação. Também é possível que haja acesso alternado entre os canais de serviço. A coordenação de canais é mostrada na \autoref{fig_24}.
-	
-	\begin{description}
-        \item Exemplos:
-    \end{description}
-    
-	\begin{description}
-		\item[(A)] Um dispositivo WAVE A pode acessar o canal de controle em intervalo de tempo 0 e um canal de serviço em intervalo de tempo 1;
-		\item[(B)] Um dispositivo WAVE B pode acessar um canal de serviço em intervalo de tempo 0 e o canal de controle em intervalo de tempo 1;
-		\item[(C)] Este mesmo dispositivo WAVE B em algum tempo depois pode acessar um canal de serviço em intervalo de tempo 0 e outro canal de serviço em intervalo de tempo 1.	
-	\end{description}
-	
-	%INSERIR Figura 24 Exemplos de acesso ao canal
-	\begin{figure} [H]
-		\centering
-		\includegraphics[scale=.5]{figuras/cap3/24ExemplosDeAcessoAoCanal}
-		\caption{\label{fig_24}Exemplos de Acesso ao Canal}
-	\end{figure}
-	
-	\par Esta alternação entre o CCH e SCH depende de um mecanismo de sincronização entre os dispositivos participantes, que é garantido pelo Serviço de Gerenciamento Sincronização multi-canal. Também é definido um período de guarda no início de cada intervalo de tempo com o objetivo de compensar os efeitos de comutação de rádio e imprecisões no sincronismo, como mostrado na \autoref{fig_25}.
+	\par Os dispositivos WAVE de várias camadas físicas podem utilizar um acesso contínuo na utilização de canal de controle ou canal de serviço, sem necessitar de alguma coordenação. Também é possível que haja acesso alternado entre os canais de serviço.
+
+	\par Esta alternância entre o CCH e SCH depende de um mecanismo de sincronização entre os dispositivos participantes, que é garantido pelo serviço de sincronização multi-canal tratado no plano de gerenciamento. Também é definido um período de guarda no início de cada intervalo de tempo com o objetivo de compensar os efeitos de comutação de rádio e imprecisões no sincronismo, como mostrado na \autoref{fig_25}.
 	
 	%INSERIR Figura 25 Intervalo de sincronismo e de guarda
 	\begin{figure} [H]
@@ -1213,21 +1198,17 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_25}Intervalo de Sincronismo e de Guarda}
 	\end{figure}
 	
-	\begin{description}
-        \item[Roteamento de canal]
-    \end{description}
-	
-	\par A subcamada MAC lida com dados de entrada e saída das camadas superiores, roteando os pacotes de dados de uma camada superior até o canal designado e configurando os parâmetros para transmissões sem fio WAVE. Do lado do destinatário, a subcamada MAC garante o roteamento de pacotes para o protocolo de camada superior correto.
-	
-	\par O protocolo WSMP define o canal, a potência de transmissão e a taxa de transferência a cada mensagem. Quando dados WSMP são recebidos na subcamada MAC, os pacotes são direcionados à filas para a transmissão de acordo com o \textbf{identificador do canal} e a \textbf{prioridade}. Logo após, a subcamada MAC deve transmitir o pacote dentro do intervalo de tempo indicado, com taxa de transferência e potência de transmissão determinadas.
-	
-	\par Datagramas IP, entretanto, têm os parâmetros canal, potência de transmissão e taxa de transferência armazenados no perfil do transmissor. Os pacotes IP são recebidos pela subcamada MAC e colocados em filas de acordo com o nível de prioridade para a transmissão no SCH. Utilizando os parâmetros estabelecidos no perfil do transmissor, os pacotes são enviados por meio da camada física caso a MLME delibere acesso.
+	\par O \textbf{serviço de roteamento de canal} na subcamada MAC lida com dados de entrada e saída das camadas superiores, roteando os pacotes de dados de uma camada superior até o canal designado e configurando os parâmetros para transmissões sem fio WAVE. Do lado do destinatário, a subcamada MAC garante o roteamento de pacotes para o protocolo de camada superior correto.
 
-	\newpage
-	
-	\begin{description}
-        \item[Prioridades de pacotes]
-    \end{description}
+	\par O protocolo WSMP define o canal, a potência de transmissão e a taxa de transferência a cada mensagem. Quando dados WSMP são recebidos na subcamada MAC, os pacotes são direcionados à filas para a transmissão de acordo com o \textbf{identificador do canal} e a \textbf{prioridade}. Logo após, a subcamada MAC deve transmitir o pacote dentro do intervalo de tempo indicado, com taxa de transferência e potência de transmissão determinadas.
+
+	\par Datagramas IPv6, entretanto, têm os parâmetros canal, potência de transmissão e taxa de transferência armazenados no perfil do transmissor. Os pacotes IPv6 são recebidos pela subcamada MAC e colocados em filas de acordo com o nível de prioridade para a transmissão no SCH. Utilizando os parâmetros estabelecidos no perfil do transmissor, os pacotes são enviados por meio da camada física caso a MLME delibere acesso.
+
+	\par O \textbf{serviço de priorização de pacotes} tratam do emprego de Qualidade de Serviço (\textit{Quality of Service} ou QoS) utilizando das técnicas EDCA (\textit{Enhanced Distributed Channel Access} ou Acesso ao Canal Distribuído Aprimorado).
+
+	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4).
+
+	\par A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA via anúncio de serviços WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
 
 	% INSERIR Figura 26 MAC (Multi-Canal)
 	\begin{figure} [H]
@@ -1236,68 +1217,57 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_26}MAC(Multi-Canal)}
 	\end{figure}
 	
-	\par Os padrões WAVE suportam Qualidade de Serviço (\textit{Quality of Service} ou QoS) nos pacotes aplicando as técnicas EDCA (\textit{Enhanced Distributed Channel Access} ou Acesso ao Canal Distribuído Aprimorado).
-	
-	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4). A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA via anúncio de serviços WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
-	
 	\subsection{Serviços do Plano de Gerenciamento}
 	
-	\par Em adição aos serviços de gerenciamento MLME mencionados no padrão 802.11 para redes sem fio em geral, o padrão WAVE IEEE 1609.4 adiciona características de acesso ao canal e sincronização de dispostivos WAVE em apoio à coordenação de canal, manutenção da MIB e reendereçamento.
-		
-	\newpage
+	\par Além dos serviços de gerenciamento MLME mencionados no padrão 802.11 para redes sem fio em geral, o padrão WAVE IEEE 1609.4 adiciona novos serviços necessários à tecnologia de redes veiculares. Os serviços oferecidos no plano de gerenciamento da subcamada MAC WAVE são:		
 	
-	\begin{description}
-        \item[Sincronização multi-canal]
-    \end{description} 
+	\begin{itemize}
+        \item Sincronização multi-canal
+        \item Acesso ao canal
+        \item Manutenção da Base de Gerenciamento de Informação (MIB)
+        \item Reenderaçamento
+        \item Outros Serviços IEEE 802.11
+    \end{itemize}
 	
-	\par A entidade da subcamada MAC(MLME) utiliza uma base de tempo comum que pode ser obtida localmente ou recebida via rádio para gerar uma função de sincronismo com objetivo de alinhar os intervalos de tempo entre os dispositivos WAVE comunicantes. A MLME gera quadros de anúncio de sincronismo para distribuição de informação de sincronismo e monitora os estes quadros recebidos.
+	\par O \textbf{serviço de sincronização multi-canal} provido pela entidade da subcamada MAC(MLME) utiliza uma base de tempo comum que pode ser obtida localmente ou recebida via rádio para gerar uma função de sincronismo com objetivo de alinhar os intervalos de tempo entre os dispositivos WAVE comunicantes. A MLME gera quadros de anúncio de sincronismo para distribuição de informação de sincronismo e monitora os estes quadros recebidos.
 	
 	\par A referência de tempo comum usada para o sincronismo multi-canal é o módulo 1 segundo da UTC, utilizado por muitos equipamentos GPS.
 	
-	\par Parâmetros como intervalo de guarda, tolerância de sincronização e tempo máximo de troca de canal são gerenciados pelo Serviço de Gerenciamento de Sincronização Multi-canal.
+	\par Parâmetros como intervalo de guarda, tolerância de sincronismo e tempo máximo de troca de canal são gerenciados pelo serviço de gerenciamento de sincronização multi-canal.
 	
+	\par O \textbf{serviço de acesso ao canal} controla o acesso aos canais de rádio específicos em suporte às requisições recebidas da entidade de gerenciamento WAVE (WME ou WAVE \textit{Manager Entity}). Os tipos de acesso a canal, evidenciados pela \autoref{fig_24}, incluem acesso contínuo, acesso alternado e acesso imediato.
 	
-	\begin{description}
-        \item[Acesso ao canal]
-    \end{description}
-	
-	\par A MLME controla o acesso aos canais de rádio específicos em suporte às requisições recebidas da entidade de gerenciamento WAVE (WME ou WAVE \textit{Manager Entity}). Opções de acesso a canal incluem acesso contínuo, acesso alternado e acesso imediato, evidenciado pela \autoref{fig_24}.
+	%INSERIR Figura 24 Exemplos de acesso ao canal
+	\begin{figure} [H]
+		\centering
+		\includegraphics[scale=.5]{figuras/cap3/24ExemplosDeAcessoAoCanal}
+		\caption{\label{fig_24}Tipos de Acesso ao Canal}
+	\end{figure}
 	
 	\begin{description}
 		
 		\item[(A)] Acesso contínuo: o canal designado fica disponível por duração indefinida;
 		\begin{itemize}
-			\item Um dispositivo WAVE configurado para operar em um único canal de serviço ou de controle.
+			\item Exemplo: Um dispositivo WAVE configurado para operar em um único canal de serviço ou de controle.
 		\end{itemize}
 		
-		\item[(B)] Acesso alternado: o acesso é alternado entre os canais de serviço ou entre o canal de controle e um canal de serviço;
+		\item[(B)] Acesso alternado: o acesso é alternado entre canais de serviço ou entre o canal de controle e um canal de serviço;
 		\begin{itemize}
-			\item Um dispositivo WAVE configurado para monitorar anúncios de serviços WAVE (WSAs) no canal de controle. Quando o canal de controle recebe um WSA de seu interesse, o dispositivo o alterna para o canal de serviço durante do intervalo de tempo 1 para participar da aplicação de interesse, retornando ao canal de controle durante intervalo de tempo 0 para monitoramento de outros WSAs ou qualquer outra atividade. Alternativamente, um dispositivo pode ser configurado para alternar entre canais de serviço também.
+			\item Exemplo: Um dispositivo WAVE configurado para monitorar anúncios de serviços WAVE (WSAs) no canal de controle. Quando o canal de controle recebe um WSA de seu interesse, o dispositivo o alterna para o canal de serviço durante a faixa de tempo 1 para participar da aplicação de interesse, retornando ao canal de controle durante a faixa de tempo 0 para monitoramento de outros WSAs ou qualquer outra atividade. Alternativamente, um dispositivo pode ser configurado para alternar entre canais de serviço também.
 		\end{itemize}
 		
-		\item[(C)] Acesso imeditado: o acesso é mudado por tempo determinado ou indefinido;
+		\item[(C)] Acesso imeditado: o acesso é repentinamente mudado por tempo determinado ou indefinido;
 		\begin{itemize}
-			\item Um dispositivo é configurado para monitorar um canal de controle. Ao receber um WSA com uma aplicação de interesse, o dispositivo alterna imediatamente para um canal de serviço por um tempo específico a fim de completar determinada atividade. Ao término desta atividade, o dispositivo retorna ao primeiro canal.
+			\item Exemplo: Um dispositivo é configurado para monitorar um canal de controle. Ao receber um WSA com uma aplicação de interesse, o dispositivo alterna imediatamente para um canal de serviço por um tempo específico até completar determinada atividade. Ao término desta atividade, o dispositivo retorna ao canal de controle.
 		\end{itemize}		
 	\end{description}
 	
-	\begin{description}
-        \item[Outros serviços IEEE 802.11]
-    \end{description}
+	\par O \textbf{serviço de manutenção da base de gerenciamento de informação} exercido pela MLME mantém uma MIB contendo informações de configuração e status dos canais.
 	
-	\par A MLME permite outros serviços 802.11 que podem ser chamados por cada canal independentemente.
-	
-	\begin{description}
-        \item[Manutenção da Base de Gerenciamento de Informação (MIB)]
-    \end{description}
-	
-	\par A MLME mantém uma Base de Gerenciamento de Informação contendo informações de configuração e status.
-	
-	\begin{description}
-        \item[Reendereçamento]
-    \end{description}
-	
-	\par A MLME permite alterações dinâmicas no endereço MAC a fim de suportar pseudonimato. O pseudonimato é uma propriedade  em que identidades e padrões de comportamento de entidades não podem ser deduzidos pelo tráfego de rede, sendo apenas observáveis por partes propriamente autorizadas.
+	\par O \textbf{serviço de reendereçamento} realizado pela MLME permite alterações dinâmicas no endereço MAC a fim de suportar o \
+	textbf{pseudonimato}. O pseudonimato é uma propriedade  em que identidades e padrões de comportamento de entidades não podem ser deduzidos pelo tráfego de rede, sendo apenas observáveis por partes propriamente autorizadas.
+
+	\par A MLME permite \textbf{outros serviços} inclusos no padrão IEEE 802.11 possam chamados por cada canal independentemente.
 	
 	\section{\label{sec:llc}Subcamada LLC}
 	
@@ -1378,7 +1348,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_29}Composição de uma WSM}
 	\end{figure}
 	
-	\par Conforme mostra a \autoref{fig_29}, o cabeçalho do protocolo WSMP-N (camada de rede do protocolo WSMP) é composto por um campo \textbf{subtipo} de 4 bits, um \textbf{indicador de campos opcionais WSMP-N} de 1 bit, um campo de \textbf{versão do WSMP} de 3 bits, e um campo de identificação para o protocolo de transporte (\textbf{TPID}) de 8 bits. Existe também o campo opcional chamado de \textbf{informações extensíveis do elemento WAVE}.
+	\par Conforme mostra a \autoref{fig_29}, o cabeçalho do protocolo WSMP-N (camada de rede do protocolo WSMP) é composto por um campo \textbf{subtipo} de 4 bits, um \textbf{indicador de campos opcionais WSMP-N} de 1 bit, um campo de \textbf{versão do WSMP} de 3 bits, e um campo de identificação para o protocolo de transporte (\textbf{TPID}) de 8 bits. Há também um campo opcional chamado de \textbf{informações extensíveis do elemento WAVE}.
 	
 	%INSERIR Figura 30 Composição de uma WSM
 	\begin{figure} [H]
@@ -1598,7 +1568,7 @@ brazil,				% o último idioma é o principal do documento
 	\chapter{Abordagem Avaliativas}
 	\label{chap:Abor_Aval}
 	
-	\par Toda e qualquer tecnologia precisa ser testada utilizando abordagens avaliativas antes de entrar em caráter de produção no mercado. Abordagens avaliativas são métodos distintos de pensar, desenhar e conduzir atividades de avaliação. A utilização de abordagens avaliativas na ciência cresceu consideravelmente a partir de um movimento internacional encorajando práticas científicas baseadas em evidências. A abordagem avaliativa empregada em determinada tecnologia é fundamental para antecipar possíveis inconvenientes ou conflitos antes desta entrar em fase de produção.
+	\par Toda e qualquer tecnologia precisa ser testada utilizando-se de alguma abordagem de avaliação antes de entrar em caráter de produção no mercado. Abordagens avaliativas são métodos distintos de pensar, desenhar e conduzir atividades de avaliação. A utilização de abordagens avaliativas é de considerável importância para o método científico. Quando uma abordagem é corretamente empregada em determinada tecnologia, esta se torna fundamental para antecipar possíveis inconvenientes ou conflitos existentes no recurso tecnológico antes do mesmo entrar em produção.
 	
 	\par Para a implementação de tecnologias em redes veiculares, há um conjunto de abordagens avaliativas que podem ser empregadas que vão desde coletas da análise conjuntos de dados, passando por simulações até experimentos no mundo real. 
 	
@@ -2203,7 +2173,7 @@ brazil,				% o último idioma é o principal do documento
 	\par Nota-se que a utilização da aplicação de emergência e das unidades de acostamento públicas no cenário proposto fez o veículo de resgate manter uma velocidade média maior em relação ao experimentos 1, reduzindo o tempo total de trajeto do veículo de resgate em 6,17\% em relação à medição base.
 	
 	
-	\subsection{Experimento 3: Aplicação de Emergência na região de Ipanema-\\Copacabana}
+	\subsection{Experimento 3: Aplicação de Emergência em região existente}
 	
 	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site do \textit{OpenStreetMap}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro,  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
 	
@@ -2346,9 +2316,9 @@ brazil,				% o último idioma é o principal do documento
 
 	\section{Resultados e Discussões}
 
-	\par Podemos perceber uma melhora nos tempos totais de trajeto do veículo de resgate em todos os cenários. A performance da aplicação de emergência poderia trazer resultados ainda mais significativos caso algumas limitações do software de simulação de tráfego fossem minimizadas.
+	\par Podemos perceber uma melhora marginal nos tempos totais de trajeto do veículo de resgate em todos os cenários. Esta melhora marginal (valores entre 4,09 e 6,17\%) pode ser atribuída exclusivamente ao uso da aplicação de emergência desenvolvida para o estudo de caso. As estatísticas foram limitadas no seu escopo à características do software de simulação de tráfego que, se fossem minimizadas, acarretariam em números ainda mais significativos.
 	
-	\par No caso do software de simulação de tráfego SUMO, algumas destas limitações foram percebidas no curso deste estudo de caso, como por exemplo:
+	\par As limitações percebidas no software de simulação de tráfego SUMO foram enumeradas:
 	
 	\begin{enumerate}
 		\item Não é permitida a ultrapassagem de semáforos fechados por quaisquer grupos de veículos. Esta situação, possível na vida real, é utilizada por alguns veículos de segurança pública caso estes estejam em serviço;
@@ -2405,6 +2375,8 @@ brazil,				% o último idioma é o principal do documento
 
 	\par No estudo de caso foi apresentado que uma aplicação de emergência alinhada à tecnologia Car2X tem o potencial de facilitar o trajeto de veículos de segurança pública. Estes veículos passam a contar com uma nova forma de sinalização de sua presença, vencendo barreiras visuais e sonoras por intermédio da replicação de suas mensagens via Rede Veicular.
 
+	\par Algumas limitações foram notadas e listadas quanto ao software de simulação de tráfego urbano. Estas limitações nos requisitos do software cercearam as estatísticas coletadas no estudo de caso a uma melhora marginal no tempo total de trajeto do veículo de segurança pública. Ainda assim, o estudo de caso revelou em todos os experimentos de simulação que o tempo total de trajeto de veículos de segurança pública foi reduzido devido a utilização de aplicação de emergência empregada em redes veiculares.
+
 % ----------------------------------------------------------
 
 	\chapter*[Trabalhos Futuros]{Trabalhos Futuros}
@@ -2425,6 +2397,10 @@ brazil,				% o último idioma é o principal do documento
 	\par Radares poderiam ser equipados com RSUs para um registro mais confiável dos veículos que não estiverem em conformidade com as leis de trânsito, enviando a multa diretamente para o dono do veículo transgressor sem depender apenas de fotos, que por vezes não são suficientes.
 
 	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminuição de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja por meio da limitação do tempo de vida dos pacotes ou com a utilização de quadros de gerenciamento para o envio \textit{multicast}.
+
+	\par Provas de conceito utilizando de idéias introduzidas no código da aplicação de emergência poderiam ser testadas com o porte de equipamentos de redes veiculares desenvolvidos pelo mercado até o presente momento. O que poderia corroborar ou até mesmo aperfeiçoar os requisitos e métricas da aplicação de emergência.
+
+	\par A partir de novas pesquisas realizadas no Brasil, as agências reguladoras e empresas de tecnologia nacionais voltariam sua atenção ao tema proposto e poderiam estabelecer marcos regulatórios e estratégicos para a difusão das redes veiculares no mercado nacional.
 
 % ----------------------------------------------------------
 	% ELEMENTOS PÓS-TEXTUAIS
