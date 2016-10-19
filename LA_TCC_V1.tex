@@ -1126,20 +1126,20 @@ brazil,				% o último idioma é o principal do documento
 	\subsection{Tipos de Canais}
 	
 	\par Os padrões WAVE especificam duas tipos de canais de rádio. Os dispositivos Car2X que utilizam o padrão WAVE e que têm múltiplas camadas físicas (vários transmissores de rádio) poderão operar um canal de controle (CCH) e pelo menos um canal de serviço(SCH) ao mesmo tempo. Os dispositivos WAVE de apenas um rádio transmissor trabalham alternando entre o canal de controle e os canais de serviço. Para lidar com a limitação de um rádio transmissor, é exigido um sincronismo para que os dispositivos WAVE monitorem cada canal no seu intervalo de tempo específico.
-	
-	\par O canal de controle é reservado apenas para mensagens do protocolo WSMP e para troca de mensagens de gerenciamento do sistema, como as mensagens de anúncio de serviços WAVE(WSA). As mensagens do protocolo WSMP podem ser recebidas por qualquer dispositivo WAVE com o canal de controle "acordado". Como exemplo, um dispositivo WAVE pode solicitar informações de sincronismo entre rádios por meio de uma requisição broadcast utilizando o protocolo WSMP. O dispositivo WAVE receptor responderia com informações de sincronismo por meio de um quadro de gerenciamento.
-	
-	\par Os canais de serviço são destinados a operar as transferências de dados de aplicações  diversas, e também podem ser coordenados via mensagens de anúncio de serviço WAVE. Os protocolos WSMP e IPv6 podem ser usados para transmitir informações nos canais de serviço. 
-	
+
+	\par O canal de controle é reservado apenas para mensagens do protocolo WSMP e para troca de mensagens de gerenciamento do sistema, como os anúncios de serviços WAVE (WSAs). As mensagens do protocolo WSMP podem ser recebidas por qualquer dispositivo WAVE com o canal de controle "acordado". Como exemplo, um dispositivo WAVE pode solicitar informações de sincronismo entre rádios por meio de uma requisição broadcast utilizando o protocolo WSMP. O dispositivo WAVE receptor responderia com informações de sincronismo por meio de um quadro de gerenciamento.
+
+	\par Os canais de serviço são destinados a operar as transferências de dados de aplicações  diversas, e também podem ser coordenados via anúncios de serviços WAVE. Os protocolos WSMP e IPv6 podem ser usados para transmitir informações nos canais de serviço. 
+
 	\par Para um melhor entendimento, iremos separar os diferentes tipos serviços WAVE em dois grupos: serviços “anunciados” e serviços “não anunciados”. 
 	
 	\par Os serviços WAVE “não anunciados” estão geralmente ligados à segurança pública e têm canais fixos. Os serviços “não anunciados” forçam os dispositivos WAVE recebedores a mudar para o canal proposto imediatamente após o envio de uma mensagem de gerenciamento WAVE.
 	
 	\par Como exemplo, um veículo de segurança pública pode enviar uma mensagem do protocolo WSMP contendo informações de emergência no canal de serviço 172 (canal de segurança pública nos EUA) para que os veículos em seu percurso liberem passagem. Todos os veículos no alcance da unidade de bordo emissora processariam a mensagem imediatamente, propagando a mesma em seguida por meio do canal de serviço 172.
 	
-	\par Nos serviços "anunciados", um dispositivo WAVE assume o papel de provedor. Este provedor transmite mensagens de anúncio WAVE mediante o canal de controle identificando e descrevendo o serviço e o canal a serem utilizados por este. Os dispositivos WAVE que decidirem se associar ao provedor sintonizam suas antenas no canal proposto pela WSA, se tornando usuários deste provedor. Assim feito, o  dispositivo provedor e os usuários poderão trocar informações associadas com o serviço oferecido. 
+	\par Nos serviços "anunciados", um dispositivo WAVE assume o papel de provedor. Este provedor transmite anúncios de serviços WAVE (WSAs) mediante o canal de controle identificando e descrevendo o serviço e o canal a serem utilizados por este. Os dispositivos WAVE que decidirem se associar ao provedor sintonizam suas antenas no canal proposto pelo WSA, se tornando usuários deste provedor. Assim feito, o  dispositivo provedor e os usuários poderão trocar informações associadas com o serviço oferecido. 
 	
-	\par Como exemplo, a \autoref{fig_22} representa um cenário no qual há 3 unidades de acostamento, todas instaladas em postes de iluminação ao longo da rodovia. Neste cenário, cada unidade de acostamento está transmitindo anúncios de serviço WAVE via canal de controle contendo a Identificação do Serviço com o valor 0x04, atribuído ao serviço de aconselhamento de tráfego para viajantes. As unidades de acostamento enviam as mensagens de anúncio (WSAs) na forma de broadcast contendo avisos sobre o tráfego local em um canal proposto e respondem a requisições para informações adicionais de tráfego usando IPv6. Quando os dispositivos usuários entrarem na área de cobertura das unidades de acostamento, estes irão receber as WSAs e avaliarão se o valor da identificação de serviço é desejado. Os dispositivos usuários que têm interesse em aconselhamento de tráfego (neste cenário representados pelo caminhão verde e pelo carro vermelho) aceitarão este serviço e sintonizarão no canal especificado. Os dispositivos usuários que não têm interesse neste serviço irão simplesmente descartar os pacotes recebidos.
+	\par Como exemplo, a \autoref{fig_22} representa um cenário no qual há 3 unidades de acostamento, todas instaladas em postes de iluminação ao longo da rodovia. Neste cenário, cada unidade de acostamento está transmitindo WSAs via canal de controle contendo a Identificação do Serviço com o valor 0x04, atribuído ao serviço de aconselhamento de tráfego para viajantes. As unidades de acostamento enviam WSAs na forma de broadcast contendo avisos sobre o tráfego local em um canal proposto e respondem a requisições para informações adicionais de tráfego usando IPv6. Quando os dispositivos usuários entrarem na área de cobertura das unidades de acostamento, estes irão receber os WSAs e avaliarão se o valor da identificação de serviço é desejado. Os dispositivos usuários que têm interesse em aconselhamento de tráfego (neste cenário representados pelo caminhão verde e pelo carro vermelho) aceitarão este serviço e sintonizarão no canal especificado. Os dispositivos usuários que não têm interesse neste serviço irão simplesmente descartar os pacotes recebidos.
 	
 	%INSERIR Figura 22 Tipos de Canais - SCH
 	\begin{figure} [H]
@@ -1238,7 +1238,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Os padrões WAVE suportam Qualidade de Serviço (\textit{Quality of Service} ou QoS) nos pacotes aplicando as técnicas EDCA (\textit{Enhanced Distributed Channel Access} ou Acesso ao Canal Distribuído Aprimorado).
 	
-	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4). A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA via anúncio de serviço WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
+	\par Quando um pacote WSMP ou IPv6 chega na subcamada MAC, tendo o roteamento do canal apropriadamente finalizado, esta deverá “enfileirar” os dados de acordo com a categoria de acesso indicada (valores entre 1 e 4). A \autoref{fig_26} ilustra as filas e o roteamento do canal. O mapeamento dos pacotes atribuindo o indicador de prioridade é tratado pelo padrão IEEE 802.11. Os Provedores de Serviço WAVE podem opcionalmente anunciar parâmetros EDCA via anúncio de serviços WAVE. Caso nenhum parâmetro EDCA seja especificado, o EDCA padrão é ativado.
 	
 	\subsection{Serviços do Plano de Gerenciamento}
 	
@@ -1272,12 +1272,12 @@ brazil,				% o último idioma é o principal do documento
 		
 		\item[(B)] Acesso alternado: o acesso é alternado entre os canais de serviço ou entre o canal de controle e um canal de serviço;
 		\begin{itemize}
-			\item Um dispositivo WAVE configurado para monitorar anúncios de serviço no canal de controle. Quando o canal de controle recebe um anúncio de serviço WAVE de seu interesse, o dispositivo o alterna para o canal de serviço durante do intervalo de tempo 1 para participar da aplicação de interesse, retornando ao canal de controle durante intervalo de tempo 0 para monitoramento de outras WSAs ou qualquer outra atividade. Alternativamente, um dispositivo pode ser configurado para alternar entre canais de serviço também.
+			\item Um dispositivo WAVE configurado para monitorar anúncios de serviços WAVE (WSAs) no canal de controle. Quando o canal de controle recebe um WSA de seu interesse, o dispositivo o alterna para o canal de serviço durante do intervalo de tempo 1 para participar da aplicação de interesse, retornando ao canal de controle durante intervalo de tempo 0 para monitoramento de outros WSAs ou qualquer outra atividade. Alternativamente, um dispositivo pode ser configurado para alternar entre canais de serviço também.
 		\end{itemize}
 		
 		\item[(C)] Acesso imeditado: o acesso é mudado por tempo determinado ou indefinido;
 		\begin{itemize}
-			\item Um dispositivo é configurado para monitorar um canal de controle. Ao receber uma WSA com uma aplicação de interesse, o dispositivo alterna imediatamente para um canal de serviço por um tempo específico a fim de completar determinada atividade. Ao término desta atividade, o dispositivo retorna ao primeiro canal.
+			\item Um dispositivo é configurado para monitorar um canal de controle. Ao receber um WSA com uma aplicação de interesse, o dispositivo alterna imediatamente para um canal de serviço por um tempo específico a fim de completar determinada atividade. Ao término desta atividade, o dispositivo retorna ao primeiro canal.
 		\end{itemize}		
 	\end{description}
 	
@@ -1419,35 +1419,35 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_32}Diferentes formatos do Cabeçalho WSMP-T de acordo com TPID}
 	\end{figure}
 
-	\subsubsection{Mensagem de Anúncio WAVE}
+	\subsubsection{Anúncio de Serviços WAVE}
 	
-	\par Um anúncio de serviço WAVE (WSA) é a compressão das informações de um serviço na forma de mensagens. Conforme a \autoref{fig_33}, uma WSA formatada (denominada \textit{Ieee1609Dot2Data} pelo padrão WAVE) é inserida no campo \textbf{dados WSM} e enviada pelo dispositivo WAVE com o valor do \textbf{PSID} 0x87, atribuído para anúncios de serviços WAVE.
+	\par Um anúncio de serviço WAVE, ou WSA, é a compressão das informações de um serviço na forma de mensagens. Conforme a \autoref{fig_33}, um WSA formatada (denominada \textit{Ieee1609Dot2Data} pelo padrão WAVE) é inserida no campo \textbf{dados WSM} e enviada pelo dispositivo WAVE com o valor do \textbf{PSID} 0x87, atribuído para anúncios de serviços WAVE.
 	
-	\par Esta mensagem formatada poderá ser uma WSA segura ou não segura.
+	\par Esta mensagem formatada poderá ser um WSA seguro ou não seguro.
 		
 	%INSERIR Figura 33 Modelos de uma WSA
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.4]{figuras/cap3/33ModelosWSA}
-		\caption{\label{fig_33}Modelos de uma WSA}
+		\caption{\label{fig_33}Modelos de um WSA}
 	\end{figure}
 	
-	\par Não há nenhuma especificação para mensagens WSA não seguras, enquanto WSA seguras podem atender a duas especificações diferentes: mensagens assinadas ou mensagens encriptadas.
+	\par Não há nenhuma especificação para WSAs não seguros, enquanto WSA seguros podem atender a duas especificações diferentes: mensagens assinadas ou mensagens encriptadas.
 	
-	\par O padrão IEEE 1609.11 propõe uma aplicação de coleta eletrônica de taxas, onde as trocas de informações para o pagamento de pedágios devem ser encriptadas com intuito de garantir a privacidade dos dados do cartão do motorista. Já mensagens assinadas são utilizadas para garantir que determinado serviço anunciado pertença a um provedor confiável. Conforme proposto por Whyte et al(2015) toda anúncio de serviço WAVE deveria ser assinado, garantindo que punições sejam aplicadas aos provedores que divulgam WSAs maliciosas.
+	\par O padrão IEEE 1609.11 propõe uma aplicação de coleta eletrônica de taxas, onde as trocas de informações para o pagamento de pedágios devem ser encriptadas com intuito de garantir a privacidade dos dados do cartão do motorista. Já mensagens assinadas são utilizadas para garantir que determinado serviço anunciado pertença a um provedor confiável. Conforme proposto por Whyte et al(2015) todo anúncio de serviços WAVE deveria ser assinado, garantindo que punições sejam aplicadas aos provedores que divulgam WSAs maliciosos.
 	
 	\par Mensagens assinadas podem contemplar os serviços de: autenticidade, indicando que a mensagem realmente foi enviada pela origem indicada; autorização, assegurando que o dispositivo de origem tem acesso aos privilégios requisitados; e integridade, certificando que qualquer mudança na mensagem será detectável. Mensagens Encriptadas devem ser confidenciais, garantindo que apenas os dispositivos determinados terão acesso ao conteúdo da mensagem.
 	
-	\par É possível configurar os dispositivos WAVE para receberem apenas anúncios de serviços assinados, de forma similar ao que acontece com a escolha de \textbf{PSIDs} aceitos pelo dispositivo.
+	\par É possível configurar os dispositivos WAVE para receberem apenas anúncios de serviços WAVE assinados, de forma similar ao que acontece com a escolha de \textbf{PSIDs} aceitos pelo dispositivo.
 	
 	%INSERIR Figura 34 Cabeçalho WSA
 	\begin{figure} [H]
 		\centering
 		\includegraphics[scale=.3]{figuras/cap3/34CabecalhoWSA}
-		\caption{\label{fig_34}Cabeçalho de WSA}
+		\caption{\label{fig_34}Cabeçalho WSA}
 	\end{figure}
 	
-	\par A \autoref{fig_34} exibe o cabeçalho de uma anúncio de serviço WAVE. Pode-se perceber a existência de diversos campos, entretanto, não é de escopo deste trabalho entrar em detalhes nos informações que compõe uma WSA.
+	\par A \autoref{fig_34} exibe o cabeçalho de uma anúncio de serviços WAVE. Pode-se perceber a existência de diversos campos, entretanto, não é de escopo deste trabalho entrar em detalhes nos informações que compõe um WSA.
 	
 	\subsubsection{Transmissão e recepção de mensagens curtas WAVE}
 	\label{subsubsec:TransRecWSM}
@@ -1565,9 +1565,9 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_39}Aplicação de pedágio}
 	\end{figure}
 	
-	\par A antena no CCH também envia Mensagens de Anúncio que divulgam a presença da praça de pedágio no percurso e entregam os parâmetros do serviço como o canal, método de acesso ao canal, PSID e demais parâmetros.
+	\par A antena no CCH também envia anúncio de serviços WAVE (WSA) que divulgam a presença da praça de pedágio no percurso e entregam os parâmetros do serviço como o canal, método de acesso ao canal, PSID e demais parâmetros.
 	
-	\par Quando uma unidade móvel (OBU) recebe o anúncio de um Serviço de Coleta Eletrônica de Taxas, a entidade de gerenciamento WAVE (WME) troca para o canal de serviço (SCH) e método de acesso descritos pelo anúncio, que no exemplo é respectivamente SCH 182 com acesso contínuo. Informações da aplicação na \autoref{tab_4}.
+	\par Quando uma unidade móvel (OBU) recebe o WSA de um Serviço de Coleta Eletrônica de Taxas, a entidade de gerenciamento WAVE (WME) troca para o canal de serviço (SCH) e método de acesso descritos pelo WSA, que no exemplo é respectivamente SCH 182 com acesso contínuo. Informações da aplicação na \autoref{tab_4}.
 	
 	\par As duas antenas restantes se responsabilizam pelo SCH a fim de executar a troca de mensagens com OBUs na área de cobertura. Logo, as camadas de aplicação da RSU e das OBUs dentro da área de cobertura trocam informações de pagamento.
 	
@@ -1579,11 +1579,11 @@ brazil,				% o último idioma é o principal do documento
 		\begin{tabular}{|c|c|p{6cm}|} \hline
 			\textbf{Parâmetro} &	\textbf{Valor} &	\multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
 			Endereço MAC Destinatário & broadcast & WSA é um broadcast \\ \hline
-			Tipo WSA & não segura & WSA não assinada \\ \hline
+			Tipo WSA & não seguro & WSA não assinado \\ \hline
 			PSID & 0x01 & Coleta eletrônica de taxas \\ \hline
 			Número do Canal & 182 &	Identifica o número do canal a ser utilizado pelo serviço \\ \hline
 			Tipo de Acesso ao Canal & contínuo & Usuário deve trocar para SCH imediatamente \\ \hline
-			Taxa de repetição & 250 &	WSA transmitida 5 vezes a cada 100ms \\ \hline
+			Taxa de repetição & 250 &	WSA transmitido 5 vezes a cada 100ms \\ \hline
 			Serviço de IP & falso & Utiliza-se WSMP \\ \hline
 		\end{tabular}	
 			\caption{\label{tab_4}Dados da aplicação de pedágio}
@@ -2636,7 +2636,7 @@ brazil,				% o último idioma é o principal do documento
 		
 		\begin{itemize}
 			
-			\item Conforme o padrão WAVE de Serviços de Rede (IEEE 1609.3), um provedor de serviço identifica os anúncios de serviço “divulgados” pelos valores PSID contidos nas mensagens WSM transmitidas.
+			\item Conforme o padrão WAVE de Serviços de Rede (IEEE 1609.3), um provedor de serviço identifica os anúncios de serviços WAVE pelos valores PSID contidos nas mensagens WSM transmitidas.
 			\item Conforme o padrão WAVE de Serviços de Rede (IEEE 1609.3), o protocolo WSMP entrega conteúdo de mensagens WSM para entidades de camadas superiores baseado no valor PSID estabelecido pelo emissário no cabeçalho da mensagem.
 			\item Conforme o padrão WAVE para Serviços de Segurança (IEEE 1609.2), um certificado de segurança lista o(s) valor(es) PSID identificando áreas de aplicação onde um emissário é autorizado a gerar unidades de dados de protocolo seguros e digitalmente assinados.
 			
