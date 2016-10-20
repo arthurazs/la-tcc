@@ -608,11 +608,11 @@ brazil,				% o último idioma é o principal do documento
 
 	\subsection{Modelo OSI}
 	
-	\par No começo dos anos 80, diversas empresas perceberam que deveriam sair do modelo proprietário dos sistemas de rede para resolver problemas de incompatibilidade e falta de comunicação. O modelo de referência OSI foi o primeiro modelo criado para redes de comunicação e teve, à época, o objetivo de ajudar estas organizações a criar redes que pudessem ser compatíveis e interoperáveis umas com as outras.
+	\par No começo dos anos 80, Forouzan (2007) reporta que diversas empresas perceberam que deveriam sair do modelo proprietário dos sistemas de rede para resolver problemas de incompatibilidade e falta de comunicação. O modelo de referência OSI foi o primeiro modelo criado para redes de comunicação e teve, à época, o objetivo de ajudar estas organizações a criar redes que pudessem ser compatíveis e interoperáveis umas com as outras.
 	
 	\par O modelo OSI foi liberado em 1984 contendo um conjunto de padrões que garantiram maior compatibilidade e operabilidade entre os vários tipos de tecnologias de rede produzidos por empresas ao redor do mundo. Apesar de outros modelos terem existido, o modelo de referência OSI é considerado a melhor ferramenta disponível para o envio e recebimento de dados em uma rede.
 	
-	\par O Modelo OSI foi dividido em 7 níveis que se inter-relacionam. Foi feito desta maneira para facilitar o entendimento de como a informação viaja através de uma rede. Cada nível ilustra uma função particular da rede. Uma camada conta com a próxima camada inferior para realizar funções mais primitivas e ocultar os detalhes destas funções. Para exemplificar, o modelo OSI descreve como os dados trafegam de uma aplicação através de um meio de rede até uma aplicação localizada em outro computador, mesmo que o emissor e o receptor estejam utilizando meios de rede diferentes. A \autoref{fig_1} apresenta a estrutura do modelo, composto de sete camadas ordenadas.
+	\par Tanenbaum \& Wetherall (2011) citam que o Modelo OSI foi dividido em 7 níveis que se inter-relacionam. Foi feito desta maneira para facilitar o entendimento de como a informação viaja através de uma rede. Cada nível ilustra uma função particular da rede. Uma camada conta com a próxima camada inferior para realizar funções mais primitivas e ocultar os detalhes destas funções. Para exemplificar, o modelo OSI descreve como os dados trafegam de uma aplicação através de um meio de rede até uma aplicação localizada em outro computador, mesmo que o emissor e o receptor estejam utilizando meios de rede diferentes. A \autoref{fig_1} apresenta a estrutura do modelo, composto de sete camadas ordenadas.
 	
 	% INSERIR FIGURA Modelo OSI
 	\begin{figure} [H]
@@ -621,7 +621,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_1}Modelo OSI}
 	\end{figure}
 		
-	\par Cada camada OSI contém um conjunto de funções executadas por programas para fazer os dados viajarem de uma origem até o destino de uma rede.
+	\par Cada camada OSI contém um conjunto de funções executadas por programas para fazer os dados viajarem de uma origem até o destino de uma rede. Tanenbaum \& Wetherall (2011) discorrem sobre as camadas de maneira detalhada:
 	
 	\par A camada de aplicação é a mais próxima do usuário e provê serviços de rede para as aplicações. Esta, diferente dos outros níveis do modelo, não oferece serviços para outras camadas OSI superiores. Entretanto, realiza ajustes em procedimentos de recuperação de erros e no controle da integridade dos dados.
 	
@@ -643,7 +643,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Embora o modelo de referência OSI seja reconhecido mundialmente, há um outro padrão que tem uma visão histórica e sobremaneira técnica da Internet: a pilha de protocolos TCP/IP.
 	
-	\par A pilha de protocolos TCP/IP tem quatro camadas: Aplicação, Transporte, Internet e Acesso à Rede. Apesar de algumas camadas do modelo TCP/IP serem homônimas de algumas do modelo OSI, estas têm diferentes funções em cada modelo. A \autoref{fig_2} compara as camadas do modelo OSI e TCP/IP.
+	\par Forouzan (2007) desdobra a pilha de protocolos TCP/IP em quatro camadas: Aplicação, Transporte, Internet e Acesso à Rede. Apesar de algumas camadas do modelo TCP/IP serem homônimas de algumas do modelo OSI, estas têm diferentes funções em cada modelo. A \autoref{fig_2} compara as camadas do modelo OSI e TCP/IP.
 	
 	% INSERIR IMAGEM Modelo OSI e TCP/IP	
 	\begin{figure} [H]
@@ -662,7 +662,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Encapsulamento de dados}
 	
-	\par Todas as comunicações em uma rede iniciam em uma origem e são enviadas a um destino. Esta seção explica como o processo de transmissão de dados funciona em redes.
+	\par O conceito de encapsulamento é tratado por Forouzan (2007) e descreve o processo de trâmite da informação em uma rede iniciando em uma origem e enviada a um destino. Esta seção explica como o processo de transmissão de dados funciona em redes. 
 	
 	\par O conjunto de informações enviado em uma rede é chamado de quadro ou pacotes de dados. Se um computador deseja enviar dados para outro computador, os dados devem primeiro ser empacotados em um processo chamado encapsulamento. O encapsulamento “embrulha” os dados com informações necessárias do protocolo antes do envio do pacote na rede. Na medida em que os dados se movem da camada de aplicação até a camada física do modelo OSI, cada camada adiciona um cabeçalho (e um rodapé se for apropriado) aos dados antes da passagem para camada de baixo. 
 	
@@ -712,7 +712,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{\textit{Unicast}, \textit{Multicast} e Broadcast}
 	
-	\par Existem três diferentes formas de compartilhamento de mensagens, chamados de \textit{Unicast}, \textit{Multicast} e Broadcast. Estes descrevem técnicas específicas para o envio da informação de acordo com cada possível cenário.
+	\par Existem três diferentes formas de compartilhamento de mensagens, chamados de \textit{Unicast}, \textit{Multicast} e Broadcast. Forouzan (2007) e Tanenbaum \& Wetherall (2011) descrevem técnicas específicas para o envio da informação de acordo com cada possível cenário.
 	
 	\par \textit{Unicast} (\autoref{fig_5}) é o termo utilizado para descrever a comunicação onde uma mensagem é enviada de um ponto à outro. Neste caso, existe apenas um emissor e um destinatário por mensagem.
 	
@@ -743,27 +743,27 @@ brazil,				% o último idioma é o principal do documento
 
 	\section{Redes LAN}
 	
-	\par As redes de comunicação têm geralmente duas categorias primárias, que podem ser diferenciadas pelo seu tamanho e área de cobertura. Existem as redes locais (LAN ou \textit{Local Area Networks}) e as redes de longo alcance (WAN ou \textit{Wide Area Networks}). As redes metropolitanas (MAN ou \textit{Metropolitan Area Networks}) se encaixam como categoria entre as LANs e WANs.
+	\par Tanenbaum \& Wetherall (2011) agrupam as redes de computadores por categorias que as diferenciam de acordo com seu tamanho e área de cobertura. Existem as redes locais (LAN ou \textit{Local Area Networks}) e as redes de longo alcance (WAN ou \textit{Wide Area Networks}). As redes metropolitanas (MAN ou \textit{Metropolitan Area Networks}) se encaixam como categoria entre as LANs e WANs.
 	
 	\par As redes locais (LANs) são o tipo mais comum de redes, podendo ser encontradas na maioria das residências, empresas e instituições de ensino. É comumente privada e limitada a alguns poucos quilômetros.
 	
-	\par As LANs atuais são redes de alta velocidade (entre 100 Mbps a 10 Gbps), baixo índice de erros e cobrem uma área geográfica relativamente pequena (Tanenbaum, 2010). As LANs conectam estações de trabalho, periféricos, roteadores, \textit{switches} e outros dispositivos em um único prédio ou área geográfica. O padrão \textit{Ethernet} é de longe o tipo mais comum de LAN cabeada.
+	\par As LANs atuais são redes de alta velocidade (entre 100 Mbps a 10 Gbps), baixo índice de erros e cobrem uma área geográfica relativamente pequena (Tanenbaum \& Wetherall, 2011). As LANs conectam estações de trabalho, periféricos, roteadores, \textit{switches} e outros dispositivos em um único prédio ou área geográfica. O padrão \textit{Ethernet} é de longe o tipo mais comum de LAN cabeada.
 	
 	\section{Família de padrões IEEE 802}
 	
-	\par O conjunto de padrões que lida com as redes LAN é o IEEE 802. Este padrão trata sobretudo das camadas física e de enlace do modelo OSI aplicadas em redes locais.
+	\par O conjunto de padrões que lida com as redes LAN é o IEEE 802. Este padrão trata sobretudo das camadas física e de enlace do modelo OSI aplicadas em redes locais. 
 	
-	\par O IEEE por meio do padrão referido subdividiu a camada de enlace em duas subcamadas nomeadas de LLC (\textit{Logical Link Control} ou Controle de Enlace Lógico) e MAC (\textit{Media Access Control} ou Controle de Acesso ao Meio).
+	\par O IEEE por meio do padrão IEEE 802 subdividiu a camada de enlace em duas subcamadas nomeadas de LLC (\textit{Logical Link Control} ou Controle de Enlace Lógico) e MAC (\textit{Media Access Control} ou Controle de Acesso ao Meio).
 	
 	\par A subcamada de Controle de Enlace Lógico se localiza abaixo da camada de Rede do modelo OSI. Esta é responsável pelo processo de encapsulamento e desencapsulamento da camada de Enlace, lidando portanto com o controle de fluxo e erros. O cabeçalho criado pelo LLC é quem informa à camada de enlace o que fazer com o pacote quando esta recebe o \textit{frame}. Por exemplo, quando um \textit{host} recebe um \textit{frame}, este olha para o cabeçalho gerado pelo LLC para entender que o pacote está destinado ao protocolo IP na camada de Rede. A subcamada também é responsável pela multiplexação{\footnote{Combinação de dois ou mais canais de informação por apenas um meio de transmissão}} e decodificação de protocolos na camada de enlace.
 	
-	\par A subcamada MAC age como interface entre a camada LLC e a camada física da rede. O padrão IEEE 802.3 especifica os endereços MAC, que identificam unicamente múltiplos dispositivos da camada de enlace, como as placas de rede. A subcamada MAC mantém uma tabela de endereços MAC (ou endereços físicos) de dispositivos. Cada dispositivo deve ser um endereço MAC único para ingressar na rede.
+	\par O padrão IEEE 802 informa que a subcamada MAC age como interface entre a camada LLC e a camada física da rede. O padrão IEEE 802.3 especifica os endereços MAC, que identificam unicamente múltiplos dispositivos da camada de enlace, como as placas de rede. A subcamada MAC mantém uma tabela de endereços MAC (ou endereços físicos) de dispositivos. Cada dispositivo deve ser um endereço MAC único para ingressar na rede.
 	
 	\par A subcamada MAC é quem provê serviços de comunicação \textit{Unicast}, \textit{Multicast} e \textit {Broadcast}.
 	
 	\section{Família de padrões IEEE 802.11}
 	
-	\par As redes Locais utilizam-se de meio cabeado e sem fio para a transmissão de bits entre os dispositivos da rede. As redes sem fio, também conhecidas como Redes \textit{Wifi} ou \textit{Wireless} foram uma grande novidade tecnológica dos últimos anos. A partir de 1997, o IEEE começou a definir uma série de padrões de transmissão e codificação para redes sem fio na família de padrões 802.11, que é aninhada à família de padrões IEEE 802. Como base, o referido padrão trata de especificações ligadas às camadas de rede e de enlace do modelo OSI voltados para Redes sem fio de Área Local (WLAN ou \textit{Wireless Local Area Networks}).
+	\par As redes Locais utilizam-se de meios guiados e não guiados para a transmissão de bits entre os dispositivos da rede. As redes sem fio, que utilizam de meios não guiados e também são conhecidas como Redes \textit{Wifi} ou \textit{Wireless}, foram uma das grandes novidades tecnológicas dos últimos anos. A partir de 1997, o IEEE começou a definir uma série de padrões de transmissão e codificação para redes sem fio na família de padrões 802.11, que é aninhada à família de padrões IEEE 802. Como base, o referido padrão trata de especificações ligadas às camadas de rede e de enlace do modelo OSI voltados para Redes sem fio de Área Local (WLAN ou \textit{Wireless Local Area Networks}).
 	
 	\par Ao longo dos anos, uma miríade de padrões foram adicionados à família 802.11, sendo diferenciados por letras subsequentes ao número da norma. Em cada padrão adicionado à família 802.11, há uma série de especificidades que adequam-se às linhas gerais da norma. Como exemplo, são citadas algumas dessas normas na \autoref{tab_0}.
 	
@@ -785,7 +785,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Modos de operação}
 	
-	\par As redes sem fio suportam basicamente dois modos de operação: Infra-estruturado e ad hoc.
+	\par Segundo Gast (2005), as redes sem fio suportam basicamente dois modos de operação: Infra-estruturado e ad hoc.
 	
 	\par O modo de operação infra-estruturado utiliza de pontos de acesso (\textit{Access Point} ou AP) para controlar os nós cobertos por determinada área geográfica. Como exemplo, na \autoref{fig_8} os nós de rede sem fio se comunicam com outros equipamentos ou com a rede cabeada por meio de um ponto de acesso, que é representado por um roteador sem fio.
 	
@@ -807,9 +807,9 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Arquitetura IEEE 802.11}
 	
-	\par Quando duas ou mais estações se comunicam umas com as outras, estas compartilham um Conjunto Básico de Serviços (BSS ou \textit{Basic Service Set}). Um BSS mínimo é formado entre dois nós. As redes locais 802.11 utilizam o BSS como um bloco de construção padrão.
+	\par Gast (2005) reporta que quando duas ou mais estações se comunicam umas com as outras, estas compartilham um Conjunto Básico de Serviços (BSS ou \textit{Basic Service Set}). Um BSS mínimo é formado entre dois nós. As redes locais 802.11 utilizam o BSS como um bloco de construção padrão.
 	
-	\par O BSS que não se conecta a um AP é chamado de BSS Independente (\textit{Independent} BSS ou IBSS). Este tipo de BSS é comumente visto em Redes \textit{Ad Hoc}. A formação de um IBSS pode ser melhor entendida na \autoref{fig_10}.
+	\par Gast (2005) ainda informa que o BSS que não se conecta a um AP é chamado de BSS Independente (\textit{Independent} BSS ou IBSS). Este tipo de BSS é comumente visto em Redes \textit{Ad Hoc}. A formação de um IBSS pode ser melhor entendida na \autoref{fig_10}.
 	
 	% INSERIR FIGURA 10 Redes Ad Hoc - IBSS
 	\begin{figure} [H]
@@ -827,13 +827,13 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_11}Arquitetura IEEE802.11 - BSS}
 	\end{figure}
 	
-	\par Para entrar em um BSS, a estação deve primeiramente “ouvir” a frequência transmitida pelo ponto de acesso, e depois executar diversos passos que incluem processos de autenticação e associação. Os usuários de redes sem fio 802.11 identificam a presença de um BSS por meio do SSID (\textit{Service Set Identification} ou Identificação de Conjunto de Serviços) que é anunciado pelos transmissores sem fio. As interfaces de rádio identificam um BSS no nível da subcamada MAC por intermédio de seu BSSID (BSS \textit{Identification} ou Identificação BSS), que é um campo da dispositivo transmissor com formato de endereço MAC.
+	\par Para entrar em um BSS, a estação deve primeiramente “ouvir” a frequência transmitida pelo ponto de acesso, e depois executar diversos passos que incluem processos de autenticação e associação. Os usuários de redes sem fio 802.11 identificam a presença de um BSS por meio do SSID (\textit{Service Set Identification} ou Identificação de Conjunto de Serviços) que é anunciado pelos transmissores sem fio. As interfaces de rádio identificam um BSS no nível da subcamada MAC por intermédio de seu BSSID (BSS \textit{Identification} ou Identificação BSS), que é um campo da dispositivo transmissor com formato de endereço MAC (Gast, 2005).
 	
 	\par Cada BSS deve ser identificado por um BSSID único, que em uma rede infraestruturada é frequentemente escolhido como o endereço MAC do ponto de acesso. Em um BSS Independente, normalmente é utilizado um endereço MAC administrado localmente, formado por um numero aleatório de 46 bits, e 2 bits identificando o endereço como “individual” (em vez de “grupo”) e “local” (em vez de “universal”). Ademais, o padrão IEEE 802.11 define um BSSID especial, com todos os 48 bits tendo valor binário 1.
 	
 	\subsection{Serviços IEEE 802.11}
 	
-	\par O IEEE define diversos serviços que precisam ser fornecidos pela LAN para prover funcionalidade equivalente às LANs cabeadas. Os serviços mais importantes são:
+	\par O IEEE define diversos serviços que precisam ser fornecidos pela LAN para prover funcionalidade equivalente às LANs cabeadas. Gast (2005) cita os serviços mais importantes, que são:
 	
 	\par \textbf{O serviço de Associação} estabelece uma associação inicial entre uma estação e um ponto de acesso. Antes que uma estação possa transmitir ou receber quadros em uma WLAN, sua identidade e endereço precisam ser conhecidos. Para esse fim, uma estação precisa estabelecer uma associação com um ponto de acesso. O ponto de acesso pode, então, comunicar essas informações com outros pontos de acesso para facilitar o roteamento e a entrega dos quadros endereçados.
 	
@@ -849,7 +849,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As redes \textit{ad hoc} se destacam por serem redes onde não há um nó central - como um roteador ou um \textit{switch} - servindo como ponto de acesso. Esta função é acumulada pelos nós, que se conectam, consomem e geram dados, assim como armazenam e entregam informações. Em redes \textit{ad hoc} são trocados quadros de arquitetura IBSS, se diferenciando das redes de infraestrutura, que utilizam quadros BSS. Além disso, as redes \textit{ad hoc} não possuem conexão direta com a Internet. Justamente por serem redes sem infraestrutura, as mesmas não possuem provedor de acesso.
 	
-	\par As redes sem fio de nós móveis que estão próximos uns aos outros são chamadas de MANETs (\textit{Mobile Ad Hoc Networks} ou Redes \textit{Ad Hoc} Móveis). Estes nós podem ser \textit{notebooks}, \textit{tablets}, \textit{smartphones}, etc. Por possuírem dispositivos que se movem constantemente, as MANETs estão sujeitas à constantes variações na topologia de rede, com nós que podem entrar e sair da rede em um curto intervalo de tempo, ocasionando a alteração rápida de rotas. 
+	\par Segundo Tanenbaum \& Wetherall (2011), as redes sem fio de nós móveis que estão próximos uns aos outros são chamadas de MANETs (\textit{Mobile Ad Hoc Networks} ou Redes \textit{Ad Hoc} Móveis). Estes nós podem ser \textit{notebooks}, \textit{tablets}, \textit{smartphones}, etc. Por possuírem dispositivos que se movem constantemente, as MANETs estão sujeitas à constantes variações na topologia de rede, com nós que podem entrar e sair da rede em um curto intervalo de tempo, ocasionando a alteração rápida de rotas. 
 	
 	\par O roteamento de pacotes em redes \textit{ad hoc} é mais complexo do que em redes infraestruturadas e possui uma série de desafios. Para rotear os pacotes, os desafios encontrados são: mobilidade dos nós que impactam diretamente as rotas, implantação de Qualidade de Serviço (QoS) e a escalabilidade da rede. Há também desafios com relação ao consumo de energia elétrica que os nós dispõem para realizar a transmissão e recepção dos dados além de realizar outros processos. Como a troca de informações entre os nós é intensa, a energia é gasta de maneira mais acelerada. Desafios que envolvem conectividade também preocupam. As redes \textit{ad hoc} apresentam condições inconstantes como taxas de erro de bit variáveis e interferências na comunicação por outros meios de transmissão.
 	
@@ -872,7 +872,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Segundo a Organização Mundial de Saúde(OMS), acidentes de carro estão entre as 10 maiores causa de morte no mundo{\footnote{\href{http://www.who.int/mediacentre/factsheets/fs310/en/}{http://www.who.int/mediacentre/factsheets/fs310/en/} (acesso em 22 de jun. 2016)}}. Conforme relatado pela Universidade de Stanford, mais de 90\% dos acidentes têm origem em falha humana{\footnote{\href{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes}{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes} (acesso em 25 de jun. 2016)}}. Tais dados são alarmantes para a sociedade visto que nenhum meio de transporte tira tantas vidas como o meio rodoviário.
 
-	\par “Uma pessoa que viajar mais de 17.622 quilomêtros em um automóvel (carros/caminhão leve) enfrenta o risco de fatalidade de 1 em 12.500. Este risco é 17, 67 e 112 vezes maior se comparado a trêns, ônibus e aviação, respectivamente.” (SAVAGE, 2013, p. 12, tradução nossa). Estes outros meios, como o aquático, aéreo e ferroviário, sofrem menos acidentes porém eventuais catástrofes assumem maiores proporções por justamente serem transportes de massa. Estes meios de transporte entenderam melhor a carência de segurança na locomoção e por isso há algumas décadas vemos navios e aviões equipados com sistemas de comunicação utilizando transponders, que auxiliam na prevenção de acidentes e na escolha de novas rotas, seja por tráfego denso ou por condições climáticas adversas. Nos trens, o uso de tecnologias 3G e 4G pelos sistemas de comunicação também tem sido fundamental para proporcionar o aumento da segurança e da pontualidade nas ferrovias metropolitanas e intercidades.
+	\par “Uma pessoa que viajar mais de 17.622 quilomêtros em um automóvel (carro ou caminhão leve) enfrenta o risco de fatalidade de 1 em 12.500. Este risco é 17, 67 e 112 vezes maior se comparado a trêns, ônibus e aviação, respectivamente” (SAVAGE, 2013). Estes outros meios, como o aquático, aéreo e ferroviário, sofrem menos acidentes porém eventuais catástrofes assumem maiores proporções por justamente serem transportes de massa. Estes meios de transporte entenderam melhor a carência de segurança na locomoção e por isso há algumas décadas vemos navios e aviões equipados com sistemas de comunicação utilizando transponders, que auxiliam na prevenção de acidentes e na escolha de novas rotas, seja por tráfego denso ou por condições climáticas adversas. Nos trens, o uso de tecnologias 3G e 4G pelos sistemas de comunicação também tem sido fundamental para proporcionar o aumento da segurança e da pontualidade nas ferrovias metropolitanas e intercidades.
 	
 	\par Atualmente, os condutores de veículos terrestres contam com itens de proteção como cintos de segurança, \textit{airbags}, sensores de obstáculo, alarmes de velocidade, e outros equipamentos. Contudo, alguns destes itens não têm provocado um efeito de compra pelos motoristas (pelo seu preço adicional em veículos novos) e muito menos causado uma substancial diminuição no número de acidentes. Segundo prevê a OMS, acidentes automobilísticos passarão da 9ª para a 7ª maior causa de morte de humanos entre todas as idades em 2030 (\textit{Global Status Report on Road Safety}, 2015). Por isto, governos e grandes empresas continuam a trabalhar no desenvolvimento de tecnologias para aumento da segurança veicular. O potencial advento de sistemas de comunicação entre veículos representa o próximo passo na evolução da segurança veicular, possibilitando a interação entre diferentes veículos para evitar acidentes. Segundo Yang et al. (2014), os principais objetivos desses sistemas são (1) oferecer conectividade ubíqua para os usuários e (2) possibilitar a comunicação de veículo para veículo, oferecendo condições necessárias para que aplicações com diferentes requisitos sejam atendidas satisfatoriamente. Tais aplicações compõem um ITS (\textit{Intelligent Transportation System} ou Sistema de Transportes Inteligente). Exemplos destas aplicações incluem monitoração cooperativa do tráfego, controle de fluxos de tráfego, auxílio a cruzamentos sem sinalização, prevenção de colisões, propagação de mensagens de emergência, serviços de informação próximos, etc.
 	
@@ -910,7 +910,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Dispositivos Car2X: Componentes e Tipos de Comunicação}
 	
-	\par Um dispositivo Car2X é um meio de comunicação de rádio que pretende oferecer serviços interoperáveis para os transportes. Funciona como um “roteador” para veículos. Pode apenas transmitir ou receber de dados (\textit{Simplex}) ou realizar ambas as operações.
+	\par Um dispositivo Car2X é um meio de comunicação de rádio que pretende oferecer serviços interoperáveis para os transportes. Funciona como um “roteador” para veículos. Pode apenas transmitir ou receber de dados ou realizar ambas as operações.
 	
 	\par Atualmente, várias empresas produzem hardware, \textit{firmware} e software para dispositivos de tecnologia Car2X. Entre elas, se destacam a Cohda Wireless, Autotalks, Commsignia, Rohde \& Schwarz, Vector Informatik e Unex.
 	
@@ -1524,7 +1524,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\subsection{Protocolo para Coleta eletrônica de Taxas}
 
-	\par Baseando-se no padrões IEEE 1609.3 , IEEE 1609.4, ISO 14906 e ISO 15628, o padrão IEEE 1609.11 (2010) propõe um sistema de pagamento eletrônico para redes veiculares foi proposto como aplicação em redes veiculares. As normas citadas estabelecem as diretrizes para alcance de confiabilidade e segurança no pagamento. 
+	\par Baseando-se no padrões IEEE 1609.3, IEEE 1609.4, ISO 14906 e ISO 15628, o padrão IEEE 1609.11 (2010) propõe um sistema de pagamento eletrônico para redes veiculares foi proposto como aplicação em redes veiculares. As normas citadas estabelecem as diretrizes para alcance de confiabilidade e segurança no pagamento. 
 	
 	\par Para transações eletrônicas ocorrerem com sucesso, deve-se garantir uma associação inequívoca de cada pagador com seu veículo para que não haja erros no processamento do pagamento durante a curta presença dos veículos ao atravessarem os postos de pagamento eletrônicos (que podem ser de estacionamentos ou pedágios utilizando-se ou não de cancelas eletrônicas). Isto é, se cinco veículos passarem por um posto eletrônico de pedágio e apenas 4 pagamentos forem registrados, o sistema deve determinar qual veículo evadiu o pagamento. Fotografias dos veículos em conjunto com o registro de transações realizadas podem evidenciar possíveis evasões.
 	
@@ -1583,7 +1583,7 @@ brazil,				% o último idioma é o principal do documento
 		\item A simulação pode testar diferentes recursos para a máquina que podem auxiliar em uma futura determinação de requisitos.
 	\end{itemize}
 	
-	\par Banks et al. (2005) acrescem que as simulações devem portar dados de saída que correspondam diretamente àqueles gravados em mundo real para que suposições duvidosas não sejam criadas a seu respeito. O processo avaliativo envolvido na simulação é de caráter observativo. Um conjunto de dados de entrada e características é dado, o módulo é executado para então resultar em cenários a serem avaliados.
+	\par Banks (2005) adiciona que as simulações devem portar dados de saída que correspondam diretamente àqueles gravados em mundo real para que suposições duvidosas não sejam criadas a seu respeito. O processo avaliativo envolvido na simulação é de caráter observativo. Um conjunto de dados de entrada e características é dado, o módulo é executado para então resultar em cenários a serem avaliados.
 	
 	\par Pegden et al. (1995) citam vantagens no desenvolvimentos de módulos para simulação:
 	
@@ -1748,7 +1748,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O SUMO é um software de simulação de tráfego urbano desenvolvido pelo Instituto de Sistemas de Transportes da Alemanha. É um sistema de código aberto, portátil e foi projetado para lidar com grandes redes rodoviárias.
 	
-	\par O SUMO faz a modelagem de tráfego microscópica. Cada veículo tem sua própria rota e se move individualmente na rede. As simulações são determinísticas por padrão, contudo há um conjunto de configurações que introduzem aleatoriedade no software.
+	\par Segundo Krajzewicz (2012), o SUMO faz a modelagem de tráfego microscópica, ou seja, cada veículo tem sua própria rota e se move individualmente na rede. As simulações são determinísticas por padrão, contudo há um conjunto de configurações que introduzem aleatoriedade no software.
 	
 	\par As bibliotecas do SUMO são majoritariamente em C++. Algumas ferramentas de apoio foram codificadas em Python e XML.
 	
@@ -1780,7 +1780,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{\textit{Vehicles in Network Simulation}}
 	
-	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. Sua arquitetura é mostrada na \autoref{fig_451}. O \text{framework} em questão tem o módulo de mobilidade (Mobility) ligado ao SUMO (Road Traffic Simulation) através de uma interface de controle de tráfego (TraCI) que utiliza uma porta TCP para comunicação. Isto faz com que cada simulação de rede veicular no VEINS execute os dois simuladores em paralelo: OMNET++ e SUMO.
+	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) segundo 	Sommer \& Dressler (2011) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. Sua arquitetura é mostrada na \autoref{fig_451}. O \text{framework} em questão tem o módulo de mobilidade (Mobility) ligado ao SUMO (Road Traffic Simulation) através de uma interface de controle de tráfego (TraCI) que utiliza uma porta TCP para comunicação. Isto faz com que cada simulação de rede veicular no VEINS execute os dois simuladores em paralelo: OMNET++ e SUMO.
 
 	% INSERIR FIGURA DE IDE DO SUMO
 	\begin{figure} [H]
@@ -2422,10 +2422,22 @@ brazil,				% o último idioma é o principal do documento
 
             %Capítulo 1
 
+        \item HARVEY, D. The Condition of Postmodernity: An Enquiry into the Origins of Cultural Change. Wiley-Blackwell, 1992. 392 p.
+
+        \item WORLD HEALTH ORGANIZATION. Global Status Report on Road Safety, 2015. Relatório. Disponível em: \url{http://www.who.int/violence_injury_prevention/road_safety_status/2015/en/}. Acesso em: 2 de maio 2016. %[?]
 
 
             %Capítulo 2
 
+		\item FOROUZAN, B. A.; FEGAN, S. C. Data Communications and Networking. Quarta Edição. McGraw-Hill Higher Education, 2007. 1134p. (McGraw-Hill Forouzan Networking Series)
+
+		\item TANENBAUM, Andrew S.; WETHERALL, DAVID J.; Computer Networks. Fifth Edition. Pearson Education, 2011. 960p.
+
+		\item GAST, M. S. 802.11 Wireless Networks: The Definitive Guide. Segunda Edição. O'Reilly Media, 2005. 672 p.
+
+		\item ROYER, E. M.; TOH, C.-K. A Review of Current Routing Protocols for Ad Hoc Mobile Wireless Networks. IEEE Personal Communications, v. 6, n. 2, p. 46-55, 1999.
+
+		\item GIORDANO, S.; STOJMENOVIC, I. Position Based Routing Algorithms for Ad Hoc Networks: A Taxonomy. In: CHENG, X.; HUANG, X.; DU, D.-Z. (Eds.). Ad Hoc Wireless Networking. Kluwer Academic, 2003. p. 103-136.
 
 
             %Capítulo 3
@@ -2457,6 +2469,23 @@ brazil,				% o último idioma é o principal do documento
 
             %Capítulo 4
 
+        \item BANKS, J. Discrete-Event System Simulation. Quarta Edição. Pearson Prentice Hall, 2005. 608 p. (Prentice-Hall international series in industrial and systems engineering)
+
+        \item PEGDEN, C. D.; SADOWSKI, R. P.; SHANNON, R. E. Introduction to Simulation Using Siman. Segunda Edição. McGraw-Hill, 1995. 660 p. (Industrial engineering series)
+
+		\item OLARIU, S.; WEIGLE, M. A. C. Vehicular Networks: From Theory to Practice. CRC Press, 2009. 472 p. (Chapman \& Hall/CRC Computer and Information Science Series)
+
+		\item OMNeT++ Discrete Event Simulator: What is OMNeT++. Disponível em: \url{https://omnetpp.org/intro/what-is-omnet}. Acesso em: 6 de jun. 2016.
+
+		\item BROCKFELD, E.;  WAGNER, P. Testing and Benchmarking of Microscopic Traffic Flow Simulation Models; 10th World Conference on Transport Research; July 2004.
+
+		\item KRAJZEWICZ, D., et al. Recent Development and Applications of SUMO: Simulation of Urban MObility. International Journal On Advances in Systems and Measurements, v. 5, n. 3-4, p. 128-138, 2012.
+
+		\item JAKOB, E. Lane-Changing Model in SUMO. Proceedings of the SUMO2014 Modeling Mobility with Open Data, Berlim, v. 24, p. 77-88, 2014.
+
+		\item SOMMER, C.; GERMAN, R.; DRESSLER, F. Bidirectionally Coupled Network and Road Traffic Simulation for Improved IVC Analysis. IEEE Transactions on Mobile Computing, v. 10, n. 1, p. 3-15, 2011.
+
+		\item Documentation: Veins. Disponível em: \url{http://veins.car2x.org/documentation/}. Acesso em: 6 de jun. 2016.
 
 
             %Capítulo 5
@@ -2490,43 +2519,15 @@ brazil,				% o último idioma é o principal do documento
 
             %Anexo F
 
-		\item ROYER, E. M.; TOH, C.-K. A Review of Current Routing Protocols for Ad Hoc Mobile Wireless Networks. IEEE Personal Communications, v. 6, n. 2, p. 46-55, 1999.
-
-		\item HARVEY, D. The Condition of Postmodernity: An Enquiry into the Origins of Cultural Change. Wiley-Blackwell, 1992. 392 p.
-
-		\item WORLD HEALTH ORGANIZATION. Global Status Report on Road Safety, 2015. Relatório. Disponível em: \url{http://www.who.int/violence_injury_prevention/road_safety_status/2015/en/}. Acesso em: 2 de maio 2016. %[?]
-
-		\item GAST, M. S. 802.11 Wireless Networks: The Definitive Guide. Segunda Edição. O'Reilly Media, 2005. 672 p.
-
 		\item DUBUISSON, O. ASN.1 Communication between Heterogeneous Systems. Morgan Kaufmann, 2001. 562 p.
-
-		\item FOROUZAN, B. A.; FEGAN, S. C. Data Communications and Networking. Quarta Edição. McGraw-Hill Higher Education, 2007. 1134p. (McGraw-Hill Forouzan Networking Series)
 
 		\item DELGROSSI, L.; ZHANG, T. Vehicle Safety Communications: Protocols, Security, and Privacy. Nova Jérsia: Wiley, 2012. 372 p. (Information and Communication Technology Series)
 
 		\item HARTENSTEIN, H.; LABERTEAUX, K. P. VANET: Vehicular Applications and Inter-Networking Technologies. Chichester: Wiley, 2010. 435 p. (Intelligent transportation systems)
 
-		\item OLARIU, S.; WEIGLE, M. A. C. Vehicular Networks: From Theory to Practice. CRC Press, 2009. 472 p. (Chapman \& Hall/CRC Computer and Information Science Series)
-
-		\item BANKS, J. Discrete-Event System Simulation. Quarta Edição. Pearson Prentice Hall, 2005. 608 p. (Prentice-Hall international series in industrial and systems engineering)
-
-		\item GIORDANO, S.; STOJMENOVIC, I. Position Based Routing Algorithms for Ad Hoc Networks: A Taxonomy. In: CHENG, X.; HUANG, X.; DU, D.-Z. (Eds.). Ad Hoc Wireless Networking. Kluwer Academic, 2003. p. 103-136.
-
-		\item SOMMER, C.; GERMAN, R.; DRESSLER, F. Bidirectionally Coupled Network and Road Traffic Simulation for Improved IVC Analysis. IEEE Transactions on Mobile Computing, v. 10, n. 1, p. 3-15, 2011.
-
 		\item CHENG, L., et al. Multi-Path Propagation Measurements for Vehicular Networks at 5.9 GHz. In: WIRELESS COMMUNICATIONS AND NETWORKING CONFERENCE, 2008, Las Vegas.
 
-		\item PEGDEN, C. D.; SADOWSKI, R. P.; SHANNON, R. E. Introduction to Simulation Using Siman. Segunda Edição. McGraw-Hill, 1995. 660 p. (Industrial engineering series)
-
 		\item PURSULA, M. Simulation of Traffic Systems: An Overview. Disponível em: \url{http://publish.uwo.ca/~jmalczew/gida\_5/Pursula/Pursula.html}. Acesso em: 6 de jun. 2016.
-
-		\item KRAJZEWICZ, D., et al. Recent Development and Applications of SUMO: Simulation of Urban MObility. International Journal On Advances in Systems and Measurements, v. 5, n. 3-4, p. 128-138, 2012.
-
-		\item JAKOB, E. Lane-Changing Model in SUMO. Proceedings of the SUMO2014 Modeling Mobility with Open Data, Berlim, v. 24, p. 77-88, 2014.
-
-		\item OMNeT++ Discrete Event Simulator: What is OMNeT++. Disponível em: \url{https://omnetpp.org/intro/what-is-omnet}. Acesso em: 6 de jun. 2016.
-
-		\item Documentation: Veins. Disponível em: \url{http://veins.car2x.org/documentation/}. Acesso em: 6 de jun. 2016.
 
 		\item GDAL: GDAL - Geospatial Data Abstraction Library. Disponível em: \url{http://www.gdal.org/}. Acesso em: 7 de jun. 2016.
 
