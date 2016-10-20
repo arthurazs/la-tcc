@@ -1399,7 +1399,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\subsubsection{\label{sssec:wsa}Anúncio de Serviços WAVE}
 	
-	\par Um anúncio de serviço WAVE, ou WSA, é a compressão das informações de um serviço na forma de mensagens. Conforme a \autoref{fig_33}, um WSA formatada - denominada \textit{Ieee1609Dot2Data} pelo padrão IEEE 1609.2 (2016) - é inserida no campo \textbf{dados WSM} e enviada pelo dispositivo WAVE com o valor do \textbf{PSID} 0x87, atribuído para anúncios de serviços WAVE.
+	\par Um anúncio de serviço WAVE, ou WSA, é a compressão das informações de um serviço na forma de mensagens. Conforme a \autoref{fig_33}, um WSA formatada - denominada pelo padrão IEEE 1609.2 (2016) de \textit{Ieee1609Dot2Data} - é inserida no campo \textbf{dados WSM} e enviada pelo dispositivo WAVE com o valor do \textbf{PSID} 0x87, atribuído para anúncios de serviços WAVE.
 	
 	\par Esta mensagem formatada poderá ser um WSA seguro ou não seguro.
 		
@@ -1813,7 +1813,7 @@ brazil,				% o último idioma é o principal do documento
 	\begin{description}
 		\item[O MiXiM] é utilizado para modelagem precisa da camada física, trabalhando com distribuição da potência de transmissão por tempo e distância;
 		\item[O TraCI] (\textit{Traffic Control Interface} ou Interface de Controle de Tráfego) é uma interface que transforma os veículos do SUMO em nós de rede do OMNET++. Este modulo é utilizado pra monitorar o fluxo da simulação no SUMO, atualizando informações sobre a mobilidade do nó (posição, velocidade, direção) no OMNET++, baseado nos comportamentos dos veículos. Este módulo permite a reconfiguração de rotas dos veículos em tempo de execução e que VEINS e SUMO trabalhem em conjunto trocando mensagens de status por intermédio de uma porta TCP aberta;
-		\item[Os módulos IEEE 802.11p e IEEE 1609.4 DSRC/WAVE] realizam uma modelagem mais precisa das camadas física e de rede WAVE, incluindo técnicas de modulação e coordenação de canal, QoS conforme EDCA. Este módulo também inclui a manipulação de WSM, quadros de gerenciamento (\textit{beacons}), WSAs, BSMs, etc.
+		\item[Os módulos IEEE 802.11p e IEEE 1609.4 DSRC/WAVE] realizam uma modelagem\\mais precisa das camadas física e de rede WAVE, incluindo técnicas de modulação e coordenação de canal, QoS conforme EDCA. Este módulo também inclui a manipulação de WSM, quadros de gerenciamento (\textit{beacons}), WSAs, BSMs, etc.
 		\item[O módulo \textit{Two-Ray Interference}] gerencia a perda de pacotes em diferentes distâncias e trabalha com a propagação de mensagens entre os carros, a distância máxima de uma mensagem enviada por um único nó e a distância máxima da mesma mensagem propagada por intermédio de outros nós;
 		\item[O módulo \textit{Obstacle Shadowing}] monitora os obstáculos que podem interferir a propagação da mensagem.
 	\end{description}
@@ -2407,7 +2407,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Radares poderiam ser equipados com RSUs para um registro mais confiável dos veículos que não estiverem em conformidade com as leis de trânsito, enviando a multa diretamente para o dono do veículo transgressor sem depender apenas de fotos, que por vezes não são suficientes.
 
-	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminuição de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja por meio da limitação do tempo de vida dos pacotes ou com a utilização de quadros de gerenciamento para o envio \textit{multicast}.
+	\par Estudos na manipulação física do envio de mensagens WAVE podem auxiliar na diminui-\\ção de congestionamento de sinal em rodovias movimentadas. É possível diminuir ainda mais essa inundação controlando a replicação das mensagens, seja por meio da limitação do tempo de vida dos pacotes ou com a utilização de quadros de gerenciamento para o envio \textit{multicast}.
 
 	\par Provas de conceito utilizando de idéias introduzidas no código da aplicação de emergência poderiam ser testadas com o porte de equipamentos de redes veiculares desenvolvidos pelo mercado até o presente momento. O que poderia corroborar ou até mesmo aperfeiçoar os requisitos e métricas da aplicação de emergência.
 
@@ -3170,7 +3170,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
 	                \item[14º Passo (Opcional)]
 	            \end{description}
-	            \par Abra o exemplo test.sumo.cfg dentro da pasta do SUMO no caminho .../sumo-0.25.0/tools/contributed/traci4j/test/resources/sumo\_maps/box1l por meio do menu \textit{File > Open Simulation}.
+	            \par Abra o exemplo test.sumo.cfg dentro da pasta do SUMO no caminho .../sumo-0.25.0/\\tools/contributed/traci4j/test/resources/sumo\_maps/box1l por meio do menu \textit{File > Open Simulation}.
 		            
                 \begin{figure} [H]
 	                \centering
@@ -3456,6 +3456,8 @@ brazil,				% o último idioma é o principal do documento
                 \end{figure}
                     
                 %------------
+                
+                \newpage
 
             	\begin{description}
                     \item[6º Passo]
@@ -3508,6 +3510,7 @@ brazil,				% o último idioma é o principal do documento
                     
                 %------------
 
+                \newpage
             	\begin{description}
                     \item[9º Passo]
                 \end{description}
@@ -3545,7 +3548,7 @@ brazil,				% o último idioma é o principal do documento
             	\begin{description}
                     \item[11º Passo]
                 \end{description}
-                \par No diretório \textbf{simulacao} (10º Passo do \autoref{tutorial_2}), adapte a linha de comando abaixo e execute-a no terminal: %[!] referenciar
+                \par No diretório \textbf{simulacao} (1º Passo do \autoref{tutorial_2}), adapte a linha de comando abaixo e execute-a no terminal: %[!] referenciar
 		
 	            \begin{table}[H]
 		            \renewcommand{\arraystretch}{1.5}
@@ -3642,7 +3645,8 @@ brazil,				% o último idioma é o principal do documento
                 \par Copie os arquivos \textbf{omnetpp.ini}, \textbf{RSUExampleScenario.ned} e \textbf{erlangen.laun-\\chd.xml} localizados no diretório \textit{veins-veins-4.4 > examples > \textbf{veins}} para a pasta \textit{veins-veins-4.4 > examples > \textbf{simulacao}}.
                 
                 %------------
-        	
+
+                \newpage
             	\begin{description}
                     \item[18º Passo]
                 \end{description}
@@ -3681,7 +3685,7 @@ brazil,				% o último idioma é o principal do documento
 	            \end{table}
                 
                 %------------
-                \newpage
+
             	\begin{description}
                     \item[20º Passo]
                 \end{description}
@@ -3726,7 +3730,8 @@ brazil,				% o último idioma é o principal do documento
 	            \end{table}
                 
                 %------------
-        	
+
+                \newpage
             	\begin{description}
                     \item[22º Passo]
                 \end{description}
@@ -3743,7 +3748,7 @@ brazil,				% o último idioma é o principal do documento
                 %------------
         	
             	\begin{description}
-                    \item[22º Passo]
+                    \item[23º Passo]
                 \end{description}
                 \par Na aba \textbf{Project Explorer}, navegue até a pasta \textbf{simulacao} e siga o resto do tutorial a partir do 22º Passo do \autoref{tutorial_1} adaptando-o para a nova simulação. %[!] Referenciar
 		            
