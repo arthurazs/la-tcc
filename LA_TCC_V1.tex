@@ -1314,7 +1314,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Camadas de Rede e Transporte}
 	
-	\par Como as camadas de rede e transporte no modelo WAVE estão intrinsicamente relacionadas, especialmente no protocolo WSMP, estas serão discutidas em seção única.
+	\par Como as camadas de rede e transporte no modelo WAVE estão intrinsecamente relacionadas, especialmente no protocolo WSMP, estas serão discutidas em seção única.
 	
 	\par Os protocolos da camadas de Rede e Transporte WAVE são definidos em grande parte no padrão IEEE 1609.3 (2016) sobre Serviços de Rede. Este padrão especifica duas pilhas de protocolos na camada de rede (\autoref{fig_17}), IPv6 e WSMP. Esta pilha de protocolos distingue-se entre as duas camadas superiores no campo \textit{Ethertype} conforme explicado na \autoref{sec:llc}.
 	
@@ -1481,7 +1481,7 @@ brazil,				% o último idioma é o principal do documento
 		\item Mensagens Sensoriais de Veículos (\textit{Probe Vehicle Message} ou PVM)
 	\end{itemize}
 	
-	\par As BSMs são mensagens para aplicações de segurança em veículos. Estas aplicações utilizariam o fluxo de dados de BSMs provenientes de veículos nas redondezas para detectar potenciais eventos de risco. As BSMs fornecem aos veículos conhecimento da posição, velocidade e direção dos veículos nas imediações. Estas mensagens de segurança possuem grupos de PSIDs para dados específicos. Conforme mostrado \autoref{tab_9}, para BSMs contendo dados de alta precisão o grupo PSID utilizado é o 0x20. Para veículos com dados não tão acurados, o grupo de PSID utilizado é o 0x21. 
+	\par As BSMs são mensagens para aplicações de segurança em veículos. Estas aplicações utilizariam o fluxo de dados de BSMs provenientes de veículos nas redondezas para detectar potenciais eventos de risco. As BSMs fornecem aos veículos conhecimento da posição, velocidade e direção dos veículos nas imediações. Estas mensagens de segurança possuem grupos de PSIDs para dados específicos. Conforme mostrado na \autoref{tab_9} (\autoref{psid_aloc}), para BSMs contendo dados de alta precisão o grupo PSID utilizado é o 0x20. Para veículos com dados não tão acurados, o grupo de PSID utilizado é o 0x21. 
 	
 	\par Como exemplo, foi proposta uma aplicação de um sistema de frenagem inteligente que detecta potenciais colisões traseiras mediante algoritmos de detecção. Após detectado o potencial risco de colisão, o condutor é alertado passivamente ou o sistema realiza ações corretivas, como desabilitar o “piloto automático”, fortalecer os freios e pré-tensionar os cintos de segurança. 
 	
@@ -1567,7 +1567,7 @@ brazil,				% o último idioma é o principal do documento
 
 %-------------------------------------------------------------
 	\newpage
-	\chapter{Abordagem Avaliativas}
+	\chapter{Abordagem Avaliativa}
 	\label{chap:Abor_Aval}
 	
 	\par Toda e qualquer tecnologia precisa ser testada utilizando-se de alguma abordagem de avaliação antes de entrar em caráter de produção no mercado. Abordagens avaliativas são métodos distintos de pensar, desenhar e conduzir atividades de avaliação. A utilização de abordagens avaliativas é de considerável importância para o método científico. Quando uma abordagem é corretamente empregada em determinada tecnologia, esta se torna fundamental para antecipar possíveis inconvenientes ou conflitos existentes no recurso tecnológico antes do mesmo entrar em produção.
@@ -2126,9 +2126,9 @@ brazil,				% o último idioma é o principal do documento
 		\begin{tabular}{|l|c|c|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base} & \textbf{Aplicação de emergência} \\ \hline
-			Total percorrido & 4000 m & 4000 m \\ \hline
-			Tempo total gasto & 128.62 s & 120.82 s \\ \hline
-			Velocidade média & 111,95 km/h & 119,18 km/h \\ \hline
+			\textbf{Total percorrido} & 4000 m & 4000 m \\ \hline
+			\textbf{Tempo total gasto} & 128,62 s & 120,82 s \\ \hline
+			\textbf{Velocidade média} & 111,95 km/h & 119,18 km/h \\ \hline
 		\end{tabular}
 		\caption{Resultados Experimento 1}
 		\label{tab_5.4}
@@ -2164,9 +2164,9 @@ brazil,				% o último idioma é o principal do documento
 		\begin{tabular}{|l|c|p{5.2cm}|}
 			\hline
 			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base} & \textbf{Aplicação  de emergência executada com RSUs} \\ \hline
-			Total percorrido & 4000 m & \multicolumn{1}{c|}{4000 m} \\ \hline
-			Tempo total gasto & 128.62 s & \multicolumn{1}{c|}{120,68 s} \\ \hline
-			Velocidade média & 111,95 km/h & \multicolumn{1}{c|}{119,2 km/h} \\ \hline
+			\textbf{Total percorrido} & 4000 m & \multicolumn{1}{c|}{4000 m} \\ \hline
+			\textbf{Tempo total gasto} & 128,62 s & \multicolumn{1}{c|}{120,68 s} \\ \hline
+			\textbf{Velocidade média} & 111,95 km/h & \multicolumn{1}{c|}{119,20 km/h} \\ \hline
 		\end{tabular}
 		\caption{Resultados Experimento 2}
 		\label{tab_5.5}
@@ -2177,7 +2177,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Experimento 3: Aplicação de Emergência em região existente}
 	
-	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site \href{https://www.openstreetmap.org}{openstreetmap.org/}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro{\footnote{\href{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/}{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/} (acesso em 20 oct. 2016)}},  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
+	\par Para o terceiro experimento, um cenário mais complexo foi desenvolvido para a realização das simulações. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site \href{https://www.openstreetmap.org}{openstreetmap.org/}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro{\footnote{\href{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/}{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/} (acesso em 20 oct. 2016)}},  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
 
 	\par A \autoref{fig_5.13} apresenta o percurso do veículo de resgate, que parte da Avenida Vieira Souto em Ipanema e segue para Copacabana via Avenida Nossa Senhora de Copacabana até seu ponto de destino. São percorridos aproximadamente 4800 metros neste trajeto, representado na imagem pela linha vermelha. Devido ao comportamento apresentado pelas unidades de acostamento no segundo experimento, 7 RSUs (pontos pretos \autoref{fig_5.13}) foram espalhadas para auxiliar na propagação das mensagens da aplicação de emergência. 
 	
@@ -2250,11 +2250,11 @@ brazil,				% o último idioma é o principal do documento
 		\renewcommand{\arraystretch}{1.5}
 		\begin{tabular}{|l|c|}
 			\hline
-			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base (semáforos habilitados)} \\ \hline
-			Total percorrido & 4800 m \\ \hline
-			Média de tempo total & 477,11 s \\ \hline
-			Média após Análise de Outliers & 471,53 s \\ \hline
-			Velocidade média & 36,65 km/h \\ \hline
+			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base} \\ \hline
+			\textbf{Total percorrido} & 4800 m \\ \hline
+			\textbf{Média de tempo total} & 477,11 s \\ \hline
+			\textbf{Média após Análise de \textit{Outliers}} & 471,53 s \\ \hline
+			\textbf{Velocidade média} & 36,65 km/h \\ \hline
 		\end{tabular}
 		\caption{Resultados do Experimento 3 - Medição base}
 		\label{tab_5.7}
@@ -2275,11 +2275,11 @@ brazil,				% o último idioma é o principal do documento
 		\renewcommand{\arraystretch}{1.5}
 		\begin{tabular}{|l|c|}
 			\hline
-			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base (semáforos habilitados)} \\ \hline
-			Total percorrido & 4800 m \\ \hline
-			Média de tempo total & 458,06 s \\ \hline
-			Média após Análise de Outliers & 452,25 s \\ \hline
-			Velocidade média & 38,21 km/h \\ \hline
+			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Aplicação de emergência com RSUs} \\ \hline
+			\textbf{Total percorrido} & 4800 m \\ \hline
+			\textbf{Média de tempo total} & 458,06 s \\ \hline
+			\textbf{Média após Análise de \textit{Outliers}} & 452,25 s \\ \hline
+			\textbf{Velocidade média} & 38,21 km/h \\ \hline
 		\end{tabular}
 		\caption{Resultados do Experimento 3 - Medição com aplicação ativada}
 		\label{tab_5.8}
@@ -2302,13 +2302,13 @@ brazil,				% o último idioma é o principal do documento
 	\begin{table}[H]
 		\centering
 		\renewcommand{\arraystretch}{1.5}
-		\begin{tabular}{|l|c|}
+		\begin{tabular}{|l|p{7.5cm}|}
 			\hline
-			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Medição base (semáforos habilitados)} \\ \hline
-			Total percorrido & 4800 m \\ \hline
-			Média de tempo total & 304,12 s \\ \hline
-			Média após Análise de Outliers & 303,53 s \\ \hline
-			Velocidade média & 56,93 km/h \\ \hline
+			\multicolumn{1}{|c|}{\textbf{Métricas}} & \textbf{Aplicação de emergência com RSUs} (semáforos abertos) \\ \hline
+			\textbf{Total percorrido} & \multicolumn{1}{c|}{4800 m} \\ \hline
+			\textbf{Média de tempo total} & \multicolumn{1}{c|}{304,12 s} \\ \hline
+			\textbf{Média após Análise de \textit{Outliers}} & \multicolumn{1}{c|}{303,53 s} \\ \hline
+			\textbf{Velocidade média} & \multicolumn{1}{c|}{56,93 km/h} \\ \hline
 		\end{tabular}
 		\caption{Resultados - Medição com aplicação ativada e semáforos abertos}
 		\label{tab_5.9}
@@ -2340,7 +2340,7 @@ brazil,				% o último idioma é o principal do documento
 			\textbf{Veículo de \newline Resgate} & \textbf{Tempo Total} (Medição Base) & \textbf{Tempo Total} \newline (Aplicação de Emergência) & \textbf{rapidez em relação \newline à medição base} (\%) \\ \hline
 			Experimento 1 & 128,62 s & 120,82 s & 6,07\% \\ \hline
 			Experimento 2 & 128,62 s & 120,68 s & 6,17\% \\ \hline
-			Experimento 3 \newline (semáforos ligados) & 471,53 s & 452,25 s & 4,09\% \\ \hline
+			Experimento 3 & 471,53 s & 452,25 s & 4,09\% \\ \hline
 			Experimento 3 \newline (semáforos abertos) & 471,53 s & 303,53 s & 35,63\% \\ \hline
 		\end{tabular}
 		\caption{Resultados Experimentos do Estudo de Caso}
