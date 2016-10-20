@@ -585,7 +585,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{Metodologia}
 	
-	\par Como base teória para um estudo de caso, serão discorridos conceitos de redes de computadores e de redes veiculares, que foram padronizados pelo IEEE e outras organizações por meio das normas IEEE 802.11p, IEEE 1609 WAVE e SAE J2735. 
+	\par Como base teória para um estudo de caso, serão discorridos conceitos de redes de computadores e de redes veiculares, que foram padronizados pelo IEEE e outras organizações por meio das normas IEEE 802.11p, IEEE 1609 e SAE J2735. 
 	
 	\par Serão analisados simuladores de tráfego urbano e simuladores de redes a fim de encontrar um grupo que melhor trabalhe com simulações de redes veiculares. 
 	
@@ -612,7 +612,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O modelo OSI foi liberado em 1984 contendo um conjunto de padrões que garantiram maior compatibilidade e operabilidade entre os vários tipos de tecnologias de rede produzidos por empresas ao redor do mundo. Apesar de outros modelos terem existido, o modelo de referência OSI é considerado a melhor ferramenta disponível para o envio e recebimento de dados em uma rede.
 	
-	\par Tanenbaum \& Wetherall (2011) citam que o Modelo OSI foi dividido em 7 níveis que se inter-relacionam. Foi feito desta maneira para facilitar o entendimento de como a informação viaja através de uma rede. Cada nível ilustra uma função particular da rede. Uma camada conta com a próxima camada inferior para realizar funções mais primitivas e ocultar os detalhes destas funções. Para exemplificar, o modelo OSI descreve como os dados trafegam de uma aplicação através de um meio de rede até uma aplicação localizada em outro computador, mesmo que o emissor e o receptor estejam utilizando meios de rede diferentes. A \autoref{fig_1} apresenta a estrutura do modelo, composto de sete camadas ordenadas.
+	\par Tanenbaum e Wetherall (2011) citam que o Modelo OSI foi dividido em 7 níveis que se inter-relacionam. Foi feito desta maneira para facilitar o entendimento de como a informação viaja através de uma rede. Cada nível ilustra uma função particular da rede. Uma camada conta com a próxima camada inferior para realizar funções mais primitivas e ocultar os detalhes destas funções. Para exemplificar, o modelo OSI descreve como os dados trafegam de uma aplicação através de um meio de rede até uma aplicação localizada em outro computador, mesmo que o emissor e o receptor estejam utilizando meios de rede diferentes. A \autoref{fig_1} apresenta a estrutura do modelo, composto de sete camadas ordenadas.
 	
 	% INSERIR FIGURA Modelo OSI
 	\begin{figure} [H]
@@ -621,7 +621,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_1}Modelo OSI}
 	\end{figure}
 		
-	\par Cada camada OSI contém um conjunto de funções executadas por programas para fazer os dados viajarem de uma origem até o destino de uma rede. Tanenbaum \& Wetherall (2011) discorrem sobre as camadas de maneira detalhada:
+	\par Cada camada OSI contém um conjunto de funções executadas por programas para fazer os dados viajarem de uma origem até o destino de uma rede. Tanenbaum e Wetherall (2011) discorrem sobre as camadas de maneira detalhada:
 	
 	\par A camada de aplicação é a mais próxima do usuário e provê serviços de rede para as aplicações. Esta, diferente dos outros níveis do modelo, não oferece serviços para outras camadas OSI superiores. Entretanto, realiza ajustes em procedimentos de recuperação de erros e no controle da integridade dos dados.
 	
@@ -712,7 +712,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\section{\textit{Unicast}, \textit{Multicast} e Broadcast}
 	
-	\par Existem três diferentes formas de compartilhamento de mensagens, chamados de \textit{Unicast}, \textit{Multicast} e Broadcast. Forouzan (2007) e Tanenbaum \& Wetherall (2011) descrevem técnicas específicas para o envio da informação de acordo com cada possível cenário.
+	\par Existem três diferentes formas de compartilhamento de mensagens, chamados de \textit{Unicast}, \textit{Multicast} e Broadcast. Forouzan (2007) e Tanenbaum e Wetherall (2011) descrevem técnicas específicas para o envio da informação de acordo com cada possível cenário.
 	
 	\par \textit{Unicast} (\autoref{fig_5}) é o termo utilizado para descrever a comunicação onde uma mensagem é enviada de um ponto à outro. Neste caso, existe apenas um emissor e um destinatário por mensagem.
 	
@@ -743,11 +743,11 @@ brazil,				% o último idioma é o principal do documento
 
 	\section{Redes LAN}
 	
-	\par Tanenbaum \& Wetherall (2011) agrupam as redes de computadores por categorias que as diferenciam de acordo com seu tamanho e área de cobertura. Existem as redes locais (LAN ou \textit{Local Area Networks}) e as redes de longo alcance (WAN ou \textit{Wide Area Networks}). As redes metropolitanas (MAN ou \textit{Metropolitan Area Networks}) se encaixam como categoria entre as LANs e WANs.
+	\par Tanenbaum e Wetherall (2011) agrupam as redes de computadores por categorias que as diferenciam de acordo com seu tamanho e área de cobertura. Existem as redes locais (LAN ou \textit{Local Area Networks}) e as redes de longo alcance (WAN ou \textit{Wide Area Networks}). As redes metropolitanas (MAN ou \textit{Metropolitan Area Networks}) se encaixam como categoria entre as LANs e WANs.
 	
 	\par As redes locais (LANs) são o tipo mais comum de redes, podendo ser encontradas na maioria das residências, empresas e instituições de ensino. É comumente privada e limitada a alguns poucos quilômetros.
 	
-	\par As LANs atuais são redes de alta velocidade (entre 100 Mbps a 10 Gbps), baixo índice de erros e cobrem uma área geográfica relativamente pequena (Tanenbaum \& Wetherall, 2011). As LANs conectam estações de trabalho, periféricos, roteadores, \textit{switches} e outros dispositivos em um único prédio ou área geográfica. O padrão \textit{Ethernet} é de longe o tipo mais comum de LAN cabeada.
+	\par As LANs atuais são redes de alta velocidade (entre 100 Mbps a 10 Gbps), baixo índice de erros e cobrem uma área geográfica relativamente pequena (Tanenbaum e Wetherall, 2011). As LANs conectam estações de trabalho, periféricos, roteadores, \textit{switches} e outros dispositivos em um único prédio ou área geográfica. O padrão \textit{Ethernet} é de longe o tipo mais comum de LAN cabeada.
 	
 	\section{Família de padrões IEEE 802}
 	
@@ -849,11 +849,11 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par As redes \textit{ad hoc} se destacam por serem redes onde não há um nó central - como um roteador ou um \textit{switch} - servindo como ponto de acesso. Esta função é acumulada pelos nós, que se conectam, consomem e geram dados, assim como armazenam e entregam informações. Em redes \textit{ad hoc} são trocados quadros de arquitetura IBSS, se diferenciando das redes de infraestrutura, que utilizam quadros BSS. Além disso, as redes \textit{ad hoc} não possuem conexão direta com a Internet. Justamente por serem redes sem infraestrutura, as mesmas não possuem provedor de acesso.
 	
-	\par Segundo Tanenbaum \& Wetherall (2011), as redes sem fio de nós móveis que estão próximos uns aos outros são chamadas de MANETs (\textit{Mobile Ad Hoc Networks} ou Redes \textit{Ad Hoc} Móveis). Estes nós podem ser \textit{notebooks}, \textit{tablets}, \textit{smartphones}, etc. Por possuírem dispositivos que se movem constantemente, as MANETs estão sujeitas à constantes variações na topologia de rede, com nós que podem entrar e sair da rede em um curto intervalo de tempo, ocasionando a alteração rápida de rotas. 
+	\par Segundo Tanenbaum e Wetherall (2011), as redes sem fio de nós móveis que estão próximos uns aos outros são chamadas de MANETs (\textit{Mobile Ad Hoc Networks} ou Redes \textit{Ad Hoc} Móveis). Estes nós podem ser \textit{notebooks}, \textit{tablets}, \textit{smartphones}, etc. Por possuírem dispositivos que se movem constantemente, as MANETs estão sujeitas à constantes variações na topologia de rede, com nós que podem entrar e sair da rede em um curto intervalo de tempo, ocasionando a alteração rápida de rotas. 
 	
 	\par O roteamento de pacotes em redes \textit{ad hoc} é mais complexo do que em redes infraestruturadas e possui uma série de desafios. Para rotear os pacotes, os desafios encontrados são: mobilidade dos nós que impactam diretamente as rotas, implantação de Qualidade de Serviço (QoS) e a escalabilidade da rede. Há também desafios com relação ao consumo de energia elétrica que os nós dispõem para realizar a transmissão e recepção dos dados além de realizar outros processos. Como a troca de informações entre os nós é intensa, a energia é gasta de maneira mais acelerada. Desafios que envolvem conectividade também preocupam. As redes \textit{ad hoc} apresentam condições inconstantes como taxas de erro de bit variáveis e interferências na comunicação por outros meios de transmissão.
 	
-	\par Ao longo dos anos, diversos protocolos de roteamento para MANETs foram criados. Seguindo uma primeira abordagem, os protocolos de redes \textit{ad hoc} móveis foram classificados baseando-se na topologia (Royer \& Toh, 1999) ou na posição (Giordano et al., 2004). Os protocolos baseados na topologia ainda podem ser subclassificados como pró-ativos, reativos e híbridos enquanto os protocolos baseados em posição podem ser classificados em roteamento guloso ou restrito. Alguns exemplos de protocolo são citados e categorizados na \autoref{fig_12}.
+	\par Ao longo dos anos, diversos protocolos de roteamento para MANETs foram criados. Seguindo uma primeira abordagem, os protocolos de redes \textit{ad hoc} móveis foram classificados baseando-se na topologia (Royer e Toh, 1999) ou na posição (Giordano et al., 2004). Os protocolos baseados na topologia ainda podem ser subclassificados como pró-ativos, reativos e híbridos enquanto os protocolos baseados em posição podem ser classificados em roteamento guloso ou restrito. Alguns exemplos de protocolo são citados e categorizados na \autoref{fig_12}.
 	
 	% INSERIR FIGURA 12 Protocolos de roteamento de MANETs
 	\begin{figure} [H]
@@ -912,7 +912,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Um dispositivo Car2X é um meio de comunicação de rádio que pretende oferecer serviços interoperáveis para os transportes. Funciona como um “roteador” para veículos. Pode apenas transmitir ou receber de dados ou realizar ambas as operações.
 	
-	\par Atualmente, várias empresas produzem hardware, \textit{firmware} e software para dispositivos de tecnologia Car2X. Entre elas, se destacam a Cohda Wireless, Autotalks, Commsignia, Rohde \& Schwarz, Vector Informatik e Unex.
+	\par Atualmente, várias empresas produzem hardware, \textit{firmware} e software para dispositivos de tecnologia Car2X. Entre elas, se destacam a Cohda Wireless, Autotalks, Commsignia, Rohde e Schwarz, Vector Informatik e Unex.
 	
 	Os dipositivos Car2X produzidos atualmente por estas empresas são unidades de bordo e unidades de acostamento.
 	
@@ -937,7 +937,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Segundo o padrão IEEE 1609.0 (2013), os dispositivos Car2X têm duas principais formas de comunicação: veículo para veículo e veículo para infraestrutura.
 	
-	\par As comunicações de \textbf{veículo para veículo} (\textit{Vehicle to Vehicle} ou V2V) são transferências de informação apenas entre unidades de bordos de veículos. O protocolo WSMP é o que provê conexões para este tipo de comunicação no padrão IEEE 1609 WAVE.
+	\par As comunicações de \textbf{veículo para veículo} (\textit{Vehicle to Vehicle} ou V2V) são transferências de informação apenas entre unidades de bordos de veículos. O protocolo WSMP é o que provê conexões para este tipo de comunicação no padrão WAVE.
 		
 	\par As comunicações de \textbf{veículo para infraestrutura} (\textit{Vehicle to Infrastructure} ou V2I) são as trocas de informações entre unidades de bordo e unidades de acostamento. É possível que uma unidade de acostamento conecte-se a uma rede de infraestrutura, o que poderia prover conexão à Internet as unidades de bordo próximas.
 	
@@ -981,8 +981,8 @@ brazil,				% o último idioma é o principal do documento
 		\renewcommand{\arraystretch}{1.2}
 		\begin{tabular}{|p{1.5cm}|p{2.3cm}|p{8.5cm}|p{2cm}|} \hline
 			\textbf{Padrão} & \multicolumn{1}{c|}{\textbf{Área}} & \multicolumn{1}{c|}{\textbf{Descrição}} & \multicolumn{1}{c|}{\textbf{Status}} \\ \hline
-			802.11p & Camadas\newline Física e MAC & Emenda que descreve as diferenças específicas na camada física e controle de acesso ao meio em ambientes de comunicação WAVE & Ativo \\ \hline
-			1609.0 & Arquitetura & Descreve a arquitetura e os serviços necessários para dispositivos WAVE multicanal & Ativo \\ \hline
+			802.11p & Camadas\newline Física e MAC & Emenda que descreve as diferenças específicas na camada física e controle de acesso ao meio em ambientes de comunicação WAVE. & Ativo \\ \hline
+			1609.0 & Arquitetura & Descreve a arquitetura e os serviços necessários para dispositivos WAVE multicanal. & Ativo \\ \hline
 			1609.1 & Gerenciador de Recursos & Aplicação retirada que permitia a sites remotos se comunicarem com OBUs via RSUs. & Retirado \\ \hline
 			1609.2 & Serviços de Segurança & Define métodos para tornar as mensagens de gerenciamento e aplicação seguras. Descreve funções administrativas necessárias para suporte de funções de segurança. & Ativo \\ \hline
 			P1609.2a & Emenda à 1609.2 para gerenciamento de certificados & Descreve como os serviços de segurança WAVE respeitam a privacidade do usuário. Provê características adicionais de gerenciamento de certificação. & Em desenvolvimento \\ \hline
@@ -990,7 +990,7 @@ brazil,				% o último idioma é o principal do documento
 			1609.4 & Operação Multicanal & Especifica as funções e serviços da subcamada de Controle de Acesso ao Meio (MAC) que suportam operações multicanal. & Ativo \\ \hline
 			1609.5 & Gerente de Comunicação & Padrão previsto para definir serviços de gerenciamento de Comunicação no suporte à conexão entre OBUs e RSUs. & Rascunho \\ \hline
 			P1609.6 & Serviços de Gerenciamento Remoto & Padrão em desenvolvimento que define formatos específicos de mensagens de gerenciamento e de dados para dispositivos WAVE remotamente controlados. & Em desenvolvimento \\ \hline
-			1609.11 & Protocolo de pagamentos eletrônicos & Define um nível básico de interoperabilidade técnica para equipamentos de pagamento eletrônico. Ex.: OBUs e RSUs usando DSRC & Ativo \\ \hline
+			1609.11 & Protocolo de pagamentos eletrônicos & Define um nível básico de interoperabilidade técnica para equipamentos de pagamento eletrônico. Ex.: OBUs e RSUs usando DSRC. & Ativo \\ \hline
 			1609.12 & Alocações de Identificadores & Especifica a alocações de identificadores WAVE. & Ativo \\ 
 			\hline
 		\end{tabular}
@@ -1102,7 +1102,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Na camada física, a principal emenda acrescida pela norma 802.11p foi operação das interfaces em canais de 10 MHz ao invés de 20 MHz, como eram usados em dispositivos 802.11a. A diminuição da largura do canal foi motivada por estudos feitos por Cheng et al. (2008) que demonstraram que os intervalos de guarda em transmissão de 20MHz (0.8$\mu$s) não são suficientemente longos para conter os atrasos gerados por efeitos da propagação multi-percurso, que eram de até 1.5$\mu$s. Um canal de 10MHz tem intervalos de guarda de 1.6$\mu$s. 
 	
-	\par O espectro que segue na \autoref{fig_21} foi alocado pela Comissão Federal das Comunicações (FCC) dos Estados Unidos para o DSRC. É esperado que os sistemas WAVE desenvolvidos nos EUA trabalhem nos canais definidos pela FCC.
+	\par O espectro que segue na \autoref{fig_21}, descrito no padrão IEEE 1609.0 (2013), foi alocado pela Comissão Federal das Comunicações (FCC) dos Estados Unidos para o DSRC. É esperado que os sistemas WAVE desenvolvidos nos EUA trabalhem nos canais definidos pela FCC.
 	
 	% INSERIR Figura 21 Espectro WAVE - FCC USA
 	\begin{figure} [H]
@@ -1596,7 +1596,7 @@ brazil,				% o último idioma é o principal do documento
 		\item A simulação permite analisar gargalos a fim de descobrir onde há processos atrasando o desempenho do sistema;
 	\end{itemize}
 	
-	\par Confome corroborado também por Olariu \& Weigle (2009), a maneira mais apropriada de se avaliar o desempenho de uma rede é desenvolvendo simulações que forneçam resultados mais próximos de observações do mundo real.
+	\par Confome corroborado também por Olariu e Weigle (2009), a maneira mais apropriada de se avaliar o desempenho de uma rede é desenvolvendo simulações que forneçam resultados mais próximos de observações do mundo real.
 	
 	\par Para se avaliar o funcionamento de simulações em redes veiculares, há de se integrar um conjunto de softwares que incorporem o aspecto de arquitetura de redes de comunicações juntamente com softwares que produzam a mobilidade e a aleatoriedade existente em ambientes veiculares. Isto é, para a simulação de redes veiculares é necessário integrar:
 	
@@ -1730,7 +1730,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Para a simulação de redes veiculares, foi notado que o modelo de tráfego deveria se preocupar com a modelagem individual de transmissão de rádio entre os nós, necessitando das posições, dos vetores e de ações exatas de nós individuais. Modelos com pelotões de veículos e ou tendências macroscópicas de tráfego não se adequariam às  comunicações inter veiculares. 
 	
-	\par Seguindo o critério estabelecido acima foi visto que há diversos modelos de microtráfego urbano implementados. Segundo conclusão de Brockfeld \& Wagner (2004), todos os modelos microscópicos de simulação apresentam um mesmo valor de acurácia como modelos de mobilidade. Isto inclui os modelos \textit{Cellular Automaton}, \textit{Car-following} e IDM/MOBIL.
+	\par Seguindo o critério estabelecido acima foi visto que há diversos modelos de microtráfego urbano implementados. Segundo conclusão de Brockfeld e Wagner (2004), todos os modelos microscópicos de simulação apresentam um mesmo valor de acurácia como modelos de mobilidade. Isto inclui os modelos \textit{Cellular Automaton}, \textit{Car-following} e IDM/MOBIL.
 	
 	\par O processo de escolha de software de simulação de trânsito para o desenvolvimento de estudo de caso atendeu os seguintes critérios:
 	
@@ -1780,7 +1780,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{\textit{Vehicles in Network Simulation}}
 	
-	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) segundo 	Sommer \& Dressler (2011) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. Sua arquitetura é mostrada na \autoref{fig_451}. O \text{framework} em questão tem o módulo de mobilidade (Mobility) ligado ao SUMO (Road Traffic Simulation) através de uma interface de controle de tráfego (TraCI) que utiliza uma porta TCP para comunicação. Isto faz com que cada simulação de rede veicular no VEINS execute os dois simuladores em paralelo: OMNET++ e SUMO.
+	\par VEINS (\textit{Vehicles in Network Simulation} ou Veículos em Simulação de Redes) segundo 	Sommer e Dressler (2011) é um \textit{framework} para o OMNET++ que contém bibliotecas para simulação de redes veiculares e faz a comunicação entre o OMNET++ e o SUMO. Sua arquitetura é mostrada na \autoref{fig_451}. O \text{framework} em questão tem o módulo de mobilidade (Mobility) ligado ao SUMO (Road Traffic Simulation) através de uma interface de controle de tráfego (TraCI) que utiliza uma porta TCP para comunicação. Isto faz com que cada simulação de rede veicular no VEINS execute os dois simuladores em paralelo: OMNET++ e SUMO.
 
 	% INSERIR FIGURA DE IDE DO SUMO
 	\begin{figure} [H]
@@ -1880,9 +1880,9 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Os experimentos mostrados a seguir incluem veículos equipados com tecnologias Car2X. Foi garantido que um mesmo conjunto de sementes aleatórias fosse gerado para os experimentos a serem comparados, o que descarta uma possível influência nos dados coletados e aumenta o grau de confiabilidade destes.
 
-	\par Conforme descrito na enciclopédia on-line do SUMO, estas sementes aleatórias são produzidar por um gerador de números pseudoaleatórios chamado \textit{Mersenne Twister}, garantindo efeitos mais aproximados de cenários reais.
+	\par Conforme descrito na enciclopédia on-line do SUMO{\footnote{\href{http://sumo.dlr.de/wiki/Simulation/Randomness}{http://sumo.dlr.de/wiki/Simulation/Randomness} (acesso em 13 de out. 2016)}}, estas sementes aleatórias são produzidas por um gerador de números pseudoaleatórios chamado \textit{Mersenne Twister}, garantindo efeitos mais aproximados de cenários reais.
 
-	\par As simulações realizadas nos cenários subsequentes utilizam o mesmo espectro regulamentado pela FCC para comunicações DSRC nos Estados Unidos. A ANATEL (ATO No 2.099, 2012) ainda não estabeleceu um espectro para as comunicações interveiculares no Brasil até a presente data.
+	\par As simulações realizadas nos cenários subsequentes utilizam o mesmo espectro descrito no IEEE 1609.0 (2013) que foi regulamentado pela FCC para comunicações DSRC nos Estados Unidos. A ANATEL (2012) ainda não estabeleceu um espectro para as comunicações interveiculares no Brasil até a presente data.
 
 	\section{Especificações do Sistema}
 
@@ -1951,7 +1951,7 @@ brazil,				% o último idioma é o principal do documento
     		BaseGPS & Interface com funções específicas de GPS. A classe concreta \textit{SimpleGPS} implementa um GPS simples com comportamentos básicos, como a obtenção e verificação de rotas de veículos. \\ \hline
     		BaseOBUDevice & Classe abstrata que contém comportamentos comuns em dispositivos Car2X móveis para veículos, como a inicialização de um GPS. A classe concreta \textit{VehicleDevice} invoca um objeto motorista. Outros tipos de dispositivos Car2X móveis podem ser implementados para pedestres e ciclistas, por exemplo. \\ \hline
     		RSUDevice & Classe utilizada por Unidades de Acostamento. Instancia um objeto \textit{BaseMobility}, característico de dispositivos estáticos. \\ \hline
-    		ApplicationManager & Classe que gerencia aplicações inspirado no Padrão de Projeto Composite. O Gerente de Aplicações permite ao dispositivo WAVE executar diversas aplicações ao mesmo tempo, diferente dos exemplos do VEINS, onde cada dispositivo executa exclusivamente uma aplicação. \textit{BaseApplicationMsg} é uma classe abstrata que contém informações comuns à aplicações WAVE. É possível a adição de novas classes no futuro como aplicações de clima, comboio de veículos, segurança no tráfego, etc. \\ \hline
+    		ApplicationManager & Classe gerente de aplicações, inspirado em Gamma et al. (2007) no Padrão de Projeto Composite. Permite ao dispositivo WAVE executar diversas aplicações ao mesmo tempo, diferente dos exemplos do VEINS, onde cada dispositivo executa exclusivamente uma aplicação. \textit{BaseApplicationMsg} é uma classe abstrata que contém informações comuns à aplicações WAVE. É possível a adição de novas classes no futuro como aplicações de clima, comboio de veículos, segurança no tráfego, etc. \\ \hline
     		BaseCryptography & Interface que contém a base para criptografia dos dados das aplicações. A classe concreta \textit{SimpleCryptography} implementa uma criptografia simples como exemplo. \\ \hline
     		EmergencyApplicationMsg & Principal classe para o estudo de caso deste trabalho. Contém comportamentos de envio e recepção de mensagens de emergência. Requisita serviços de um GPS e contém o \textbf{PSID 0x0C}. \\ \hline
     	\end{tabular}
@@ -1961,7 +1961,7 @@ brazil,				% o último idioma é o principal do documento
 
     \par Foi escolhido o método de envio das mensagens de emergência no formato broadcast com o intuito de garantir que todos veículos na proximidade recebam o alerta. Entretanto, conforme analisado por Sommer e Dressler (2015), o envio de mensagens broadcast no meio veicular pode gerar um problema de “congestionamento de transmissões”. Existem propostas de solução para o problema, porém estas não serão tratadas no trabalho.
 
-	\par As mensagens da aplicação de emergência são enviadas no formato broadcast. Estas mensagens são de alcance direto (\textit{single-hop} ou salto único) e geradas na camada de aplicação WAVE. Serão requisitados para o envio da mensagem apenas os serviços da camadas de aplicação, da subcamada de enlace MAC e da camada física. Os serviços de outras camadas, como a de transporte e a subcamada de enlace LLC são apropriados para o envio de outras naturezas de mensagens, como mensagens de protocolos roteamento que contém múltiplos saltos (\textit{multihop}).
+	\par As mensagens da aplicação de emergência são enviadas no formato broadcast. Estas mensagens são de alcance direto{\footnote{\href{http://stackoverflow.com/a/38727027}{http://stackoverflow.com/a/38727027} (acesso em 3 de ago. 2016)}} (\textit{single-hop} ou salto único) e geradas na camada de aplicação WAVE. Serão requisitados para o envio da mensagem apenas os serviços da camadas de aplicação, da subcamada de enlace MAC e da camada física. Os serviços de outras camadas, como a de transporte e a subcamada de enlace LLC são apropriados para o envio de outras naturezas de mensagens, como mensagens de protocolos roteamento que contém múltiplos saltos (\textit{multihop}).
 
 	\par O tamanho dos dados nas mensagens de emergência é dinâmico. Para este estudo de caso, o campo \textit{wsmData} contém o percurso parcial a ser percorrido pelo veículo de segurança pública. O formato deste campo é o seguinte:
 
@@ -1973,7 +1973,7 @@ brazil,				% o último idioma é o principal do documento
 
     \begin{table}[H] %[?] Colocar cor no codigo. Fica em tabela msm? Coloca legenda ou n?
 	    \centering
-	    \renewcommand{\arraystretch}{1.2}
+	    \renewcommand{\arraystretch}{1.1}
 	    \begin{tabular}{|p{15cm}|}
 		    \hline
 		    //numberOfRoads: Número máximo de ruas a ser obtido, inicializado no construtor \\
@@ -2177,8 +2177,8 @@ brazil,				% o último idioma é o principal do documento
 	
 	\subsection{Experimento 3: Aplicação de Emergência em região existente}
 	
-	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site do \textit{OpenStreetMap}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro,  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
-	
+	\par Para o terceiro cenário, um cenário mais complexo foi desenvolvido para a realização de experimentos. Foi importado o mapa do entorno da região de Ipanema-Copabana na cidade do Rio de Janeiro por meio do site \href{https://www.openstreetmap.org}{openstreetmap.org/}. Esta região foi escolhida por serem dois bairros turísticos mundialmente famosos da cidade do Rio de Janeiro{\footnote{\href{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/}{http://www.touropia.com/tourist-attractions-in-rio-de-janeiro/} (acesso em 20 oct. 2016)}},  além do fato deles também possuírem condições propícias à simulações de tráfego, como melhor planejamento urbano, número relevante de faixas por vias, semáforos, obstáculos, etc.
+
 	\par A \autoref{fig_5.13} apresenta o percurso do veículo de resgate, que parte da Avenida Vieira Souto em Ipanema e segue para Copacabana via Avenida Nossa Senhora de Copacabana até seu ponto de destino. São percorridos aproximadamente 4800 metros neste trajeto, representado na imagem pela linha vermelha. Devido ao comportamento apresentado pelas unidades de acostamento no segundo experimento, 7 RSUs (pontos pretos \autoref{fig_5.13}) foram espalhadas para auxiliar na propagação das mensagens da aplicação de emergência. 
 	
 	\begin{figure}[H]
@@ -2187,7 +2187,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_5.13}Trajetória do veículo de resgate e RSUs}
 	\end{figure}	
 	
-	\par O volume de veículos gerado para as avenidas Vieira Souto e Nossa Senhora de Copacabana foi baseado em informações de tráfego obtidos em documento da Companhia de Engenharia de Tráfego do Rio de Janeiro (CET-Rio, 2014). A \autoref{tab_5.6} apresenta os dispositivos WAVE contidos no experimento.
+	\par O volume de veículos gerado para as avenidas Vieira Souto e Nossa Senhora de Copacabana foi baseado em informações de tráfego obtidos em documento da Companhia de Engenharia de Tráfego do Rio de Janeiro (CET-RIO, 2014). A \autoref{tab_5.6} apresenta os dispositivos WAVE contidos no experimento.
 	
 	\begin{table}[H]
 		\centering
@@ -2221,7 +2221,7 @@ brazil,				% o último idioma é o principal do documento
 		\caption{\label{fig_5.15}Fluxo dos Carros e obstáculos em vermelho no  Experimento 3}
 	\end{figure}
 	
-	\par Os dados coletados no experimento 3 tiveram seus \textit{outliers} filtrados. Um \textit{outlier} é descrito em estatística como um ponto que está muito distante das demais observações em uma série. Comumente é chamado de “ponto fora da curva”. A utilização da análise de \textit{outliers} otimiza análises e garante confiabilidade na amostra.
+	\par Os dados coletados no experimento 3 tiveram seus \textit{outliers} filtrados. Um \textit{outlier} é descrito por Hawkins (1980) como um ponto que está muito distante das demais observações em uma série. Comumente é chamado de “ponto fora da curva”. A utilização da análise de \textit{outliers} otimiza análises e garante confiabilidade na amostra.
 	
 	\par O experimento tratado terá 95\% de confiabilidade, isto é, serão analisados os 95\% dos valores que encontram-se entre a média somada a duas vezes o desvio padrão e a média subtraída de duas vezes o desvio padrão.
 	
@@ -2458,9 +2458,13 @@ brazil,				% o último idioma é o principal do documento
 
 		\item IEEE COMPUTER SOCIETY. IEEE Standard for Wireless Access in Vehicular Environments (WAVE): Multi-Channel Operation, 1609.4-2016. Nova York, 2016. 94 p.
 
+		\item WHYTE, W., et al. Threat and Countermeasures Analysis for WAVE \textit{Service Advertisement}. IEEE 18th International Conference on Intelligent Transportation Systems, Las Palmas, p. 1061-1068, 2015.
+
 		\item IEEE COMPUTER SOCIETY. IEEE Standard for Wireless Access in Vehicular Environments (WAVE): Networking Services, 1609.3-2016. Nova York, 2016. 160 p.
 
 		\item IEEE COMPUTER SOCIETY. IEEE Standard for Wireless Access in Vehicular Environments (WAVE): Over-the-Air Electronic Payment Data Exchange Protocol for Intelligent Transportation Systems (ITS), 1609.11-2010. Nova York, 2010. 62 p.
+
+		\item CHENG, L., et al. Multi-Path Propagation Measurements for Vehicular Networks at 5.9 GHz. In: WIRELESS COMMUNICATIONS AND NETWORKING CONFERENCE, 2008, Las Vegas.
 
 		\item IEEE COMPUTER SOCIETY. IEEE Standard for Wireless Access in Vehicular Environments (WAVE): Identifier Allocations, 1609.12-2016. Nova York, 2016. 21 p.
 
@@ -2490,42 +2494,27 @@ brazil,				% o último idioma é o principal do documento
 
             %Capítulo 5
 
+		\item ANATEL. Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil: Ato n. 2099. Brasil, 2012. 175 p.
+
+		\item GAMMA, E., et al. Padrões de Projeto: Soluções reutilizáveis de software orientado a objetos. Tradução de Luiz A. Meirelles Salgado. Bookman, 2007. 368 p.
+
 		\item SOMMER, C.; DRESSLER, F. Vehicular Networking. Primeira Edição. Cambridge University Press, 2015. 370 p.
 
+		\item CET-RIO. Volume Diário De Veículos Das Principais Vias Do Município Do Rio De Janeiro. Disponível em: \url{http://www.rio.rj.gov.br/dlstatic/10112/5112752/4131653/VolumedasprinciaisviasdoRiodeJaneiro.pdf}. Acesso em: 25 de ago. 2016.
 
-            %Capítulo 6
-
+        \item HAWKINS, D. M. Identification of Outliers. Chapman and Hall, 1980. 188 p. (Monographs on applied probability and statistics)
 
 
             %Anexo A
 
-
-
-            %Anexo B
-
-
-
-            %Anexo C
-
-
-
-            %Anexo D
-
-
-
-            %Anexo E
-
-
-
-            %Anexo F
-
 		\item DUBUISSON, O. ASN.1 Communication between Heterogeneous Systems. Morgan Kaufmann, 2001. 562 p.
+
+
+            %apagar?%
 
 		\item DELGROSSI, L.; ZHANG, T. Vehicle Safety Communications: Protocols, Security, and Privacy. Nova Jérsia: Wiley, 2012. 372 p. (Information and Communication Technology Series)
 
 		\item HARTENSTEIN, H.; LABERTEAUX, K. P. VANET: Vehicular Applications and Inter-Networking Technologies. Chichester: Wiley, 2010. 435 p. (Intelligent transportation systems)
-
-		\item CHENG, L., et al. Multi-Path Propagation Measurements for Vehicular Networks at 5.9 GHz. In: WIRELESS COMMUNICATIONS AND NETWORKING CONFERENCE, 2008, Las Vegas.
 
 		\item PURSULA, M. Simulation of Traffic Systems: An Overview. Disponível em: \url{http://publish.uwo.ca/~jmalczew/gida\_5/Pursula/Pursula.html}. Acesso em: 6 de jun. 2016.
 
@@ -2545,21 +2534,11 @@ brazil,				% o último idioma é o principal do documento
 
 		\item Installing: Sumo. Disponível em: \url{http://sumo.dlr.de/wiki/Installing}. Acesso em: 7 de jun. 2016.
 
-		\item ANATEL. Plano de Atribuição, Destinação e Distribuição de Faixas de Frequências no Brasil: Ato n. 2099. Brasil, 2012. 175 p.
-
 		\item IEEE COMPUTER SOCIETY. Standard for Wireless Access in Vehicular Environments: Security Services for Applications and Management Messages Amendment - Certificate Management, P1609.2a. Nova York, 2010. 62 p.
-
-		\item IEEE SA - P1609.2a - Standard for Wireless Access in Vehicular Environments--Security Services for Applications and Management Messages Amendment - Certificate Management. Disponível em: \url{https://standards.ieee.org/develop/project/1609.2a.html}. Acesso em: 21 de jun. 2016.
 
 		\item IEEE SA - P1609.6 - Standard for Wireless Access in Vehicular Environments (WAVE) - Remote Management Service. Disponível em: \url{https://standards.ieee.org/develop/project/1609.6.html}. Acesso em: 21 de jun. 2016.
 
 		\item Features: Veins. Disponível em: \url{http://veins.car2x.org/features/}. Acesso em: 19 de jul. 2016.
-
-		\item DIRETORIA DE DESENVOLVIMENTO GERÊNCIA DE INFORMAÇÕES DE TRÁFEGO. Volume Diário De Veículos Das Principais Vias Do Município Do Rio De Janeiro. Disponível em: \url{http://www.rio.rj.gov.br/dlstatic/10112/5112752/4131653/VolumedasprinciaisviasdoRiodeJaneiro.pdf}. Acesso em: 25 de ago. 2016.
-
-		\item WHYTE, W., et al. Threat and Countermeasures Analysis for WAVE \textit{Service Advertisement}. IEEE 18th International Conference on Intelligent Transportation Systems, Las Palmas, p. 1061-1068, 2015.
-
-		\item  Simulation/Randomness. Disponível em: \url{http://sumo.dlr.de/wiki/Simulation/Randomness}. Acesso em: 13 de out. 2016.
 
 	\end{itemize}
 
@@ -2615,7 +2594,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\chapter{\label{ASN1}\textit{Abstract Syntax Notation One}}
 	
-	\par Em telecomunicações, ASN.1 (\textit{Abstract Syntax Notation One} ou Notação para Sintaxe Abstrata 1) é uma notação de comunicação padronizada internacionalmente em 1984 por um conjunto de organizações e funciona independentemente de hardware, sistemas operacionais e linguagens de programação utilizados. Esta notação descreve estruturas de dados usadas para a representação, codificação, transmissão e decodificação dos dados em redes de telecomunicações. Por estes motivos, a notação ASN.1 permite que a estrutura da informação entre sistemas diversos (torres de celulares, radiotelescópios, carros, \textit{smartphones}, computadores, etc) seja compartilhada sem necessidade de saber como a mensagem é construída ou que meio é utilizado para a propagação (ar ou cabo).
+	\par Em telecomunicações, Dubuisson (2001) descreve ASN.1 (\textit{Abstract Syntax Notation One} ou Notação para Sintaxe Abstrata 1) como uma notação de comunicação padronizada internacionalmente em 1984 por um conjunto de organizações e funciona independentemente de hardware, sistemas operacionais e linguagens de programação utilizados. Esta notação descreve estruturas de dados usadas para a representação, codificação, transmissão e decodificação dos dados em redes de telecomunicações. Por estes motivos, a notação ASN.1 permite que a estrutura da informação entre sistemas diversos (torres de celulares, radiotelescópios, carros, \textit{smartphones}, computadores, etc) seja compartilhada sem necessidade de saber como a mensagem é construída ou que meio é utilizado para a propagação (ar ou cabo).
 	
 	%[?] como BER, CER e PER utilizam  : deixa sem descricao da sigla msm?
 	\par ASN.1 define uma sintaxe abstrata da informação mas não restringe como a informação é codificada. Por isso, diversas regras de codificação como BER, CER e PER utilizam da sintaxe abstrata descrita em ASN.1. Regras de codificação descrevem como os valores definidos na notação podem ser codificados para a transmissão. Em outras palavras as regras de codificação ditam como a informação será traduzida em bytes para comunicações com ou sem fio. Diversos protocolos de aplicação como LDAP, H.323 e Kerberos também utilizam a notação ASN.1 em unidades de protocolos de dados trocados.
@@ -2638,7 +2617,7 @@ brazil,				% o último idioma é o principal do documento
 		\legend{Fonte: \href{http://support.ipmonitor.com/}{http://support.ipmonitor.com/} (acesso em 29 de jul. 2016)}
 	\end{figure}
 	
-	\par As camadas físicas e de enlace, por exemplo, têm sua própria MIB. Há entidades conceituais que gerenciam informações das camadas, requisitando informações e solicitando alterações na MIBs de outras camadas por meio de pontos de acesso a serviços (SAPs ou \textit{Service Acess Points}), que funcionam como interfaces. Como exemplo, algumas alterações na camada MAC podem necessitar de alterações na camada física, portanto o SAP que fica entre a subcamada MAC e a camada física permite à entidade da subcamada MAC solicitar à entidade da camada física alterações na MIB. A \autoref{fig_14} mostra um modelo conceitual contendo SAPs entre entidades e camadas.
+	\par As camadas físicas e de enlace, segundo o padrão IEEE 802.11p (2010), têm sua própria MIB. Há entidades conceituais que gerenciam informações das camadas, requisitando informações e solicitando alterações na MIBs de outras camadas por meio de pontos de acesso a serviços (SAPs ou \textit{Service Acess Points}), que funcionam como interfaces. Como exemplo, algumas alterações na camada MAC podem necessitar de alterações na camada física, portanto o SAP que fica entre a subcamada MAC e a camada física permite à entidade da subcamada MAC solicitar à entidade da camada física alterações na MIB. A \autoref{fig_14} mostra um modelo conceitual contendo SAPs entre entidades e camadas.
 	
 	% INSERIR FIGURA 14 MIBs - Interfaces entre camadas
 	\begin{figure} [H]
@@ -2657,7 +2636,7 @@ brazil,				% o último idioma é o principal do documento
 
 		\chapter{\label{psid_aloc}Alocação de PSIDs}
 		
-		\par Na família de padrões WAVE são alocados identificadores a fim de identificar dispositivos, serviços, organizações e tipos de mensagens WAVE segundo seus propósitos. A norma que aloca os identificadores de dispositivos ou serviços WAVE é a IEEE 1609.12.
+		\par Na família de padrões WAVE são alocados identificadores a fim de identificar dispositivos, serviços, organizações e tipos de mensagens WAVE segundo seus propósitos. A norma que aloca os identificadores de dispositivos ou serviços WAVE é a IEEE 1609.12 (2016).
 		
 		\par Para provedores de serviço, a identificação (\textit{Provider Service Identifier} ou PSID) é um número inteiro de 4 octetos que varia entre 0 a 270 549 119 (em hexadecimal 10-20-40-7F). O PSID é um identificador de uma área de aplicação e tem 3 principais usos:
 		
@@ -2731,7 +2710,7 @@ brazil,				% o último idioma é o principal do documento
 		
 	    \chapter{\label{att:InfoElemWAVE}Informações do Elemento WAVE}
 	
-	    \par Partes do cabeçalho WSMP e WSA permitem a presença do campo Informações Extensíveis do Elemento WAVE que deverá conter a estrutura apresentada na \autoref{fig_35}.
+	    \par Partes do cabeçalho WSMP e WSA permitem a presença do campo Informações Extensíveis do Elemento WAVE que deverá conter a estrutura apresentada na \autoref{fig_35} conforme descrito no padrão IEEE 1609.3 (2016).
 	
 	    %INSERIR Figura 35 Estrutura do campo Informações Extensíveis do Elemento WAVE
 	    \begin{figure} [H]
