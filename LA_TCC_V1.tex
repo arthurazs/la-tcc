@@ -6,7 +6,7 @@
 % Conversão de Tabelas http://www.tablesgenerator.com/latex_tables
 % Manual ABNTeX2 http://mirror.unl.edu/ctan/macros/latex/contrib/abntex2/doc/abntex2.pdf
 % Corrigir tab_2
-% Dúvidas marcadas com um [?]
+% Dúvidas marcadas com [?]
 % Links autoref estão bugados, levando p/ a legenda da imagem ao invés da imagem
 % Apendice sem identação correta e sem justificação
 % Como referenciar capítulo?
@@ -16,7 +16,6 @@
 % Alterar imagens com fundo transparente (Ex.: Figura 05)
 % Corrigir notas de rodapé
 % Alterar tamanho das imagens
-%[?] COLOCAR LIVROS QUE UTILIZAMOS PARA APRENDER PADORES DE PROJETO?
 % Verificar se falta alguma referencia
 % Rever imagens, adicionar circulos, sublinhados, etc, necessários!
 
@@ -62,6 +61,9 @@ brazil,				% o último idioma é o principal do documento
 \usepackage{multirow}
 \usepackage{ragged2e}
 \usepackage{caption}
+\usepackage{footnote}
+\usepackage{geometry}
+\geometry{a4paper, left=2cm, right=2cm, bottom=2cm, top=2cm, footskip=2cm}
 % ---
 
 % ---
@@ -109,7 +111,7 @@ brazil,				% o último idioma é o principal do documento
 		LAURO DE LACERDA CAETANO}
 \local{Campos dos Goytacazes}
 \data{2016}
-\orientador{MSc. VINÍCIUS BARCELOS} % [?] Verificar com o orientador
+\orientador{MSc. VINÍCIUS BARCELOS}
 \instituicao{%
 	Instituto Federal Fluminense -- IFF
 	\par
@@ -539,7 +541,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.3]{figuras/cap1/01FlightRadar}
+		\includegraphics[scale=.35]{figuras/cap1/01FlightRadar}
 		\caption{\label{fig_0}Dados públicos de vôos}
 	\end{figure}
 
@@ -551,7 +553,7 @@ brazil,				% o último idioma é o principal do documento
 
 	\par Vista como subclasse da Internet das Coisas, a Internet dos Veículos é uma rede que também integra dispositivos incorporados de sensores (veículos, itens de sinalização, unidades de acostamento), software e rede de dados, possibilitando que veículos e mais objetos coletem e troquem informações. A partir do processamento das informações, os veículos podem tornar-se mais inteligentes, sendo capazes de auxiliar na tomada de decisões até de maneira parcial ou totalmente autônomas, visando a segurança e bem estar dos passageiros e pedestres.
 
-	\par As redes de comunicação veiculares, parte fundamental para incremento da inteligência no meio veicular, continuam em plena evolução. O estudo do funcionamento destas tem mais de uma década, sendo iniciado pelas VANETs (\textit{Vehicular Ad Hoc NETworks} ou Redes Ad Hoc Veiculares), passando por diversos protocolos de teste, até chegar ao estabelecimento de famílias de padrões. Duas destas se destacam, a primeira família chamada de Acesso sem fio em Ambientes Veiculares (WAVE) contém um conjunto de padrões criados pelo Instituto de Engenheiros Elétricos e Eletrônicos (IEEE) que foram submetidos a diversas baterias de testes e provas de conceito. Na Europa, a família de padrões para Sistemas de Transportes Inteligentes do Instituto de Padrões de Telecomunicações Europeu(ETSI) se iguala em notoriedade na comunidade científica.
+	\par As redes de comunicação veiculares, parte fundamental para incremento da inteligência no meio veicular, continuam em plena evolução. O estudo do funcionamento destas tem mais de uma década, sendo iniciado pelas VANETs (\textit{Vehicular Ad Hoc NETworks} ou Redes Ad Hoc Veiculares), passando por diversos protocolos de teste, até chegar ao estabelecimento de famílias de padrões. Duas destas se destacam, a primeira família chamada de Acesso sem fio em Ambientes Veiculares (WAVE) contém um conjunto de padrões criados pelo Instituto de Engenheiros Elétricos e Eletrônicos (IEEE) que foram submetidos a diversas baterias de testes e provas de conceito. Na Europa, a família de padrões para Sistemas de Transportes Inteligentes do Instituto de Padrões de Telecomunicações Europeu (ETSI) se iguala em notoriedade na comunidade científica.
 
 	\par Segundo expectativas de mercado, 75\% dos carros do mundo estarão conectados em 2020, e o crescimento da Internet dos Veículos trará em torno de US\$2,94 bilhões em receitas{\footnote{\href{http://press.trendforce.com/node/view/1880.html}{http://press.trendforce.com/node/view/1880.html} (acesso em 13 de maio 2016)}}. Com um amplo apoio do Departamento de Transporte dos Estados Unidos, a comunicação entre veículos está perto de se tornar obrigatória para automóveis em circulação neste país{\footnote{\href{https://www.transportation.gov/fastlane/dialogue-industry-conversation-between-cars}{https://www.transportation.gov/fastlane/dialogue-industry-conversation-between-cars} (acesso em 14 de maio 2016)}}. Na Europa, a implantação da comunicação veicular também está acelerada. Foi criado um consórcio chamado Car2Car{\footnote{\href{https://www.car-2-car.org/}{https://www.car-2-car.org/} (acesso em 22 de maio 2016)}}  a partir da iniciativa de fabricantes de veículos europeus. Este consórcio sem fins lucrativos tem por objetivo aumentar a eficiência e segurança no tráfego rodoviário a partir da utilização de redes veículares.
 
@@ -767,6 +769,8 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Ao longo dos anos, uma miríade de padrões foram adicionados à família 802.11, sendo diferenciados por letras subsequentes ao número da norma. Em cada padrão adicionado à família 802.11, há uma série de especificidades que adequam-se às linhas gerais da norma. Como exemplo, são citadas algumas dessas normas na \autoref{tab_0}.
 	
+	\newpage
+	
 	%INSERIR TABELA padrões IEEE 802.11
 	\begin{table}[H]
 		\centering
@@ -792,7 +796,7 @@ brazil,				% o último idioma é o principal do documento
 	% INSERIR FIGURA 08 Modo infra-estruturado
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.5]{figuras/cap2/08ModoInfra-estruturado}
+		\includegraphics[scale=.55]{figuras/cap2/08ModoInfra-estruturado}
 		\caption{\label{fig_8}Modo Infra-estruturado}
 	\end{figure}		
 	
@@ -801,7 +805,7 @@ brazil,				% o último idioma é o principal do documento
 	% INSERIR FIGURA 09 Modo de operação ad hoc
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.3]{figuras/cap2/09ModosdeOperacaoAdHoc}
+		\includegraphics[scale=.45]{figuras/cap2/09ModosdeOperacaoAdHoc}
 		\caption{\label{fig_9}Modo de Operação Ad-Hoc}
 	\end{figure}
 	
@@ -823,7 +827,7 @@ brazil,				% o último idioma é o principal do documento
 	% INSERIR FIGURA 11 Redes Infra-estruturadas - BSS
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.6]{figuras/cap2/11ArquiteturaIEEE80211BSS}
+		\includegraphics[scale=.7]{figuras/cap2/11ArquiteturaIEEE80211BSS}
 		\caption{\label{fig_11}Arquitetura IEEE802.11 - BSS}
 	\end{figure}
 	
@@ -870,7 +874,7 @@ brazil,				% o último idioma é o principal do documento
 	\newpage
 	\chapter{Redes de Comunicação Veiculares}
 
-	\par Segundo a Organização Mundial de Saúde(OMS), acidentes de carro estão entre as 10 maiores causa de morte no mundo{\footnote{\href{http://www.who.int/mediacentre/factsheets/fs310/en/}{http://www.who.int/mediacentre/factsheets/fs310/en/} (acesso em 22 de jun. 2016)}}. Conforme relatado pela Universidade de Stanford, mais de 90\% dos acidentes têm origem em falha humana{\footnote{\href{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes}{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes} (acesso em 25 de jun. 2016)}}. Tais dados são alarmantes para a sociedade visto que nenhum meio de transporte tira tantas vidas como o meio rodoviário.
+	\par Segundo a Organização Mundial de Saúde (OMS), acidentes de carro estão entre as 10 maiores causa de morte no mundo{\footnote{\href{http://www.who.int/mediacentre/factsheets/fs310/en/}{http://www.who.int/mediacentre/factsheets/fs310/en/} (acesso em 22 de jun. 2016)}}. Conforme relatado pela Universidade de Stanford, mais de 90\% dos acidentes têm origem em falha humana{\footnote{\href{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes}{http://cyberlaw.stanford.edu/blog/2013/12/human-error-cause-vehicle-crashes} (acesso em 25 de jun. 2016)}}. Tais dados são alarmantes para a sociedade visto que nenhum meio de transporte tira tantas vidas como o meio rodoviário.
 
 	\par “Uma pessoa que viajar mais de 17.622 quilomêtros em um automóvel (carro ou caminhão leve) enfrenta o risco de fatalidade de 1 em 12.500. Este risco é 17, 67 e 112 vezes maior se comparado a trêns, ônibus e aviação, respectivamente” (SAVAGE, 2013). Estes outros meios, como o aquático, aéreo e ferroviário, sofrem menos acidentes porém eventuais catástrofes assumem maiores proporções por justamente serem transportes de massa. Estes meios de transporte entenderam melhor a carência de segurança na locomoção e por isso há algumas décadas vemos navios e aviões equipados com sistemas de comunicação utilizando transponders, que auxiliam na prevenção de acidentes e na escolha de novas rotas, seja por tráfego denso ou por condições climáticas adversas. Nos trens, o uso de tecnologias 3G e 4G pelos sistemas de comunicação também tem sido fundamental para proporcionar o aumento da segurança e da pontualidade nas ferrovias metropolitanas e intercidades.
 	
@@ -976,7 +980,7 @@ brazil,				% o último idioma é o principal do documento
 	\par Além das camadas, alguns padrões da família 1609 definem outras características, como segurança e gerenciamento para aplicações DSRC (\textit{Dedicated Short Range Communications} ou Comunições Dedicadas de Curto Alcance). Na \autoref{tab_1}, a família de padrões WAVE é detalhada. 
 	
 	% INSERIR Tabela de padrões WAVE
-	\begin{table}[H] %[?] Arrumar alinhamento vertical e quebra de linhas (exemplo: quebrar o camadas\\fisica e mac)
+	\begin{table}[H]
 		\centering
 		\renewcommand{\arraystretch}{1.2}
 		\begin{tabular}{|p{1.5cm}|p{2.3cm}|p{8.5cm}|p{2cm}|} \hline
@@ -1215,8 +1219,8 @@ brazil,				% o último idioma é o principal do documento
 	% INSERIR Figura 26 MAC (Multi-Canal)
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.5]{figuras/cap3/26MAC(MultiCanal)}
-		\caption{\label{fig_26}MAC(Multi-Canal)}
+		\includegraphics[scale=.6]{figuras/cap3/26MAC(MultiCanal)}
+		\caption{\label{fig_26}MAC (Multi-Canal)}
 	\end{figure}
 	
 	\subsection{Serviços do Plano de Gerenciamento}
@@ -1231,7 +1235,7 @@ brazil,				% o último idioma é o principal do documento
         \item Outros Serviços IEEE 802.11
     \end{itemize}
 	
-	\par O \textbf{serviço de sincronização multi-canal} provido pela entidade da subcamada MAC(MLME) utiliza uma base de tempo comum que pode ser obtida localmente ou recebida via rádio para gerar uma função de sincronismo com objetivo de alinhar os intervalos de tempo entre os dispositivos WAVE comunicantes. A MLME gera quadros de anúncio de sincronismo para distribuição de informação de sincronismo e monitora os estes quadros recebidos.
+	\par O \textbf{serviço de sincronização multi-canal} provido pela entidade da subcamada MAC (MLME) utiliza uma base de tempo comum que pode ser obtida localmente ou recebida via rádio para gerar uma função de sincronismo com objetivo de alinhar os intervalos de tempo entre os dispositivos WAVE comunicantes. A MLME gera quadros de anúncio de sincronismo para distribuição de informação de sincronismo e monitora os estes quadros recebidos.
 	
 	\par A referência de tempo comum usada para o sincronismo multi-canal é o módulo 1 segundo da UTC, utilizado por muitos equipamentos GPS.
 	
@@ -1296,7 +1300,7 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par O protocolo da camada de rede requisita a transmissão de um pacote e a subcamada LLC configura o campo \textbf{Type} ao valor \textit{Ethertype} correspondente. 
 	
-	\begin{itemize} %[?] FICA ASSIM MSM?
+	\begin{itemize}
 	    \item Se o protocolo a ser chamado for o WSMP, uma primitiva chamada DL-UNITDATAX\\.request é acionada e o valor \textit{Ethertype} atribuído no campo Type é 0x88DC. Os dados são transmitidos para as camadas inferiores usando a primitiva MA-UNITDATAX\\.request. 
         \item Se o protocolo for o IPv6, uma primitiva chamada DL-UNITDATA.request é acionada e o valor \textit{Ethertype} atribuído no campo Type é 0x86DD. Os dados são transmitidos para as camadas inferiores usando a primitiva MA-UNITDATA.request.
     \end{itemize}
@@ -1342,6 +1346,8 @@ brazil,				% o último idioma é o principal do documento
 	\par  Quando a camada de aplicação requisita o envio de uma mensagem, esta é encapsulada dentro do campo \textbf{dados WSM} de uma mensagem curta WAVE (WSM). Mensagens Curtas WAVE são formadas pelo \textbf{cabeçalho} do protocolo WSMP em conjunto com os \textbf{dados da WSM}.
 	
 	\par A \autoref{fig_29} ilustra como este cabeçalho é construído conforme os dados são movidos da camada de aplicação através dos Serviços de Rede{\footnote{\textbf{Serviços de Rede} comprime os serviços da Camada 3 (Rede) e Camada 4 (Transporte) do Modelo OSI conforme pode ser visto na \autoref{fig_28}.}} até a camada MAC. As caixas com borda pontilhada são opcionais e não fazem parte do pacote em si, mas podem ser enviadas para as camadas inferiores como parâmetros por meio das primitivas (“funções” em itálico na \autoref{fig_29}). As caixas com borda preenchida indicam  os campos formatados para a transmissão.
+	
+	\newpage
 
 	%INSERIR Figura 29 Composição de uma WSM
 	\begin{figure} [H]
@@ -1533,7 +1539,7 @@ brazil,				% o último idioma é o principal do documento
 	%INSERIR Figura 39 Aplicação de pedágio
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.4]{figuras/cap3/39AplicacaoPedagio}
+		\includegraphics[scale=.45]{figuras/cap3/39AplicacaoPedagio}
 		\caption{\label{fig_39}Aplicação de pedágio}
 	\end{figure}
 	
@@ -1567,7 +1573,7 @@ brazil,				% o último idioma é o principal do documento
 
 %-------------------------------------------------------------
 	\newpage
-	\chapter{Abordagem Avaliativa}
+	\chapter{Abordagens Avaliativas}
 	\label{chap:Abor_Aval}
 	
 	\par Toda e qualquer tecnologia precisa ser testada utilizando-se de alguma abordagem de avaliação antes de entrar em caráter de produção no mercado. Abordagens avaliativas são métodos distintos de pensar, desenhar e conduzir atividades de avaliação. A utilização de abordagens avaliativas é de considerável importância para o método científico. Quando uma abordagem é corretamente empregada em determinada tecnologia, esta se torna fundamental para antecipar possíveis inconvenientes ou conflitos existentes no recurso tecnológico antes do mesmo entrar em produção.
@@ -1785,7 +1791,7 @@ brazil,				% o último idioma é o principal do documento
 	% INSERIR FIGURA DE IDE DO SUMO
 	\begin{figure} [H]
 		\centering
-		\includegraphics[scale=.8]{figuras/cap4/451Veins}
+		\includegraphics[scale=.75]{figuras/cap4/451Veins}
 		\caption{\label{fig_451}Arquitetura do \textit{framework} VEINS}
 	\end{figure}
 	
@@ -1888,6 +1894,8 @@ brazil,				% o último idioma é o principal do documento
 
    	\par Conforme relatado na \autoref{sec:MiddleIntegra}, o \textit{framework} escolhido para simulação de Redes Veiculares é o VEINS. Devido a grande quantidade de atributos e métodos presentes no código fonte deste \textit{framework}, a \autoref{fig_5.1} demonstra um diagrama de classes simplificado do funcionamento do software. A \autoref{tab_5.1} apresenta uma breve descrição sobre suas principais classes.
 
+	\newpage
+
 	 \begin{figure} [H]
 	  \centering
 	  \includegraphics[scale=.43]{figuras/cap5/51ClassesVEINS}
@@ -1940,7 +1948,7 @@ brazil,				% o último idioma é o principal do documento
 
 	A \autoref{tab_5.2} contém uma breve descrição das classes desenvolvidas para extensão do VEINS e para este estudo de caso.
 
-    \begin{table}[H] %[?] ARRUMAR tamanho da tabela e rever italicos+negritos! OBS: REFERENCIAR LIVRO DO PADRAO DE PROJETO COMPOSITE
+    \begin{table}[H] %[?] ARRUMAR tamanho da tabela
     	\centering
 	    \renewcommand{\arraystretch}{1.4}
 	    \begin{tabular}{|p{4.8cm}|p{10.2cm}|}
@@ -1969,9 +1977,9 @@ brazil,				% o último idioma é o principal do documento
 
 	\par  $ L_1 $ e $ R_1 $ representam respectivamente a faixa e rua em trânsito. $ R_2 $ até $ R_n $ simbolizam as próximas ruas a serem percorridas pelo veículo de segurança pública. 
 
-	\par Devido à sua natureza, a aplicação de emergência utiliza o PSID \textbf{0x0C} no cabeçalho das mensagens, apropriado para situações de emergência. O código abaixo representa como essa informação é gerada pelo veículo de segurança pública via função \textbf{prepareMessage}. % [?] verificar se é prepareMsg msm
+	\par Devido à sua natureza, a aplicação de emergência utiliza o PSID \textbf{0x0C} no cabeçalho das mensagens, apropriado para situações de emergência. O código abaixo representa como essa informação é gerada pelo veículo de segurança pública via função \textbf{prepareMessage}.
 
-    \begin{table}[H] %[?] Colocar cor no codigo. Fica em tabela msm? Coloca legenda ou n?
+    \begin{table}[H] %[?] Colocar cor no codigo.
 	    \centering
 	    \renewcommand{\arraystretch}{1.1}
 	    \begin{tabular}{|p{15cm}|}
@@ -1993,6 +2001,7 @@ brazil,				% o último idioma é o principal do documento
 
     \par A aplicação de emergência solicita o percurso do veículo a um GPS (Rua Atual + próximas ruas) e encripta esta informação logo em seguida. Com o dado pronto para ser enviado, a aplicação inicia a preparação da mensagem tendo como base uma WAVE \textit{Short Message} (WSM) inicializada pela classe \textit{BaseWaveApplicationLayer}. Esta aplicação utiliza a classe \textit{BaseWaveApplicationLayer} para incluir na WSM o dado encriptado, o PSID da aplicação e o número do canal a ser utilizado, que neste caso é o canal de controle.
 
+	\newpage
 
 	\section{\label{sec:estudoDeCaso}Estudo de Caso}
 
@@ -2424,7 +2433,7 @@ brazil,				% o último idioma é o principal do documento
 
         \item HARVEY, D. The Condition of Postmodernity: An Enquiry into the Origins of Cultural Change. Wiley-Blackwell, 1992. 392 p.
 
-        \item WORLD HEALTH ORGANIZATION. Global Status Report on Road Safety, 2015. Relatório. Disponível em: \url{http://www.who.int/violence_injury_prevention/road_safety_status/2015/en/}. Acesso em: 2 de maio 2016. %[?]
+        \item WORLD HEALTH ORGANIZATION. Global Status Report on Road Safety, 2015. Relatório. Disponível em: \url{http://www.who.int/violence_injury_prevention/road_safety_status/2015/en/}. Acesso em: 2 de maio 2016.
 
 
             %Capítulo 2
@@ -2447,6 +2456,10 @@ brazil,				% o último idioma é o principal do documento
 		\item YANG, F., et al. An Overview of Internet of Vehicles. China Communications, v.11, n. 10, p. 1-15, 2014.
 
 		\item CHENG, J., et al. Routing in Internet of Vehicles: A Review. IEEE Transactions on Intelligent Transportation Systems, v. 16, n. 5, p. 2339-2352, 2015.
+		
+		\item IEEE COMPUTER SOCIETY. Standard for Wireless Access in Vehicular Environments: Security Services for Applications and Management Messages Amendment - Certificate Management, P1609.2a. Nova York, 2010. 62 p.
+		
+		\item IEEE SA - P1609.6 - Standard for Wireless Access in Vehicular Environments (WAVE) - Remote Management Service. Disponível em: \url{https://standards.ieee.org/develop/project/1609.6.html}. Acesso em: 21 de jun. 2016.
 
 		\item IEEE COMPUTER SOCIETY. IEEE Guide for Wireless Access in Vehicular Environments (WAVE): Architecture, 1609.0-2013. Nova York, 2013. 78 p.
 
@@ -2489,6 +2502,8 @@ brazil,				% o último idioma é o principal do documento
 
 		\item SOMMER, C.; GERMAN, R.; DRESSLER, F. Bidirectionally Coupled Network and Road Traffic Simulation for Improved IVC Analysis. IEEE Transactions on Mobile Computing, v. 10, n. 1, p. 3-15, 2011.
 
+		\item Features: Veins. Disponível em: \url{http://veins.car2x.org/features/}. Acesso em: 19 de jul. 2016.
+		
 		\item Documentation: Veins. Disponível em: \url{http://veins.car2x.org/documentation/}. Acesso em: 6 de jun. 2016.
 
 
@@ -2508,38 +2523,33 @@ brazil,				% o último idioma é o principal do documento
             %Anexo A
 
 		\item DUBUISSON, O. ASN.1 Communication between Heterogeneous Systems. Morgan Kaufmann, 2001. 562 p.
-
+		
+			%Anexo E
+	
+		\item GDAL: GDAL - Geospatial Data Abstraction Library. Disponível em: \url{http://www.gdal.org/}. Acesso em: 7 de jun. 2016.
+		
+		\item OSGeo.org: Your Open Source Compass. Disponível em: \url{http://www.osgeo.org/}. Acesso em: 7 de jun. 2016.
+		
+		\item Fox-toolkit.org. Disponível em: \url{http://www.fox-toolkit.org/}. Acesso em: 7 de jun. 2016.
+		
+		\item Proj.4: proj.4 4.9.3 documentation. Disponível em: \url{http://proj4.org/}. Acesso em: 7 de jun. 2016.
+		
+		\item Xerces-C++ XML Parser. Disponível em: \url{http://xerces.apache.org/xerces-c/}. Acesso em: 7 de jun. 2016.
+		
+		\item VARGA, A. OMNeT++ Installation Guide: Version 5.0. Disponível em: \url{https://omnetpp.org/doc/omnetpp/InstallGuide.pdf}. Acesso em: 7 de jun. 2016.
+		
+		\item Tutorial: Veins. Disponível em: \url{http://veins.car2x.org/tutorial/}. Acesso em: 7 de jun. 2016.
+		
+		\item Installing: Sumo. Disponível em: \url{http://sumo.dlr.de/wiki/Installing}. Acesso em: 7 de jun. 2016.
 
             %apagar?%
 
-		\item DELGROSSI, L.; ZHANG, T. Vehicle Safety Communications: Protocols, Security, and Privacy. Nova Jérsia: Wiley, 2012. 372 p. (Information and Communication Technology Series)
+		%\item DELGROSSI, L.; ZHANG, T. Vehicle Safety Communications: Protocols, Security, and Privacy. Nova Jérsia: Wiley, 2012. 372 p. (Information and Communication Technology Series)
 
-		\item HARTENSTEIN, H.; LABERTEAUX, K. P. VANET: Vehicular Applications and Inter-Networking Technologies. Chichester: Wiley, 2010. 435 p. (Intelligent transportation systems)
+		%\item HARTENSTEIN, H.; LABERTEAUX, K. P. VANET: Vehicular Applications and Inter-Networking Technologies. Chichester: Wiley, 2010. 435 p. (Intelligent transportation systems)
 
-		\item PURSULA, M. Simulation of Traffic Systems: An Overview. Disponível em: \url{http://publish.uwo.ca/~jmalczew/gida\_5/Pursula/Pursula.html}. Acesso em: 6 de jun. 2016.
-
-		\item GDAL: GDAL - Geospatial Data Abstraction Library. Disponível em: \url{http://www.gdal.org/}. Acesso em: 7 de jun. 2016.
-
-		\item OSGeo.org: Your Open Source Compass. Disponível em: \url{http://www.osgeo.org/}. Acesso em: 7 de jun. 2016.
-
-		\item Fox-toolkit.org. Disponível em: \url{http://www.fox-toolkit.org/}. Acesso em: 7 de jun. 2016.
-
-		\item Proj.4: proj.4 4.9.3 documentation. Disponível em: \url{http://proj4.org/}. Acesso em: 7 de jun. 2016.
-
-		\item Xerces-C++ XML Parser. Disponível em: \url{http://xerces.apache.org/xerces-c/}. Acesso em: 7 de jun. 2016.
-
-		\item VARGA, A. OMNeT++ Installation Guide: Version 5.0. Disponível em: \url{https://omnetpp.org/doc/omnetpp/InstallGuide.pdf}. Acesso em: 7 de jun. 2016.
-
-		\item Tutorial: Veins. Disponível em: \url{http://veins.car2x.org/tutorial/}. Acesso em: 7 de jun. 2016.
-
-		\item Installing: Sumo. Disponível em: \url{http://sumo.dlr.de/wiki/Installing}. Acesso em: 7 de jun. 2016.
-
-		\item IEEE COMPUTER SOCIETY. Standard for Wireless Access in Vehicular Environments: Security Services for Applications and Management Messages Amendment - Certificate Management, P1609.2a. Nova York, 2010. 62 p.
-
-		\item IEEE SA - P1609.6 - Standard for Wireless Access in Vehicular Environments (WAVE) - Remote Management Service. Disponível em: \url{https://standards.ieee.org/develop/project/1609.6.html}. Acesso em: 21 de jun. 2016.
-
-		\item Features: Veins. Disponível em: \url{http://veins.car2x.org/features/}. Acesso em: 19 de jul. 2016.
-
+		%\item PURSULA, M. Simulation of %Traffic Systems: An Overview. %Disponível em: %\url{http://publish.uwo.ca/~jmalczew/%gida\_5/Pursula/Pursula.html}. Acesso em: 6 de jun. 2016.
+		
 	\end{itemize}
 
 	% ----------------------------------------------------------
@@ -2596,7 +2606,6 @@ brazil,				% o último idioma é o principal do documento
 	
 	\par Em telecomunicações, Dubuisson (2001) descreve ASN.1 (\textit{Abstract Syntax Notation One} ou Notação para Sintaxe Abstrata 1) como uma notação de comunicação padronizada internacionalmente em 1984 por um conjunto de organizações e funciona independentemente de hardware, sistemas operacionais e linguagens de programação utilizados. Esta notação descreve estruturas de dados usadas para a representação, codificação, transmissão e decodificação dos dados em redes de telecomunicações. Por estes motivos, a notação ASN.1 permite que a estrutura da informação entre sistemas diversos (torres de celulares, radiotelescópios, carros, \textit{smartphones}, computadores, etc) seja compartilhada sem necessidade de saber como a mensagem é construída ou que meio é utilizado para a propagação (ar ou cabo).
 	
-	%[?] como BER, CER e PER utilizam  : deixa sem descricao da sigla msm?
 	\par ASN.1 define uma sintaxe abstrata da informação mas não restringe como a informação é codificada. Por isso, diversas regras de codificação como BER, CER e PER utilizam da sintaxe abstrata descrita em ASN.1. Regras de codificação descrevem como os valores definidos na notação podem ser codificados para a transmissão. Em outras palavras as regras de codificação ditam como a informação será traduzida em bytes para comunicações com ou sem fio. Diversos protocolos de aplicação como LDAP, H.323 e Kerberos também utilizam a notação ASN.1 em unidades de protocolos de dados trocados.
 	
 	\par A ASN.1 envia informação compressa em qualquer forma (áudio, vídeo, dados, etc) para qualquer lugar que a comunicação digital é alcançada. Esta notação dispõe de uma tipagem básica pré-definida - os tipos inteiro, booleano e string existem na notação - e também permite a criação de novos tipos de dados. Esta característica é de extrema importância para a comunicação entre sistemas novos e antigos. Apesar de demonstrar semelhanças, a notação ASN.1 não é considerada uma linguagem de programação pois não possui operadores.
@@ -2783,11 +2792,11 @@ brazil,				% o último idioma é o principal do documento
 
 		    \par Foram elaborados dois tutorias para dois sistemas operacionais distintos: Windows 10 e Ubuntu 16.04. Encorajamos a instalação dos \textit{frameworks} no sistema operacional Ubuntu para melhor \textit{performance} da instalação e das simulações.
 
-		    \par O download do SUMO 0.25.0 pode ser feito por meio do site \href{https://sourceforge.net/projects/sumo/files/sumo/}{https://sourceforge.net/\\projects/sumo/files/sumo/}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
+		    \par O download do SUMO 0.25.0 pode ser feito por meio do site \href{https://sourceforge.net/projects/sumo/files/sumo/}{https://sourceforge.net/\\projects/sumo/files/sumo/}, escolhendo a versão compatível com o sistema operacional desejado.
 
-		    \par O download do OMNET++ 4.6 pode ser feito por meio do site \href{https://omnetpp.org/omnetpp}{https://omnetpp.org/\\omnetpp}, escolhendo a versão compatível com o sistema operacional desejado. %[?] Colocar link para versão utilizada!
+		    \par O download do OMNET++ 4.6 pode ser feito por meio do site \href{https://omnetpp.org/omnetpp}{https://omnetpp.org/\\omnetpp}, escolhendo a versão compatível com o sistema operacional desejado.
 
-		    \par O download do VEINS 4.4 pode ser feito no site \href{http://veins.car2x.org/download/}{http://veins.car2x.org/\\download/}. %[?] Colocar link para versão utilizada!
+		    \par O download do VEINS 4.4 pode ser feito no site \href{http://veins.car2x.org/download/}{http://veins.car2x.org/\\download/}.
 
 		    \par Recomenda-se manter os arquivos descompactados em uma pasta padrão. Neste tutorial vamos assumir que esta pasta é nomeada \textbf{WAVE}. Determine qual sistema operacional será utilizado e siga os passos conformemente.
 
